@@ -1,0 +1,51 @@
+.buy-wrap {
+	position: relative;
+	padding-top: 120px;
+	padding-bottom: 160px;
+	&__bg {
+		position: absolute;
+		left: 0;
+		top: -70px;
+		@media (max-width: 991px) {
+			display: none;
+		}
+	}
+}
+.buy {
+	@include flex(column, center, center);
+	&__form {
+		width: 616px;
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+		@media (max-width: 991px) {
+			width: 100%;
+		}
+		.btn-more {
+			color: $accent;
+			font-size: 14px;
+			font-weight: 500;
+			line-height: normal;
+			@include flex(row, center, center);
+			gap: 8px;
+			padding: 16px 32px;
+			border-radius: 50px;
+		}
+		button {
+			width: 100%;
+		}
+	}
+}
+@media (max-width: 991px) {
+	.hidden-row {
+		display: none;
+	}
+
+	.hidden-row.show {
+		display: flex;
+	}
+
+	.rotate {
+		transform: rotate(180deg);
+	}
+}

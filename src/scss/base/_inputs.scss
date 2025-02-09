@@ -1,0 +1,152 @@
+.label {
+	display: block;
+	color: #e4e4e4;
+	font-weight: 500;
+	line-height: normal;
+	margin-bottom: 8px;
+}
+
+.input {
+	width: 100%;
+	position: relative;
+
+	&-chev {
+		position: absolute;
+		top: 12px;
+		right: 12px;
+		pointer-events: none;
+		cursor: pointer;
+	}
+}
+
+.input-chev {
+	@include transition;
+}
+
+.input-chev.rotate {
+	transform: rotate(180deg);
+}
+.input > input {
+	cursor: pointer;
+	width: 100%;
+	overflow: hidden;
+	color: #fff;
+	text-overflow: ellipsis;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	height: 48px;
+	padding: 16px 35px 16px 20px;
+	border-radius: 50px;
+	border: 1px solid #bababa;
+	&::placeholder {
+		color: #7c7c7c;
+	}
+	&:focus {
+		border: 1px solid $accent;
+	}
+}
+
+.dropdown {
+	position: relative;
+	::-webkit-scrollbar {
+		width: 2px;
+		height: 2px;
+	}
+
+	.dropdown-list {
+		position: absolute;
+		z-index: 10;
+		margin-top: 8px;
+		width: 100%;
+		padding: 20px 12px 20px 20px;
+		border-radius: 16px;
+		background: #2b2b2b;
+		box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.1);
+	}
+	.dropdown-items {
+		overflow-y: auto;
+		width: 100%;
+		max-height: 300px;
+		@include flex(column, flex-start, flex-start);
+		gap: 16px;
+		li {
+			@include flex(row, space-between, center);
+			width: 100%;
+			color: #fff;
+			font-size: 18px;
+			line-height: normal;
+			@include transition;
+			cursor: pointer;
+			svg {
+				margin-right: 5px;
+				@include transition;
+			}
+		}
+		li:hover {
+			color: $accent;
+			stroke: $accent;
+			text-shadow: 0px 0px 25px rgba(255, 213, 133, 0.4);
+		}
+		li.active {
+			color: $accent;
+			text-shadow: 0px 0px 25px rgba(255, 213, 133, 0.4);
+		}
+	}
+
+	.dropdown-list {
+		display: none;
+	}
+
+	.dropdown-list.open {
+		display: block;
+	}
+}
+.advanced-search {
+	display: none;
+}
+
+.advanced-search.show {
+	display: block;
+}
+
+.rotate {
+	transform: rotate(180deg);
+}
+
+.input-primary {
+	cursor: pointer;
+	width: 100%;
+	overflow: hidden;
+	color: #fff;
+	text-overflow: ellipsis;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	height: 48px;
+	padding: 16px 35px 16px 20px;
+	border-radius: 50px;
+	border: 1px solid #bababa;
+	&::placeholder {
+		color: #7c7c7c;
+	}
+	&:focus {
+		border: 1px solid $accent;
+	}
+}
+.no-results {
+	color: #fff;
+	font-size: 18px;
+	line-height: normal;
+	list-style-type: none;
+}
+.message-not-found {
+	color: $accent;
+	text-align: center;
+	font-size: 23px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}

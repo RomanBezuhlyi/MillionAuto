@@ -1,0 +1,27 @@
+.connect-wrap {
+	padding-bottom: 160px;
+	@media (max-width: 991px) {
+		padding-bottom: 120px;
+	}
+}
+.connect {
+	@include flex(column, center, center);
+	gap: 24px;
+	&__inputs {
+		@include flex(row, center, center);
+		gap: 16px;
+		max-width: 616px;
+		@media (max-width: 600px) {
+			@include flex(column, center, center);
+			gap: 24px;
+			width: 100%;
+			max-width: none;
+		}
+	}
+	button {
+		width: 300px;
+		@media (max-width: 600px) {
+			width: 100%;
+		}
+	}
+}

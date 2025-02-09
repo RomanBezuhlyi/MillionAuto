@@ -1,0 +1,85 @@
+.services-wrap {
+	padding-bottom: 160px;
+	@media (max-width: 991px) {
+		padding-bottom: 120px;
+	}
+}
+.services {
+	&__card {
+		@include flex(column, flex-start, flex-start);
+		padding: 32px;
+		border-radius: 16px;
+		background: #191919;
+		box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.1);
+		position: relative;
+		@media (max-width: 991px) {
+			padding: 24px;
+		}
+		&-link {
+			position: absolute;
+			top: 32px;
+			right: 32px;
+			width: 40px;
+			height: 40px;
+			padding: 8px;
+			border-radius: 20px;
+			border: 1px solid $accent;
+			&:hover {
+				transform: scale(1.2);
+			}
+		}
+		&-img {
+			margin-bottom: 24px;
+		}
+		&-title {
+			@include flex(row, flex-start, center);
+			gap: 12px;
+			color: $accent;
+			text-shadow: 0px 0px 25px rgba(255, 213, 133, 0.4);
+			font-size: 28px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: normal;
+			margin-bottom: 12px;
+			@media (max-width: 991px) {
+				font-size: 23px;
+			}
+		}
+	}
+}
+
+.servicesSwiper {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	padding-bottom: 70px;
+}
+.services-button-prev::after {
+	display: none;
+}
+.services-button-next::after {
+	display: none;
+}
+.services__list-nav {
+	position: absolute;
+	bottom: 0;
+	@include flex(row, center, center);
+	gap: 24px;
+}
+.services-button-prev {
+	position: static;
+	width: 88px;
+	height: 48px;
+	border-radius: 50px;
+	border: 1px solid $accent;
+	box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.1);
+}
+.services-button-next {
+	position: static;
+	width: 88px;
+	height: 48px;
+	border-radius: 50px;
+	border: 1px solid $accent;
+	box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,66 @@
+.hero-wrap {
+	padding-top: 245px;
+	padding-bottom: 131px;
+	@media (max-width: 1200px) {
+		padding-top: 100px;
+		padding-bottom: 120px;
+	}
+	@media (max-width: 991px) {
+		padding-top: 77px;
+	}
+}
+.hero {
+	@include flex(row, space-between, center);
+	gap: 54px;
+	@media (max-width: 991px) {
+		@include flex(column, flex-start, flex-start);
+	}
+	&__img {
+		max-width: 50%;
+	}
+	&__img-mobile--left {
+		@media (max-width: 991px) {
+			margin-left: -16px;
+		}
+	}
+	&__img-mobile--right {
+		@media (max-width: 991px) {
+			margin-left: auto;
+			margin-right: -16px;
+		}
+	}
+	&__card {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		h4 {
+			color: $accent;
+			font-size: 28px;
+			font-weight: 400;
+			line-height: normal;
+			margin-bottom: 12px;
+			@media (max-width: 991px) {
+				color: $white;
+				font-weight: 700;
+			}
+		}
+		p {
+			color: $text;
+			font-weight: 500;
+			line-height: normal;
+			margin-bottom: 24px;
+		}
+	}
+	.left {
+		align-items: flex-start;
+		text-align: left;
+	}
+	.right {
+		align-items: flex-end;
+		text-align: right;
+		@media (max-width: 991px) {
+			align-items: flex-start;
+			text-align: left;
+		}
+	}
+}
