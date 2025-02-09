@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/png" href="../img/favicon.png" />
+		<title>MillionAuto</title>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+		/>
+
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+		/>
+		<link rel="stylesheet" href="./css/main.css" />
+	</head>
+	<body>
+		<header id="header" class="header-wrap container fade-in">
+	<div class="header">
+		<a class="header__logo" href="/../">
+			<img src="../../img/logo-header.svg" alt="" />
+		</a>
+		<nav class="header__nav">
+			<a href="page-catalog.html">Автомобілі</a>
+			<a href="#">Послуги</a>
+			<a href="#">Послуги</a>
+			<a href="#">Зателефонувати</a>
+			<div class="header__nav-opt">
+				<div class="header__nav-lang">
+					<a href="#"><img src="../../img/united kingdom.svg" alt="" /> Ua</a>
+					<a class="active" href="#"
+						><img src="../../img/ukraine.svg" alt="" /> En</a
+					>
+				</div>
+				<div class="header__nav-log none">
+					<a href="#">Вхід</a>
+				</div>
+			</div>
+		</nav>
+		<button class="header__burger mobile">
+			<img src="../../img/icons/burger_menu_icon.svg" alt="" />
+		</button>
+	</div>
+</header>
+
+		<main>
+			<section data-aos="fade-up" class="hero-wrap container">
+	<div class="hero">
+		<img
+			class="hero__img-mobile--left mobile"
+			src="../../img/silver_car.png"
+			alt=""
+		/>
+		<div class="hero__card left">
+			<h4>Продати авто</h4>
+			<p>
+				В рази більше потенційних клієнтів із різних каналів продаж - вже
+				чекають на твоє авто
+			</p>
+			<a class="primary" href="#">ДОКЛАДНІШЕ</a>
+		</div>
+		<img class="hero__img desktop" src="../../img/main_car.png" alt="" />
+		<img
+			class="hero__img-mobile--right mobile"
+			src="../../img/red_car.png"
+			alt=""
+		/>
+		<div class="hero__card right">
+			<h4>Придбати авто</h4>
+			<p>
+				Якщо ви хочете стати щасливим власником авто наша компанія готова вам
+				допомогти
+			</p>
+			<a class="primary" href="#">ДОКЛАДНІШЕ</a>
+		</div>
+	</div>
+</section>
+ <section data-aos="fade-up" data-aos-offset="300" id="buy" class="buy-wrap">
+	<img class="buy-wrap__bg" src="../../img/carbon-1.svg" alt="" />
+	<div class="container">
+		<div class="buy">
+			<div class="pre-title">
+				<p>придбати авто</p>
+			</div>
+			<h2 class="title">
+				<span>Купуєш авто?</span> Знайди свій ідеальний варіант!
+			</h2>
+			<p class="sub-title">
+				Обирай із сотень пропозицій на будь-який смак і бюджет
+			</p>
+			<form class="buy__form" id="buy-form">
+				<div class="row g-3">
+					<div class="col-lg-6 col-12 dropdown">
+						<label class="label" for="drop">Марка авто</label>
+						<div class="input">
+							<input
+								id="marka-auto"
+								readonly
+								type="text"
+								placeholder="Усі марки"
+								data-placeholder="Усі марки"
+							/>
+							<img
+								class="input-chev"
+								src="../../img/icons/chevron_more_icon.svg"
+								alt=""
+							/>
+						</div>
+						<div class="dropdown-list">
+							<ul class="dropdown-items">
+								<li>Title One</li>
+								<li>Title Two</li>
+								<li>Title Three</li>
+								<li>Title Four</li>
+								<li>Title Five</li>
+								<li>Title Six</li>
+								<li>Title Seven</li>
+								<li>Title Eight</li>
+								<li>Title Nine</li>
+								<li>Title Ten</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-6 col-12 dropdown">
+						<label class="label" for="drop">Модель</label>
+						<div class="input">
+							<input
+								id="model"
+								readonly
+								type="text"
+								placeholder="Усі моделі"
+								data-placeholder="Усі моделі"
+							/>
+							<img
+								class="input-chev"
+								src="../../img/icons/chevron_more_icon.svg"
+								alt=""
+							/>
+						</div>
+						<div class="dropdown-list">
+							<ul class="dropdown-items">
+								<li>Title One</li>
+								<li>Title Two</li>
+								<li>Title Three</li>
+								<li>Title Four</li>
+								<li>Title Five</li>
+								<li>Title Six</li>
+								<li>Title Seven</li>
+								<li>Title Eight</li>
+								<li>Title Nine</li>
+								<li>Title Ten</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="row g-3 hidden-row">
+					<div class="col-lg-6 col-12 dropdown">
+						<label class="label" for="drop">Коробка передач</label>
+						<div class="input">
+							<input
+								id="korobka-peredach"
+								readonly
+								type="text"
+								placeholder="Усі"
+								data-placeholder="Усі"
+							/>
+							<img
+								class="input-chev"
+								src="../../img/icons/chevron_more_icon.svg"
+								alt=""
+							/>
+						</div>
+						<div class="dropdown-list">
+							<ul class="dropdown-items">
+								<li>Title One</li>
+								<li>Title Two</li>
+								<li>Title Three</li>
+								<li>Title Four</li>
+								<li>Title Five</li>
+								<li>Title Six</li>
+								<li>Title Seven</li>
+								<li>Title Eight</li>
+								<li>Title Nine</li>
+								<li>Title Ten</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-6 col-12 dropdown">
+						<label class="label" for="drop">Тип пального</label>
+						<div class="input">
+							<input
+								id="typ-palnoho"
+								readonly
+								type="text"
+								placeholder="Усі"
+								data-placeholder="Усі"
+							/>
+							<img
+								class="input-chev"
+								src="../../img/icons/chevron_more_icon.svg"
+								alt=""
+							/>
+						</div>
+						<div class="dropdown-list">
+							<ul class="dropdown-items">
+								<li>Title One</li>
+								<li>Title Two</li>
+								<li>Title Three</li>
+								<li>Title Four</li>
+								<li>Title Five</li>
+								<li>Title Six</li>
+								<li>Title Seven</li>
+								<li>Title Eight</li>
+								<li>Title Nine</li>
+								<li>Title Ten</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="row g-3 hidden-row">
+					<div class="col-lg-6 col-12 dropdown">
+						<label class="label" for="drop">Привод</label>
+						<div class="input">
+							<input
+								id="pryvod"
+								readonly
+								type="text"
+								placeholder="Усі"
+								data-placeholder="Усі"
+							/>
+							<img
+								class="input-chev"
+								src="../../img/icons/chevron_more_icon.svg"
+								alt=""
+							/>
+						</div>
+						<div class="dropdown-list">
+							<ul class="dropdown-items">
+								<li>Title One</li>
+								<li>Title Two</li>
+								<li>Title Three</li>
+								<li>Title Four</li>
+								<li>Title Five</li>
+								<li>Title Six</li>
+								<li>Title Seven</li>
+								<li>Title Eight</li>
+								<li>Title Nine</li>
+								<li>Title Ten</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-6 col-12 dropdown">
+						<label class="label" for="drop">Тип кузова</label>
+						<div class="input">
+							<input
+								id="typ-kuzova"
+								readonly
+								type="text"
+								placeholder="Усі"
+								data-placeholder="Усі"
+							/>
+							<img
+								class="input-chev"
+								src="../../img/icons/chevron_more_icon.svg"
+								alt=""
+							/>
+						</div>
+						<div class="dropdown-list">
+							<ul class="dropdown-items">
+								<li>Title One</li>
+								<li>Title Two</li>
+								<li>Title Three</li>
+								<li>Title Four</li>
+								<li>Title Five</li>
+								<li>Title Six</li>
+								<li>Title Seven</li>
+								<li>Title Eight</li>
+								<li>Title Nine</li>
+								<li>Title Ten</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="row g-3">
+					<div class="col-lg-6 col-12">
+						<div class="row g-3 align-items-end">
+							<div class="col-6 dropdown">
+								<label class="label" for="drop">Рік випуску</label>
+								<div class="input">
+									<input
+										id="year-from"
+										type="number"
+										placeholder="Від"
+										data-placeholder="Від"
+									/>
+								</div>
+							</div>
+							<div class="col-6 dropdown">
+								<div class="input">
+									<input
+										id="year-to"
+										type="number"
+										placeholder="До"
+										data-placeholder="До"
+									/>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-12">
+						<div class="row g-3 align-items-end">
+							<div class="col-6 dropdown">
+								<label class="label" for="drop">Ціна, $</label>
+								<div class="input">
+									<input
+										id="price-from"
+										type="number"
+										placeholder="Від"
+										data-placeholder="Від"
+									/>
+								</div>
+							</div>
+							<div class="col-6 dropdown">
+								<div class="input">
+									<input
+										id="price-to"
+										type="number"
+										placeholder="До"
+										data-placeholder="До"
+									/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row g-3">
+					<div class="col-lg-6 col-12 mobile">
+						<button
+							class="btn-more"
+							style="margin-top: 8px"
+							type="button"
+							id="more-button"
+						>
+							Розширений пошук
+							<img src="../../img/icons/more_arrow_icon.svg" alt="" />
+						</button>
+					</div>
+					<div class="col-lg-6 col-12">
+						<button
+							class="outline"
+							style="margin-top: 8px"
+							type="button"
+							id="reset-button"
+						>
+							СКИНУТИ ПАРАМЕТРИ
+						</button>
+					</div>
+					<div class="col-lg-6 col-12">
+						<button
+							class="primary"
+							style="margin-top: 8px"
+							type="submit"
+							id="submit-button"
+						>
+							ПІДІБРАТИ
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</section>
+
+			<section data-aos="fade-up" data-aos-offset="300" id="about" class="about-wrap">
+	<img class="about-wrap__bg" src="../../img/carbon-2.svg" alt="" />
+	<div class="container">
+		<div class="about">
+			<div class="pre-title">
+				<p>Про компанію</p>
+			</div>
+			<h2 class="title"><span>Зустрічайте</span> MILLIONAUTO</h2>
+			<p class="sub-title" style="font-size: 14px">
+				Наш успіх базується на індивідуальному підході до кожного клієнта та
+				командній роботі професіоналів, які створюють комфортний і прозорий
+				процес купівлі чи обміну авто
+			</p>
+			<ul class="about__list">
+				<li class="about__list-item">
+					<span>700 +</span>
+					<p>Проданих автомобілів</p>
+				</li>
+				<li class="about__list-line"></li>
+				<li class="about__list-item">
+					<span>500 +</span>
+					<p>Автомобілів Trade-In</p>
+				</li>
+				<li class="about__list-line"></li>
+				<li class="about__list-item">
+					<span>1500 +</span>
+					<p>Технічного обслуговування</p>
+				</li>
+			</ul>
+			<div class="about__video">
+				<img class="preview" src="../../img/preview.jpg" alt="" />
+				<button class="play" type="button">
+					<img src="../../img/PlayButton.svg" alt="" />
+				</button>
+				<video id="video-player" width="100%" controls>
+					<source
+						src="https://cdn.create.vista.com/api/media/medium/394486198/stock-video-attractive-woman-getting-black-car-drivers-seat?token="
+						type="video/mp4"
+					/>
+				</video>
+			</div>
+			<p class="about__text">
+				Наша компанія є одним із лідерів автомобільного ринку України. Ми
+				успішно працюємо понад 10 років, пропонуючи клієнтам широкий вибір
+				автомобілів, вигідні умови кредитування, та сервіс найвищого рівня.
+			</p>
+		</div>
+	</div>
+</section>
+ <section
+	data-aos="fade-up"
+	data-aos-offset="300"
+	id="services"
+	class="services-wrap container"
+>
+	<div class="services">
+		<div class="pre-title">
+			<p>Послуги компанії</p>
+		</div>
+		<h2 class="title">
+			Повний спектр послуг <span>для вашого автомобіля</span>
+		</h2>
+		<p class="sub-title" style="font-size: 14px">
+			Від продажу нових і вживаних автомобілів до програми Trade-In та
+			сервісного обслуговування – ми забезпечуємо повний цикл послуг для вашого
+			комфорту.
+		</p>
+		<ul class="row g-3 align-items-start services__list desktop">
+			<li class="col-4 col-lg-4 col-md-6">
+				<div class="services__card">
+					<a class="services__card-link" href="#"
+						><img src="../../img/icons/fluent_arrow-up-48-regular.svg" alt=""
+					/></a>
+					<img class="services__card-img" src="../../img/card-1.png" alt="" />
+					<h5 class="services__card-title">
+						<img src="../../img/icons/search_icon.svg" alt="" />Автопідбір
+					</h5>
+					<p>
+						Наші експерти ретельно аналізують ринок, перевіряють технічний стан
+						авто та гарантують прозорість угоди. Ми економимо ваш час і
+						забезпечуємо комфортний вибір вашого майбутнього автомобіля.
+					</p>
+				</div>
+			</li>
+			<li class="col-4 col-lg-4 col-md-6">
+				<div class="services__card">
+					<a class="services__card-link" href="#"
+						><img src="../../img/icons/fluent_arrow-up-48-regular.svg" alt=""
+					/></a>
+					<img class="services__card-img" src="../../img/card-2.png" alt="" />
+					<h5 class="services__card-title">
+						<img src="../../img/icons/search_icon.svg" alt="" />Автовикуп
+					</h5>
+					<p>
+						Вигідне рішення для тих, хто хоче продати свій автомобіль. Ми
+						пропонує прозору оцінку, справедливу ціну та оперативне оформлення
+						угоди. Ми гарантуємо надійність у кожному етапі продажу.
+					</p>
+				</div>
+			</li>
+			<li class="col-4 col-lg-4 col-md-6">
+				<div class="services__card">
+					<a class="services__card-link" href="#"
+						><img src="../../img/icons/fluent_arrow-up-48-regular.svg" alt=""
+					/></a>
+					<img class="services__card-img" src="../../img/card-2.png" alt="" />
+					<h5 class="services__card-title">
+						<img src="../../img/icons/search_icon.svg" alt="" />Продаж авто
+					</h5>
+					<p>
+						Наші експерти ретельно аналізують ринок, перевіряють технічний стан
+						авто та гарантують прозорість угоди. Ми економимо ваш час і
+						забезпечуємо комфортний вибір вашого майбутнього автомобіля.
+					</p>
+				</div>
+			</li>
+			<li class="col-4 col-lg-4 col-md-6">
+				<div class="services__card">
+					<a class="services__card-link" href="#"
+						><img src="../../img/icons/fluent_arrow-up-48-regular.svg" alt=""
+					/></a>
+					<img class="services__card-img" src="../../img/card-2.png" alt="" />
+					<h5 class="services__card-title">
+						<img src="../../img/icons/search_icon.svg" alt="" />Кредит або
+						лізинг
+					</h5>
+					<p>
+						Наші експерти ретельно аналізують ринок, перевіряють технічний стан
+						авто та гарантують прозорість угоди. Ми економимо ваш час і
+						забезпечуємо комфортний вибір вашого майбутнього автомобіля.
+					</p>
+				</div>
+			</li>
+			<li class="col-4 col-lg-4 col-md-6">
+				<div class="services__card">
+					<a class="services__card-link" href="#"
+						><img src="../../img/icons/fluent_arrow-up-48-regular.svg" alt=""
+					/></a>
+					<img class="services__card-img" src="../../img/card-2.png" alt="" />
+					<h5 class="services__card-title">
+						<img src="../../img/icons/search_icon.svg" alt="" />Обмін вашого
+						авто
+					</h5>
+					<p>
+						Наші експерти ретельно аналізують ринок, перевіряють технічний стан
+						авто та гарантують прозорість угоди. Ми економимо ваш час і
+						забезпечуємо комфортний вибір вашого майбутнього автомобіля.
+					</p>
+				</div>
+			</li>
+			<li class="col-4 col-lg-4 col-md-6">
+				<div class="services__card">
+					<a class="services__card-link" href="#"
+						><img src="../../img/icons/fluent_arrow-up-48-regular.svg" alt=""
+					/></a>
+					<img class="services__card-img" src="../../img/card-2.png" alt="" />
+					<h5 class="services__card-title">
+						<img src="../../img/icons/search_icon.svg" alt="" />Автоломбард
+					</h5>
+					<p>
+						Наші експерти ретельно аналізують ринок, перевіряють технічний стан
+						авто та гарантують прозорість угоди. Ми економимо ваш час і
+						забезпечуємо комфортний вибір вашого майбутнього автомобіля.
+					</p>
+				</div>
+			</li>
+		</ul>
+
+		<div class="servicesSwiper mobile">
+			<ul class="swiper-wrapper services__list">
+				<li class="swiper-slide">
+					<div class="services__card">
+						<a class="services__card-link" href="#"
+							><img src="../../img/icons/fluent_arrow-up-48-regular.svg" alt=""
+						/></a>
+						<img class="services__card-img" src="../../img/card-1.png" alt="" />
+						<h5 class="services__card-title">
+							<img src="../../img/icons/search_icon.svg" alt="" />Автопідбір
+						</h5>
+						<p>
+							Наші експерти ретельно аналізують ринок, перевіряють технічний
+							стан авто та гарантують прозорість угоди. Ми економимо ваш час і
+							забезпечуємо комфортний вибір вашого майбутнього автомобіля.
+						</p>
+					</div>
+				</li>
+				<li class="swiper-slide">
+					<div class="services__card">
+						<a class="services__card-link" href="#"
+							><img src="../../img/icons/fluent_arrow-up-48-regular.svg" alt=""
+						/></a>
+						<img class="services__card-img" src="../../img/card-2.png" alt="" />
+						<h5 class="services__card-title">
+							<img src="../../img/icons/search_icon.svg" alt="" />Автовикуп
+						</h5>
+						<p>
+							Вигідне рішення для тих, хто хоче продати свій автомобіль. Ми
+							пропонує прозору оцінку, справедливу ціну та оперативне оформлення
+							угоди. Ми гарантуємо надійність у кожному етапі продажу.
+						</p>
+					</div>
+				</li>
+				<li class="swiper-slide">
+					<div class="services__card">
+						<a class="services__card-link" href="#"
+							><img src="../../img/icons/fluent_arrow-up-48-regular.svg" alt=""
+						/></a>
+						<img class="services__card-img" src="../../img/card-2.png" alt="" />
+						<h5 class="services__card-title">
+							<img src="../../img/icons/search_icon.svg" alt="" />Продаж авто
+						</h5>
+						<p>
+							Наші експерти ретельно аналізують ринок, перевіряють технічний
+							стан авто та гарантують прозорість угоди. Ми економимо ваш час і
+							забезпечуємо комфортний вибір вашого майбутнього автомобіля.
+						</p>
+					</div>
+				</li>
+				<li class="swiper-slide">
+					<div class="services__card">
+						<a class="services__card-link" href="#"
+							><img src="../../img/icons/fluent_arrow-up-48-regular.svg" alt=""
+						/></a>
+						<img class="services__card-img" src="../../img/card-2.png" alt="" />
+						<h5 class="services__card-title">
+							<img src="../../img/icons/search_icon.svg" alt="" />Кредит або
+							лізинг
+						</h5>
+						<p>
+							Наші експерти ретельно аналізують ринок, перевіряють технічний
+							стан авто та гарантують прозорість угоди. Ми економимо ваш час і
+							забезпечуємо комфортний вибір вашого майбутнього автомобіля.
+						</p>
+					</div>
+				</li>
+				<li class="swiper-slide">
+					<div class="services__card">
+						<a class="services__card-link" href="#"
+							><img src="../../img/icons/fluent_arrow-up-48-regular.svg" alt=""
+						/></a>
+						<img class="services__card-img" src="../../img/card-2.png" alt="" />
+						<h5 class="services__card-title">
+							<img src="../../img/icons/search_icon.svg" alt="" />Обмін вашого
+							авто
+						</h5>
+						<p>
+							Наші експерти ретельно аналізують ринок, перевіряють технічний
+							стан авто та гарантують прозорість угоди. Ми економимо ваш час і
+							забезпечуємо комфортний вибір вашого майбутнього автомобіля.
+						</p>
+					</div>
+				</li>
+				<li class="swiper-slide">
+					<div class="services__card">
+						<a class="services__card-link" href="#"
+							><img src="../../img/icons/fluent_arrow-up-48-regular.svg" alt=""
+						/></a>
+						<img class="services__card-img" src="../../img/card-2.png" alt="" />
+						<h5 class="services__card-title">
+							<img src="../../img/icons/search_icon.svg" alt="" />Автоломбард
+						</h5>
+						<p>
+							Наші експерти ретельно аналізують ринок, перевіряють технічний
+							стан авто та гарантують прозорість угоди. Ми економимо ваш час і
+							забезпечуємо комфортний вибір вашого майбутнього автомобіля.
+						</p>
+					</div>
+				</li>
+			</ul>
+			<div class="services__list-nav">
+				<button class="services-button-prev" type="button">
+					<img src="../../img/icons/swiper-arr-l.svg" alt="" />
+				</button>
+				<button class="services-button-next" type="button">
+					<img src="../../img/icons/swiper-arr-r.svg" alt="" />
+				</button>
+			</div>
+		</div>
+	</div>
+</section>
+
+			<section
+	data-aos="fade-up"
+	data-aos-offset="300"
+	id="activity"
+	class="activity-wrap container"
+>
+	<div class="pre-title">
+		<p>діяльність</p>
+	</div>
+	<h2 class="title"><span>Як ми</span> працюємо</h2>
+	<p class="sub-title" style="font-size: 14px">
+		Ми пропонуємо комплексні рішення для вибору автомобіля, лізингу та обміну
+		старого авто на нове, з індивідуальним підходом до кожного клієнта
+	</p>
+	<div class="activity">
+		<div class="row g-5">
+			<ul class="col-12 col-lg-6 col-md-12 activity__list">
+				<li class="activity__list-item">
+					<div class="activity__list-item--img">
+						<img src="../../img/activity-1.png" alt="" />
+					</div>
+					<div class="activity__list-item--i">
+						<span>1. ЗАЯВКА</span>
+						<p>Заповніть заявку на сайті або зателефонуйте</p>
+					</div>
+				</li>
+				<li class="activity__list-item">
+					<div class="activity__list-item--img">
+						<img src="../../img/activity-2.png" alt="" />
+					</div>
+					<div class="activity__list-item--i">
+						<span>2. ДОГОВІР</span>
+						<p>Заключаємо договір на співпрацю</p>
+					</div>
+				</li>
+			</ul>
+			<ul class="col-12 col-lg-6 col-md-12 activity__list">
+				<li class="activity__list-item">
+					<div class="activity__list-item--img">
+						<img src="../../img/activity-3.png" alt="" />
+					</div>
+					<div class="activity__list-item--i">
+						<span>3. РЕАЛІЗАЦІЯ ЗАКЛИКУ</span>
+						<p>
+							За вами закріплюється персональний менеджер та починає роботу над
+							вашим
+						</p>
+					</div>
+				</li>
+				<li class="activity__list-item">
+					<div class="activity__list-item--img">
+						<img src="../../img/activity-4.png" alt="" />
+					</div>
+					<div class="activity__list-item--i">
+						<span>4. ЗАКРИТТЯ УГОДИ</span>
+						<p>
+							Індивідуальне супруводження, повна перевірка та вирішення усіх
+							запитів до закриття угоди
+						</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<button class="primary">ОТРИМАТИ КОНСУЛЬТАЦІЮ</button>
+	</div>
+</section>
+ <section data-aos="fade-up" data-aos-offset="300" id="team" class="team-wrap">
+	<img src="../../img/carbon-1.svg" alt="" class="team-wrap__bg" />
+	<div class="container">
+		<div class="pre-title">
+			<p>компанія</p>
+		</div>
+		<h2 class="title"><span>Наша</span> команда</h2>
+		<p class="sub-title" style="font-size: 14px">
+			Кожен член нашої команди — експерт у своїй галузі, готовий допомогти вам
+			знайти найкращі рішення для автопідбору, лізингу та трейд-іну
+		</p>
+		<ul class="team">
+			<li class="team__item">
+				<div class="team__item-img">
+					<img src="../../img/team-1.png" alt="" />
+				</div>
+				<h5 class="team__item-title">Іван Петренко</h5>
+				<p class="team__item-text">Менеджер з автопідбору</p>
+			</li>
+			<li class="team__item">
+				<div class="team__item-img">
+					<img src="../../img/team-2.png" alt="" />
+				</div>
+				<h5 class="team__item-title">Олена Іванова</h5>
+				<p class="team__item-text">Спеціаліст з лізингу</p>
+			</li>
+			<li class="team__item">
+				<div class="team__item-img">
+					<img src="../../img/team-1.png" alt="" />
+				</div>
+				<h5 class="team__item-title">Іван Петренко</h5>
+				<p class="team__item-text">Менеджер з автопідбору</p>
+			</li>
+			<li class="team__item">
+				<div class="team__item-img">
+					<img src="../../img/team-2.png" alt="" />
+				</div>
+				<h5 class="team__item-title">Олена Іванова</h5>
+				<p class="team__item-text">Спеціаліст з лізингу</p>
+			</li>
+			<li class="team__item">
+				<div class="team__item-img">
+					<img src="../../img/team-1.png" alt="" />
+				</div>
+				<h5 class="team__item-title">Іван Петренко</h5>
+				<p class="team__item-text">Менеджер з автопідбору</p>
+			</li>
+			<li class="team__item">
+				<div class="team__item-img">
+					<img src="../../img/team-2.png" alt="" />
+				</div>
+				<h5 class="team__item-title">Олена Іванова</h5>
+				<p class="team__item-text">Спеціаліст з лізингу</p>
+			</li>
+			<li class="team__item">
+				<div class="team__item-img">
+					<img src="../../img/team-2.png" alt="" />
+				</div>
+				<h5 class="team__item-title">Олена Іванова</h5>
+				<p class="team__item-text">Спеціаліст з лізингу</p>
+			</li>
+		</ul>
+	</div>
+</section>
+
+			<section
+	data-aos="fade-up"
+	data-aos-offset="300"
+	id="reviews"
+	class="reviews-wrap"
+>
+	<img src="../../img/carbon-2.svg" alt="" class="reviews-wrap__bg" />
+	<div class="container">
+		<div class="pre-title">
+			<p>ВІДГУКИ</p>
+		</div>
+		<h2 class="title"><span>На що</span> наголошують клієнти</h2>
+		<p class="sub-title" style="font-size: 14px">
+			Професіоналізм, індивідуальний підхід та швидкість обслуговування — ось
+			основні переваги, які відзначають наші клієнти
+		</p>
+		<div class="reviews reviewsSwiper">
+			<ul class="swiper-wrapper">
+				<li class="swiper-slide">
+					<div class="review">
+						<div class="review__content">
+							<img src="../../img/icons/ri_double-quotes-l.svg" alt="" />
+							<p>
+								Велика подяка команді! Процес лізингу був швидким і зрозумілим,
+								а автомобіль я знайшов саме той, що шукав. Рекомендую!
+							</p>
+						</div>
+						<div class="review__info">
+							<div class="review__info-user">
+								<img src="../../img/icons/r-1.svg" alt="" />
+								<span>Олександр К.</span>
+							</div>
+							<div class="review__info-rate">
+								<img src="../../img/icons/full_star_icon.svg" alt="" />
+								<span>5 / 5</span>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="swiper-slide">
+					<div class="review">
+						<div class="review__content">
+							<img src="../../img/icons/ri_double-quotes-l.svg" alt="" />
+							<p>
+								Дуже вдячна за професіоналізм! Перевірка авто на трейд-ін
+								пройшла без проблем, і я отримала вигідну пропозицію. Справжні
+								фахівці!
+							</p>
+						</div>
+						<div class="review__info">
+							<div class="review__info-user">
+								<img src="../../img/icons/r-2.svg" alt="" />
+								<span>Олександр К.</span>
+							</div>
+							<div class="review__info-rate">
+								<img src="../../img/icons/full_star_icon.svg" alt="" />
+								<span>3 / 5</span>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="swiper-slide">
+					<div class="review">
+						<div class="review__content">
+							<img src="../../img/icons/ri_double-quotes-l.svg" alt="" />
+							<p>
+								З компанією працював вже не один раз, завжди залишаюсь
+								задоволений. Швидкий підбір авто, а також допомога з лізингом —
+								це те, що шукаєш
+							</p>
+						</div>
+						<div class="review__info">
+							<div class="review__info-user">
+								<img src="../../img/icons/r-3.svg" alt="" />
+								<span>Олександр К.</span>
+							</div>
+							<div class="review__info-rate">
+								<img src="../../img/icons/full_star_icon.svg" alt="" />
+								<span>4 / 5</span>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="swiper-slide">
+					<div class="review">
+						<div class="review__content">
+							<img src="../../img/icons/ri_double-quotes-l.svg" alt="" />
+							<p>
+								Неймовірно зручний сервіс! Чудово розібралися з усіма нюансами
+								лізингу, що дозволило мені швидко отримати авто на вигідних
+								умовах.
+							</p>
+						</div>
+						<div class="review__info">
+							<div class="review__info-user">
+								<img src="../../img/icons/r-4.svg" alt="" />
+								<span>Олександр К.</span>
+							</div>
+							<div class="review__info-rate">
+								<img src="../../img/icons/full_star_icon.svg" alt="" />
+								<span>5 / 5</span>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="swiper-slide">
+					<div class="review">
+						<div class="review__content">
+							<img src="../../img/icons/ri_double-quotes-l.svg" alt="" />
+							<p>
+								Велика подяка команді! Процес лізингу був швидким і зрозумілим,
+								а автомобіль я знайшов саме той, що шукав. Рекомендую!
+							</p>
+						</div>
+						<div class="review__info">
+							<div class="review__info-user">
+								<img src="../../img/icons/r-1.svg" alt="" />
+								<span>Олександр К.</span>
+							</div>
+							<div class="review__info-rate">
+								<img src="../../img/icons/full_star_icon.svg" alt="" />
+								<span>5 / 5</span>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="swiper-slide">
+					<div class="review">
+						<div class="review__content">
+							<img src="../../img/icons/ri_double-quotes-l.svg" alt="" />
+							<p>
+								Дуже вдячна за професіоналізм! Перевірка авто на трейд-ін
+								пройшла без проблем, і я отримала вигідну пропозицію. Справжні
+								фахівці!
+							</p>
+						</div>
+						<div class="review__info">
+							<div class="review__info-user">
+								<img src="../../img/icons/r-2.svg" alt="" />
+								<span>Олександр К.</span>
+							</div>
+							<div class="review__info-rate">
+								<img src="../../img/icons/full_star_icon.svg" alt="" />
+								<span>3 / 5</span>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<div class="reviews__list-nav">
+				<button class="reviews-button-prev" type="button">
+					<img src="../../img/icons/swiper-arr-l.svg" alt="" />
+				</button>
+				<button class="reviews-button-next" type="button">
+					<img src="../../img/icons/swiper-arr-r.svg" alt="" />
+				</button>
+			</div>
+		</div>
+	</div>
+</section>
+ <section
+	data-aos="fade-up"
+	data-aos-offset="300"
+	id="connect"
+	class="connect-wrap container"
+>
+	<div class="pre-title">
+		<p>зв’язок</p>
+	</div>
+	<h2 class="title">Питання?</h2>
+	<p class="sub-title" style="font-size: 14px">
+		Ми завжди готові допомогти! Залиште ваше запитання, і наша команда надасть
+		вам усю необхідну інформацію
+	</p>
+	<form class="connect">
+		<div class="connect__inputs">
+			<input type="text" class="input-primary" placeholder="Ваше Ім’я" />
+			<input
+				type="text"
+				class="input-primary"
+				id="phone-input"
+				placeholder="Номер телефону"
+			/>
+		</div>
+		<button class="primary" type="submit">ЗАЛИШИТИ ЗАЯВКУ</button>
+	</form>
+</section>
+
+		</main>
+		<footer
+	data-aos="fade-up"
+	data-aos-offset="300"
+	id="footer"
+	class="footer-wrap container"
+>
+	<div class="footer">
+		<a class="footer__logo" href="/../"
+			><img src="../../img/logo-footer.svg" alt=""
+		/></a>
+		<ul class="footer__links">
+			<li class="footer__link">
+				<a href=""><img src="../../img/icons/youtube_icon.svg" alt="" /></a>
+			</li>
+			<li class="footer__link">
+				<a href=""><img src="../../img/icons/telegram_icon.svg" alt="" /></a>
+			</li>
+			<li class="footer__link">
+				<a href=""><img src="../../img/icons/instagram_icon.svg" alt="" /></a>
+			</li>
+		</ul>
+		<p style="margin-bottom: 16px">вул. Раїси Окіпної, 2, Київ, 02002</p>
+		<p>067 324 66 90</p>
+	</div>
+	<div class="footer-description">
+		<a href="#">Юридична інформація</a>
+		<p>MILLIONAUTO 2024</p>
+	</div>
+</footer>
+
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://unpkg.com/imask"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+		<script src="./js/index.bundle.js"></script>
+	</body>
+</html>
