@@ -149,4 +149,7 @@
 	font-style: normal;
 	font-weight: 500;
 	line-height: normal;
+	@media (max-width: 991px) {
+		font-size: 14px;
+	}
 }

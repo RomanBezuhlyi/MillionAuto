@@ -3,6 +3,9 @@
 }
 .catalog {
 	@include flex(row, flex-start, flex-start);
+	::-webkit-scrollbar {
+		display: none;
+	}
 
 	&__filter {
 		flex-shrink: 0;
@@ -10,6 +13,28 @@
 		padding-right: 24px;
 		margin-right: 24px;
 		border-right: 1px solid #2b2b2b;
+		@media (max-width: 991px) {
+			position: fixed;
+			left: 0;
+			z-index: 12;
+			width: 100%;
+			height: 100vh;
+			background-color: $bg;
+			padding: 0 16px;
+			overflow: scroll;
+			@include transition;
+			display: none;
+			::-webkit-scrollbar {
+				display: none;
+			}
+		}
+	}
+	&__filter-wrap {
+		@media (max-width: 991px) {
+			position: relative;
+			height: 75vh;
+			overflow: scroll;
+		}
 	}
 	&__filter-label {
 		color: $accent;
@@ -21,6 +46,13 @@
 	&__filter-btns {
 		@include flex(row, center, center);
 		gap: 16px;
+		@media (max-width: 991px) {
+			position: absolute;
+			padding: 0 16px;
+			bottom: 100px;
+			left: 0;
+			z-index: 111;
+		}
 	}
 	&__filter-reset {
 		@include flex(row, flex-start, center);
@@ -42,7 +74,20 @@
 		@include flex(row, flex-start, center);
 		gap: 48px;
 		flex-wrap: wrap;
+		margin-top: 32px;
 		margin-bottom: 32px;
+		@media (max-width: 991px) {
+			flex-wrap: nowrap;
+			gap: 8px;
+			padding-top: 24px;
+			padding-bottom: 16px;
+			margin-top: 0;
+			margin-bottom: 0;
+			position: sticky;
+			top: 60px;
+			z-index: 10;
+			background-color: $bg;
+		}
 	}
 	&__sort-search {
 		@include flex(row, flex-start, center);
@@ -52,16 +97,52 @@
 			font-size: 18px;
 			font-weight: 500;
 			line-height: normal;
+			@media (max-width: 991px) {
+				display: none;
+			}
+		}
+		.dropdown {
+			width: 422px;
+			@media (max-width: 768px) {
+				width: 100%;
+			}
+		}
+	}
+	&__sort-btn--filter {
+		display: none;
+		@media (max-width: 991px) {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			gap: 8px;
+			width: 50%;
+			box-shadow: none;
+		}
+		&:hover {
+			box-shadow: 0px 0px 12px 5px rgba(255, 213, 133, 0.4);
 		}
 	}
 	&__sort-drop {
 		@include flex(row, flex-start, center);
 		gap: 16px;
+		@media (max-width: 991px) {
+			width: 50%;
+		}
 		label {
 			color: $accent;
 			font-size: 18px;
 			font-weight: 500;
 			line-height: normal;
+			@media (max-width: 991px) {
+				display: none;
+			}
+		}
+		.dropdown {
+			width: 225px;
+			@media (max-width: 768px) {
+				width: 100%;
+			}
 		}
 	}
 
@@ -71,6 +152,17 @@
 
 	&__list {
 		margin-bottom: 32px;
+		@media (max-width: 991px) {
+			margin-bottom: 24px;
+		}
+		.col-lg-4 {
+			@media (max-width: 1250px) {
+				width: 50%;
+			}
+			@media (max-width: 600px) {
+				width: 100%;
+			}
+		}
 	}
 
 	&__item {

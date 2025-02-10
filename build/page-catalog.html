@@ -23,10 +23,10 @@
 		<link rel="stylesheet" href="./css/main.css" />
 	</head>
 	<body>
-		<header id="header" class="header-wrap container fade-in">
+		<header id="header" class="header-wrap container">
 	<div class="header">
 		<a class="header__logo" href="/../">
-			<img src="../../img/logo-header.svg" alt="" />
+			<img src="./img/logo-header.svg" alt="" />
 		</a>
 		<nav class="header__nav">
 			<a href="page-catalog.html">Автомобілі</a>
@@ -35,9 +35,9 @@
 			<a href="#">Зателефонувати</a>
 			<div class="header__nav-opt">
 				<div class="header__nav-lang">
-					<a href="#"><img src="../../img/united kingdom.svg" alt="" /> Ua</a>
+					<a href="#"><img src="./img/united kingdom.svg" alt="" /> Ua</a>
 					<a class="active" href="#"
-						><img src="../../img/ukraine.svg" alt="" /> En</a
+						><img src="./img/ukraine.svg" alt="" /> En</a
 					>
 				</div>
 				<div class="header__nav-log none">
@@ -46,7 +46,7 @@
 			</div>
 		</nav>
 		<button class="header__burger mobile">
-			<img src="../../img/icons/burger_menu_icon.svg" alt="" />
+			<img src="./img/icons/burger_menu_icon.svg" alt="" />
 		</button>
 	</div>
 </header>
@@ -54,293 +54,296 @@
 		<main><section data-aos="fade-up" class="catalog-wrap container">
 	<div class="breadcrumbs">
 		<span>Головна</span>
-		<img src="../../img/icons/right_arrow_icon.svg" alt="" />
+		<img src="./img/icons/right_arrow_icon.svg" alt="" />
 		<span class="active">Каталог автомобілів</span>
 	</div>
 	<h3 class="title-page">Каталог автомобілів</h3>
 	<div class="catalog">
 		<div class="catalog__filter">
-			<p class="catalog__filter-label">Фільтр</p>
-			<div class="row align-items-end g-3">
-				<div class="col-12 dropdown">
-					<label class="label" for="drop">Марка авто</label>
-					<div class="input">
-						<input
-							id="marka-auto"
-							readonly
-							type="text"
-							placeholder="Усі марки"
-							data-placeholder="Усі марки"
-						/>
-						<img
-							class="input-chev"
-							src="../../img/icons/chevron_more_icon.svg"
-							alt=""
-						/>
+			<div class="catalog__filter-wrap">
+				<p class="catalog__filter-label">Фільтр</p>
+				<button>close</button>
+				<div class="row align-items-end g-3">
+					<div class="col-12 dropdown">
+						<label class="label" for="drop">Марка авто</label>
+						<div class="input">
+							<input
+								id="marka-auto"
+								readonly
+								type="text"
+								placeholder="Усі марки"
+								data-placeholder="Усі марки"
+							/>
+							<img
+								class="input-chev"
+								src="./img/icons/chevron_more_icon.svg"
+								alt=""
+							/>
+						</div>
+						<div class="dropdown-list">
+							<ul class="dropdown-items">
+								<li>Title One</li>
+								<li>Title Two</li>
+								<li>Title Three</li>
+								<li>Title Four</li>
+								<li>Title Five</li>
+								<li>Title Six</li>
+								<li>Title Seven</li>
+								<li>Title Eight</li>
+								<li>Title Nine</li>
+								<li>Title Ten</li>
+							</ul>
+						</div>
 					</div>
-					<div class="dropdown-list">
-						<ul class="dropdown-items">
-							<li>Title One</li>
-							<li>Title Two</li>
-							<li>Title Three</li>
-							<li>Title Four</li>
-							<li>Title Five</li>
-							<li>Title Six</li>
-							<li>Title Seven</li>
-							<li>Title Eight</li>
-							<li>Title Nine</li>
-							<li>Title Ten</li>
-						</ul>
+					<div class="col-12 dropdown">
+						<label class="label" for="drop">Модель</label>
+						<div class="input">
+							<input
+								id="model"
+								readonly
+								type="text"
+								placeholder="Усі моделі"
+								data-placeholder="Усі моделі"
+							/>
+							<img
+								class="input-chev"
+								src="./img/icons/chevron_more_icon.svg"
+								alt=""
+							/>
+						</div>
+						<div class="dropdown-list">
+							<ul class="dropdown-items">
+								<li>Title One</li>
+								<li>Title Two</li>
+								<li>Title Three</li>
+								<li>Title Four</li>
+								<li>Title Five</li>
+								<li>Title Six</li>
+								<li>Title Seven</li>
+								<li>Title Eight</li>
+								<li>Title Nine</li>
+								<li>Title Ten</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-6 dropdown">
+						<label class="label" for="drop">Рік випуску</label>
+						<div class="input">
+							<input
+								id="year-from"
+								type="number"
+								placeholder="Від"
+								data-placeholder="Від"
+							/>
+						</div>
+					</div>
+					<div class="col-6 dropdown">
+						<div class="input">
+							<input
+								id="year-to"
+								type="number"
+								placeholder="До"
+								data-placeholder="До"
+							/>
+						</div>
+					</div>
+					<div class="col-12 dropdown">
+						<label class="label" for="drop">Пробіг до</label>
+						<div class="input">
+							<input
+								id="probig"
+								readonly
+								type="text"
+								placeholder="Пробіг до"
+								data-placeholder="Пробіг до"
+							/>
+							<img
+								class="input-chev"
+								src="./img/icons/chevron_more_icon.svg"
+								alt=""
+							/>
+						</div>
+						<div class="dropdown-list">
+							<ul class="dropdown-items">
+								<li>Title One</li>
+								<li>Title Two</li>
+								<li>Title Three</li>
+								<li>Title Four</li>
+								<li>Title Five</li>
+								<li>Title Six</li>
+								<li>Title Seven</li>
+								<li>Title Eight</li>
+								<li>Title Nine</li>
+								<li>Title Ten</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-12 dropdown">
+						<label class="label" for="drop">Коробка передач</label>
+						<div class="input">
+							<input
+								id="korobka-peredach"
+								readonly
+								type="text"
+								placeholder="Усі"
+								data-placeholder="Усі"
+							/>
+							<img
+								class="input-chev"
+								src="./img/icons/chevron_more_icon.svg"
+								alt=""
+							/>
+						</div>
+						<div class="dropdown-list">
+							<ul class="dropdown-items">
+								<li>Title One</li>
+								<li>Title Two</li>
+								<li>Title Three</li>
+								<li>Title Four</li>
+								<li>Title Five</li>
+								<li>Title Six</li>
+								<li>Title Seven</li>
+								<li>Title Eight</li>
+								<li>Title Nine</li>
+								<li>Title Ten</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-12 dropdown">
+						<label class="label" for="drop">Тип пального</label>
+						<div class="input">
+							<input
+								id="typ-palnoho"
+								readonly
+								type="text"
+								placeholder="Усі"
+								data-placeholder="Усі"
+							/>
+							<img
+								class="input-chev"
+								src="./img/icons/chevron_more_icon.svg"
+								alt=""
+							/>
+						</div>
+						<div class="dropdown-list">
+							<ul class="dropdown-items">
+								<li>Title One</li>
+								<li>Title Two</li>
+								<li>Title Three</li>
+								<li>Title Four</li>
+								<li>Title Five</li>
+								<li>Title Six</li>
+								<li>Title Seven</li>
+								<li>Title Eight</li>
+								<li>Title Nine</li>
+								<li>Title Ten</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-12 dropdown">
+						<label class="label" for="drop">Привод</label>
+						<div class="input">
+							<input
+								id="pryvod"
+								readonly
+								type="text"
+								placeholder="Усі"
+								data-placeholder="Усі"
+							/>
+							<img
+								class="input-chev"
+								src="./img/icons/chevron_more_icon.svg"
+								alt=""
+							/>
+						</div>
+						<div class="dropdown-list">
+							<ul class="dropdown-items">
+								<li>Title One</li>
+								<li>Title Two</li>
+								<li>Title Three</li>
+								<li>Title Four</li>
+								<li>Title Five</li>
+								<li>Title Six</li>
+								<li>Title Seven</li>
+								<li>Title Eight</li>
+								<li>Title Nine</li>
+								<li>Title Ten</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-6 dropdown">
+						<label class="label" for="drop">Ціна, $</label>
+						<div class="input">
+							<input
+								id="price-from"
+								type="number"
+								placeholder="Від"
+								data-placeholder="Від"
+							/>
+						</div>
+					</div>
+					<div class="col-6 dropdown">
+						<div class="input">
+							<input
+								id="price-to"
+								type="number"
+								placeholder="До"
+								data-placeholder="До"
+							/>
+						</div>
+					</div>
+					<div class="col-12 dropdown">
+						<label class="label" for="drop">Тип кузова</label>
+						<div class="input">
+							<input
+								id="typ-kuzova"
+								readonly
+								type="text"
+								placeholder="Усі"
+								data-placeholder="Усі"
+							/>
+							<img
+								class="input-chev"
+								src="./img/icons/chevron_more_icon.svg"
+								alt=""
+							/>
+						</div>
+						<div class="dropdown-list">
+							<ul class="dropdown-items">
+								<li>Title One</li>
+								<li>Title Two</li>
+								<li>Title Three</li>
+								<li>Title Four</li>
+								<li>Title Five</li>
+								<li>Title Six</li>
+								<li>Title Seven</li>
+								<li>Title Eight</li>
+								<li>Title Nine</li>
+								<li>Title Ten</li>
+							</ul>
+						</div>
 					</div>
 				</div>
-				<div class="col-12 dropdown">
-					<label class="label" for="drop">Модель</label>
-					<div class="input">
-						<input
-							id="model"
-							readonly
-							type="text"
-							placeholder="Усі моделі"
-							data-placeholder="Усі моделі"
-						/>
-						<img
-							class="input-chev"
-							src="../../img/icons/chevron_more_icon.svg"
-							alt=""
-						/>
-					</div>
-					<div class="dropdown-list">
-						<ul class="dropdown-items">
-							<li>Title One</li>
-							<li>Title Two</li>
-							<li>Title Three</li>
-							<li>Title Four</li>
-							<li>Title Five</li>
-							<li>Title Six</li>
-							<li>Title Seven</li>
-							<li>Title Eight</li>
-							<li>Title Nine</li>
-							<li>Title Ten</li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-6 dropdown">
-					<label class="label" for="drop">Рік випуску</label>
-					<div class="input">
-						<input
-							id="year-from"
-							type="number"
-							placeholder="Від"
-							data-placeholder="Від"
-						/>
-					</div>
-				</div>
-				<div class="col-6 dropdown">
-					<div class="input">
-						<input
-							id="year-to"
-							type="number"
-							placeholder="До"
-							data-placeholder="До"
-						/>
-					</div>
-				</div>
-				<div class="col-12 dropdown">
-					<label class="label" for="drop">Пробіг до</label>
-					<div class="input">
-						<input
-							id="probig"
-							readonly
-							type="text"
-							placeholder="Пробіг до"
-							data-placeholder="Пробіг до"
-						/>
-						<img
-							class="input-chev"
-							src="../../img/icons/chevron_more_icon.svg"
-							alt=""
-						/>
-					</div>
-					<div class="dropdown-list">
-						<ul class="dropdown-items">
-							<li>Title One</li>
-							<li>Title Two</li>
-							<li>Title Three</li>
-							<li>Title Four</li>
-							<li>Title Five</li>
-							<li>Title Six</li>
-							<li>Title Seven</li>
-							<li>Title Eight</li>
-							<li>Title Nine</li>
-							<li>Title Ten</li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-12 dropdown">
-					<label class="label" for="drop">Коробка передач</label>
-					<div class="input">
-						<input
-							id="korobka-peredach"
-							readonly
-							type="text"
-							placeholder="Усі"
-							data-placeholder="Усі"
-						/>
-						<img
-							class="input-chev"
-							src="../../img/icons/chevron_more_icon.svg"
-							alt=""
-						/>
-					</div>
-					<div class="dropdown-list">
-						<ul class="dropdown-items">
-							<li>Title One</li>
-							<li>Title Two</li>
-							<li>Title Three</li>
-							<li>Title Four</li>
-							<li>Title Five</li>
-							<li>Title Six</li>
-							<li>Title Seven</li>
-							<li>Title Eight</li>
-							<li>Title Nine</li>
-							<li>Title Ten</li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-12 dropdown">
-					<label class="label" for="drop">Тип пального</label>
-					<div class="input">
-						<input
-							id="typ-palnoho"
-							readonly
-							type="text"
-							placeholder="Усі"
-							data-placeholder="Усі"
-						/>
-						<img
-							class="input-chev"
-							src="../../img/icons/chevron_more_icon.svg"
-							alt=""
-						/>
-					</div>
-					<div class="dropdown-list">
-						<ul class="dropdown-items">
-							<li>Title One</li>
-							<li>Title Two</li>
-							<li>Title Three</li>
-							<li>Title Four</li>
-							<li>Title Five</li>
-							<li>Title Six</li>
-							<li>Title Seven</li>
-							<li>Title Eight</li>
-							<li>Title Nine</li>
-							<li>Title Ten</li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-12 dropdown">
-					<label class="label" for="drop">Привод</label>
-					<div class="input">
-						<input
-							id="pryvod"
-							readonly
-							type="text"
-							placeholder="Усі"
-							data-placeholder="Усі"
-						/>
-						<img
-							class="input-chev"
-							src="../../img/icons/chevron_more_icon.svg"
-							alt=""
-						/>
-					</div>
-					<div class="dropdown-list">
-						<ul class="dropdown-items">
-							<li>Title One</li>
-							<li>Title Two</li>
-							<li>Title Three</li>
-							<li>Title Four</li>
-							<li>Title Five</li>
-							<li>Title Six</li>
-							<li>Title Seven</li>
-							<li>Title Eight</li>
-							<li>Title Nine</li>
-							<li>Title Ten</li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-6 dropdown">
-					<label class="label" for="drop">Ціна, $</label>
-					<div class="input">
-						<input
-							id="price-from"
-							type="number"
-							placeholder="Від"
-							data-placeholder="Від"
-						/>
-					</div>
-				</div>
-				<div class="col-6 dropdown">
-					<div class="input">
-						<input
-							id="price-to"
-							type="number"
-							placeholder="До"
-							data-placeholder="До"
-						/>
-					</div>
-				</div>
-				<div class="col-12 dropdown">
-					<label class="label" for="drop">Тип кузова</label>
-					<div class="input">
-						<input
-							id="typ-kuzova"
-							readonly
-							type="text"
-							placeholder="Усі"
-							data-placeholder="Усі"
-						/>
-						<img
-							class="input-chev"
-							src="../../img/icons/chevron_more_icon.svg"
-							alt=""
-						/>
-					</div>
-					<div class="dropdown-list">
-						<ul class="dropdown-items">
-							<li>Title One</li>
-							<li>Title Two</li>
-							<li>Title Three</li>
-							<li>Title Four</li>
-							<li>Title Five</li>
-							<li>Title Six</li>
-							<li>Title Seven</li>
-							<li>Title Eight</li>
-							<li>Title Nine</li>
-							<li>Title Ten</li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-12 catalog__filter-btns">
-					<button class="catalog__filter-reset none" id="reset-filter">
-						<img src="../../img/icons/cross_icon.svg" alt="" />
-					</button>
-					<button
-						disabled
-						class="primary catalog__filter-btn"
-						style="width: 100%; margin-top: 8px"
-						type="submit"
-					>
-						Знайти
-					</button>
-				</div>
+			</div>
+			<div class="col-12 catalog__filter-btns">
+				<button class="catalog__filter-reset none" id="reset-filter">
+					<img src="./img/icons/cross_icon.svg" alt="" />
+				</button>
+				<button
+					disabled
+					class="primary catalog__filter-btn"
+					style="width: 100%; margin-top: 8px"
+					type="submit"
+				>
+					Знайти
+				</button>
 			</div>
 		</div>
 		<div class="catalog__content">
 			<div class="catalog__sort">
-				<div class="catalog__sort-search">
+				<div class="catalog__sort-search desktop">
 					<label for="">Швидкий пошук</label>
-					<div class="dropdown" style="width: 422px">
+					<div class="dropdown">
 						<div class="input">
 							<input
 								id="search"
@@ -350,7 +353,7 @@
 							/>
 							<img
 								class="input-chev"
-								src="../../img/icons/search_icon.svg"
+								src="./img/icons/search_icon.svg"
 								alt=""
 							/>
 						</div>
@@ -366,10 +369,12 @@
 						</div>
 					</div>
 				</div>
-
+				<button class="catalog__sort-btn--filter primary">
+					<img src="./img/icons/filter_icon_2.svg" alt="" />ФІЛЬТРИ
+				</button>
 				<div class="catalog__sort-drop">
 					<label for="">Сортувати</label>
-					<div class="dropdown" style="width: 225px">
+					<div class="dropdown">
 						<div class="input">
 							<input
 								id="filter-price"
@@ -380,7 +385,7 @@
 							/>
 							<img
 								class="input-chev"
-								src="../../img/icons/chevron_more_icon.svg"
+								src="./img/icons/chevron_more_icon.svg"
 								alt=""
 							/>
 						</div>
@@ -481,21 +486,41 @@
 					</div>
 				</div>
 			</div>
+			<div class="catalog__sort-search mobile" style="margin-bottom: 32px">
+				<label for="">Швидкий пошук</label>
+				<div class="dropdown">
+					<div class="input">
+						<input
+							id="search"
+							type="text"
+							placeholder="Почніть вводити назву авто"
+							data-placeholder="Почніть вводити назву авто"
+						/>
+						<img class="input-chev" src="./img/icons/search_icon.svg" alt="" />
+					</div>
+					<div class="dropdown-list">
+						<ul class="dropdown-items">
+							<li>Title One</li>
+							<li>Title Two</li>
+							<li>Title Three</li>
+							<li>Title Four</li>
+							<li>Title Five</li>
+							<li>Title Six</li>
+						</ul>
+					</div>
+				</div>
+			</div>
 			<div class="catalog__wrap">
 				<ul class="catalog__list row g-3">
 					<li class="col-lg-4 col-md-6 col-12">
 						<a href="#" class="catalog__item">
-							<img
-								class="catalog__item-img"
-								src="../../img/car/car-1.jpg"
-								alt=""
-							/>
+							<img class="catalog__item-img" src="./img/car/car-1.jpg" alt="" />
 							<button class="catalog__item-like">
 								<div class="catalog__item-like--wrap">
-									<img src="../../img/icons/favorite_icon.svg" alt="" />
+									<img src="./img/icons/favorite_icon.svg" alt="" />
 									<img
 										class="favorite"
-										src="../../img/icons/favorite_full_icon.svg"
+										src="./img/icons/favorite_full_icon.svg"
 										alt=""
 									/>
 								</div>
@@ -503,23 +528,19 @@
 							<div class="catalog__item-descr">
 								<h5 class="catalog__item-title">Land Rover Discovery Sport</h5>
 								<ul class="catalog__item-list">
-									<li>
-										<img src="../../img/car/dizel.svg" alt="" />Дизель 2 л.
-									</li>
-									<li>
-										<img src="../../img/car/speed.svg" alt="" />87 тис. км.
-									</li>
-									<li><img src="../../img/car/drive.svg" alt="" />Повний</li>
-									<li><img src="../../img/car/box.svg" alt="" />Автомат</li>
+									<li><img src="./img/car/dizel.svg" alt="" />Дизель 2 л.</li>
+									<li><img src="./img/car/speed.svg" alt="" />87 тис. км.</li>
+									<li><img src="./img/car/drive.svg" alt="" />Повний</li>
+									<li><img src="./img/car/box.svg" alt="" />Автомат</li>
 								</ul>
 								<ul class="catalog__item-bottom">
 									<li class="catalog__item-date">
-										<img src="../../img/icons/calendar_icon.svg" alt="" />2021
+										<img src="./img/icons/calendar_icon.svg" alt="" />2021
 									</li>
 									<li class="catalog__item-price">
 										19 000 $
 										<img
-											src="../../img/icons/fluent_arrow-up-48-regular.svg"
+											src="./img/icons/fluent_arrow-up-48-regular.svg"
 											alt=""
 										/>
 									</li>
@@ -529,17 +550,13 @@
 					</li>
 					<li class="col-lg-4 col-md-6 col-12">
 						<a href="#" class="catalog__item">
-							<img
-								class="catalog__item-img"
-								src="../../img/car/car-2.jpg"
-								alt=""
-							/>
+							<img class="catalog__item-img" src="./img/car/car-2.jpg" alt="" />
 							<button class="catalog__item-like">
 								<div class="catalog__item-like--wrap">
-									<img src="../../img/icons/favorite_icon.svg" alt="" />
+									<img src="./img/icons/favorite_icon.svg" alt="" />
 									<img
 										class="favorite"
-										src="../../img/icons/favorite_full_icon.svg"
+										src="./img/icons/favorite_full_icon.svg"
 										alt=""
 									/>
 								</div>
@@ -547,23 +564,19 @@
 							<div class="catalog__item-descr">
 								<h5 class="catalog__item-title">Land Rover Discovery Sport</h5>
 								<ul class="catalog__item-list">
-									<li>
-										<img src="../../img/car/dizel.svg" alt="" />Дизель 2 л.
-									</li>
-									<li>
-										<img src="../../img/car/speed.svg" alt="" />87 тис. км.
-									</li>
-									<li><img src="../../img/car/drive.svg" alt="" />Повний</li>
-									<li><img src="../../img/car/box.svg" alt="" />Автомат</li>
+									<li><img src="./img/car/dizel.svg" alt="" />Дизель 2 л.</li>
+									<li><img src="./img/car/speed.svg" alt="" />87 тис. км.</li>
+									<li><img src="./img/car/drive.svg" alt="" />Повний</li>
+									<li><img src="./img/car/box.svg" alt="" />Автомат</li>
 								</ul>
 								<ul class="catalog__item-bottom">
 									<li class="catalog__item-date">
-										<img src="../../img/icons/calendar_icon.svg" alt="" />2021
+										<img src="./img/icons/calendar_icon.svg" alt="" />2021
 									</li>
 									<li class="catalog__item-price">
 										19 000 $
 										<img
-											src="../../img/icons/fluent_arrow-up-48-regular.svg"
+											src="./img/icons/fluent_arrow-up-48-regular.svg"
 											alt=""
 										/>
 									</li>
@@ -573,17 +586,13 @@
 					</li>
 					<li class="col-lg-4 col-md-6 col-12">
 						<a href="#" class="catalog__item">
-							<img
-								class="catalog__item-img"
-								src="../../img/car/car-3.jpg"
-								alt=""
-							/>
+							<img class="catalog__item-img" src="./img/car/car-3.jpg" alt="" />
 							<button class="catalog__item-like">
 								<div class="catalog__item-like--wrap">
-									<img src="../../img/icons/favorite_icon.svg" alt="" />
+									<img src="./img/icons/favorite_icon.svg" alt="" />
 									<img
 										class="favorite"
-										src="../../img/icons/favorite_full_icon.svg"
+										src="./img/icons/favorite_full_icon.svg"
 										alt=""
 									/>
 								</div>
@@ -591,22 +600,234 @@
 							<div class="catalog__item-descr">
 								<h5 class="catalog__item-title">Land Rover Discovery Sport</h5>
 								<ul class="catalog__item-list">
-									<li>
-										<img src="../../img/car/dizel.svg" alt="" />Дизель 2 л.
-									</li>
-									<li>
-										<img src="../../img/car/speed.svg" alt="" />87 тис. км.
-									</li>
-									<li><img src="../../img/car/drive.svg" alt="" />Повний</li>
-									<li><img src="../../img/car/box.svg" alt="" />Автомат</li>
+									<li><img src="./img/car/dizel.svg" alt="" />Дизель 2 л.</li>
+									<li><img src="./img/car/speed.svg" alt="" />87 тис. км.</li>
+									<li><img src="./img/car/drive.svg" alt="" />Повний</li>
+									<li><img src="./img/car/box.svg" alt="" />Автомат</li>
 								</ul>
 								<ul class="catalog__item-bottom">
 									<li class="catalog__item-date">
-										<img src="../../img/icons/calendar_icon.svg" alt="" />2021
+										<img src="./img/icons/calendar_icon.svg" alt="" />2021
 									</li>
 									<li class="catalog__item-price">
 										19 000 $<img
-											src="../../img/icons/fluent_arrow-up-48-regular.svg"
+											src="./img/icons/fluent_arrow-up-48-regular.svg"
+											alt=""
+										/>
+									</li>
+								</ul>
+							</div>
+						</a>
+					</li>
+					<li class="col-lg-4 col-md-6 col-12">
+						<a href="#" class="catalog__item">
+							<img class="catalog__item-img" src="./img/car/car-4.jpg" alt="" />
+							<button class="catalog__item-like">
+								<div class="catalog__item-like--wrap">
+									<img src="./img/icons/favorite_icon.svg" alt="" />
+									<img
+										class="favorite"
+										src="./img/icons/favorite_full_icon.svg"
+										alt=""
+									/>
+								</div>
+							</button>
+							<div class="catalog__item-descr">
+								<h5 class="catalog__item-title">Land Rover Discovery Sport</h5>
+								<ul class="catalog__item-list">
+									<li><img src="./img/car/dizel.svg" alt="" />Дизель 2 л.</li>
+									<li><img src="./img/car/speed.svg" alt="" />87 тис. км.</li>
+									<li><img src="./img/car/drive.svg" alt="" />Повний</li>
+									<li><img src="./img/car/box.svg" alt="" />Автомат</li>
+								</ul>
+								<ul class="catalog__item-bottom">
+									<li class="catalog__item-date">
+										<img src="./img/icons/calendar_icon.svg" alt="" />2021
+									</li>
+									<li class="catalog__item-price">
+										19 000 $
+										<img
+											src="./img/icons/fluent_arrow-up-48-regular.svg"
+											alt=""
+										/>
+									</li>
+								</ul>
+							</div>
+						</a>
+					</li>
+					<li class="col-lg-4 col-md-6 col-12">
+						<a href="#" class="catalog__item">
+							<img class="catalog__item-img" src="./img/car/car-5.jpg" alt="" />
+							<button class="catalog__item-like">
+								<div class="catalog__item-like--wrap">
+									<img src="./img/icons/favorite_icon.svg" alt="" />
+									<img
+										class="favorite"
+										src="./img/icons/favorite_full_icon.svg"
+										alt=""
+									/>
+								</div>
+							</button>
+							<div class="catalog__item-descr">
+								<h5 class="catalog__item-title">Land Rover Discovery Sport</h5>
+								<ul class="catalog__item-list">
+									<li><img src="./img/car/dizel.svg" alt="" />Дизель 2 л.</li>
+									<li><img src="./img/car/speed.svg" alt="" />87 тис. км.</li>
+									<li><img src="./img/car/drive.svg" alt="" />Повний</li>
+									<li><img src="./img/car/box.svg" alt="" />Автомат</li>
+								</ul>
+								<ul class="catalog__item-bottom">
+									<li class="catalog__item-date">
+										<img src="./img/icons/calendar_icon.svg" alt="" />2021
+									</li>
+									<li class="catalog__item-price">
+										19 000 $
+										<img
+											src="./img/icons/fluent_arrow-up-48-regular.svg"
+											alt=""
+										/>
+									</li>
+								</ul>
+							</div>
+						</a>
+					</li>
+					<li class="col-lg-4 col-md-6 col-12">
+						<a href="#" class="catalog__item">
+							<img class="catalog__item-img" src="./img/car/car-6.jpg" alt="" />
+							<button class="catalog__item-like">
+								<div class="catalog__item-like--wrap">
+									<img src="./img/icons/favorite_icon.svg" alt="" />
+									<img
+										class="favorite"
+										src="./img/icons/favorite_full_icon.svg"
+										alt=""
+									/>
+								</div>
+							</button>
+							<div class="catalog__item-descr">
+								<h5 class="catalog__item-title">Land Rover Discovery Sport</h5>
+								<ul class="catalog__item-list">
+									<li><img src="./img/car/dizel.svg" alt="" />Дизель 2 л.</li>
+									<li><img src="./img/car/speed.svg" alt="" />87 тис. км.</li>
+									<li><img src="./img/car/drive.svg" alt="" />Повний</li>
+									<li><img src="./img/car/box.svg" alt="" />Автомат</li>
+								</ul>
+								<ul class="catalog__item-bottom">
+									<li class="catalog__item-date">
+										<img src="./img/icons/calendar_icon.svg" alt="" />2021
+									</li>
+									<li class="catalog__item-price">
+										19 000 $
+										<img
+											src="./img/icons/fluent_arrow-up-48-regular.svg"
+											alt=""
+										/>
+									</li>
+								</ul>
+							</div>
+						</a>
+					</li>
+					<li class="col-lg-4 col-md-6 col-12">
+						<a href="#" class="catalog__item">
+							<img class="catalog__item-img" src="./img/car/car-7.jpg" alt="" />
+							<button class="catalog__item-like">
+								<div class="catalog__item-like--wrap">
+									<img src="./img/icons/favorite_icon.svg" alt="" />
+									<img
+										class="favorite"
+										src="./img/icons/favorite_full_icon.svg"
+										alt=""
+									/>
+								</div>
+							</button>
+							<div class="catalog__item-descr">
+								<h5 class="catalog__item-title">Land Rover Discovery Sport</h5>
+								<ul class="catalog__item-list">
+									<li><img src="./img/car/dizel.svg" alt="" />Дизель 2 л.</li>
+									<li><img src="./img/car/speed.svg" alt="" />87 тис. км.</li>
+									<li><img src="./img/car/drive.svg" alt="" />Повний</li>
+									<li><img src="./img/car/box.svg" alt="" />Автомат</li>
+								</ul>
+								<ul class="catalog__item-bottom">
+									<li class="catalog__item-date">
+										<img src="./img/icons/calendar_icon.svg" alt="" />2021
+									</li>
+									<li class="catalog__item-price">
+										19 000 $
+										<img
+											src="./img/icons/fluent_arrow-up-48-regular.svg"
+											alt=""
+										/>
+									</li>
+								</ul>
+							</div>
+						</a>
+					</li>
+					<li class="col-lg-4 col-md-6 col-12">
+						<a href="#" class="catalog__item">
+							<img class="catalog__item-img" src="./img/car/car-8.jpg" alt="" />
+							<button class="catalog__item-like">
+								<div class="catalog__item-like--wrap">
+									<img src="./img/icons/favorite_icon.svg" alt="" />
+									<img
+										class="favorite"
+										src="./img/icons/favorite_full_icon.svg"
+										alt=""
+									/>
+								</div>
+							</button>
+							<div class="catalog__item-descr">
+								<h5 class="catalog__item-title">Land Rover Discovery Sport</h5>
+								<ul class="catalog__item-list">
+									<li><img src="./img/car/dizel.svg" alt="" />Дизель 2 л.</li>
+									<li><img src="./img/car/speed.svg" alt="" />87 тис. км.</li>
+									<li><img src="./img/car/drive.svg" alt="" />Повний</li>
+									<li><img src="./img/car/box.svg" alt="" />Автомат</li>
+								</ul>
+								<ul class="catalog__item-bottom">
+									<li class="catalog__item-date">
+										<img src="./img/icons/calendar_icon.svg" alt="" />2021
+									</li>
+									<li class="catalog__item-price">
+										19 000 $
+										<img
+											src="./img/icons/fluent_arrow-up-48-regular.svg"
+											alt=""
+										/>
+									</li>
+								</ul>
+							</div>
+						</a>
+					</li>
+					<li class="col-lg-4 col-md-6 col-12">
+						<a href="#" class="catalog__item">
+							<img class="catalog__item-img" src="./img/car/car-9.jpg" alt="" />
+							<button class="catalog__item-like">
+								<div class="catalog__item-like--wrap">
+									<img src="./img/icons/favorite_icon.svg" alt="" />
+									<img
+										class="favorite"
+										src="./img/icons/favorite_full_icon.svg"
+										alt=""
+									/>
+								</div>
+							</button>
+							<div class="catalog__item-descr">
+								<h5 class="catalog__item-title">Land Rover Discovery Sport</h5>
+								<ul class="catalog__item-list">
+									<li><img src="./img/car/dizel.svg" alt="" />Дизель 2 л.</li>
+									<li><img src="./img/car/speed.svg" alt="" />87 тис. км.</li>
+									<li><img src="./img/car/drive.svg" alt="" />Повний</li>
+									<li><img src="./img/car/box.svg" alt="" />Автомат</li>
+								</ul>
+								<ul class="catalog__item-bottom">
+									<li class="catalog__item-date">
+										<img src="./img/icons/calendar_icon.svg" alt="" />2021
+									</li>
+									<li class="catalog__item-price">
+										19 000 $
+										<img
+											src="./img/icons/fluent_arrow-up-48-regular.svg"
 											alt=""
 										/>
 									</li>
@@ -618,15 +839,15 @@
 						<a href="#" class="catalog__item">
 							<img
 								class="catalog__item-img"
-								src="../../img/car/car-4.jpg"
+								src="./img/car/car-10.jpg"
 								alt=""
 							/>
 							<button class="catalog__item-like">
 								<div class="catalog__item-like--wrap">
-									<img src="../../img/icons/favorite_icon.svg" alt="" />
+									<img src="./img/icons/favorite_icon.svg" alt="" />
 									<img
 										class="favorite"
-										src="../../img/icons/favorite_full_icon.svg"
+										src="./img/icons/favorite_full_icon.svg"
 										alt=""
 									/>
 								</div>
@@ -634,23 +855,19 @@
 							<div class="catalog__item-descr">
 								<h5 class="catalog__item-title">Land Rover Discovery Sport</h5>
 								<ul class="catalog__item-list">
-									<li>
-										<img src="../../img/car/dizel.svg" alt="" />Дизель 2 л.
-									</li>
-									<li>
-										<img src="../../img/car/speed.svg" alt="" />87 тис. км.
-									</li>
-									<li><img src="../../img/car/drive.svg" alt="" />Повний</li>
-									<li><img src="../../img/car/box.svg" alt="" />Автомат</li>
+									<li><img src="./img/car/dizel.svg" alt="" />Дизель 2 л.</li>
+									<li><img src="./img/car/speed.svg" alt="" />87 тис. км.</li>
+									<li><img src="./img/car/drive.svg" alt="" />Повний</li>
+									<li><img src="./img/car/box.svg" alt="" />Автомат</li>
 								</ul>
 								<ul class="catalog__item-bottom">
 									<li class="catalog__item-date">
-										<img src="../../img/icons/calendar_icon.svg" alt="" />2021
+										<img src="./img/icons/calendar_icon.svg" alt="" />2021
 									</li>
 									<li class="catalog__item-price">
 										19 000 $
 										<img
-											src="../../img/icons/fluent_arrow-up-48-regular.svg"
+											src="./img/icons/fluent_arrow-up-48-regular.svg"
 											alt=""
 										/>
 									</li>
@@ -662,15 +879,15 @@
 						<a href="#" class="catalog__item">
 							<img
 								class="catalog__item-img"
-								src="../../img/car/car-5.jpg"
+								src="./img/car/car-11.jpg"
 								alt=""
 							/>
 							<button class="catalog__item-like">
 								<div class="catalog__item-like--wrap">
-									<img src="../../img/icons/favorite_icon.svg" alt="" />
+									<img src="./img/icons/favorite_icon.svg" alt="" />
 									<img
 										class="favorite"
-										src="../../img/icons/favorite_full_icon.svg"
+										src="./img/icons/favorite_full_icon.svg"
 										alt=""
 									/>
 								</div>
@@ -678,23 +895,19 @@
 							<div class="catalog__item-descr">
 								<h5 class="catalog__item-title">Land Rover Discovery Sport</h5>
 								<ul class="catalog__item-list">
-									<li>
-										<img src="../../img/car/dizel.svg" alt="" />Дизель 2 л.
-									</li>
-									<li>
-										<img src="../../img/car/speed.svg" alt="" />87 тис. км.
-									</li>
-									<li><img src="../../img/car/drive.svg" alt="" />Повний</li>
-									<li><img src="../../img/car/box.svg" alt="" />Автомат</li>
+									<li><img src="./img/car/dizel.svg" alt="" />Дизель 2 л.</li>
+									<li><img src="./img/car/speed.svg" alt="" />87 тис. км.</li>
+									<li><img src="./img/car/drive.svg" alt="" />Повний</li>
+									<li><img src="./img/car/box.svg" alt="" />Автомат</li>
 								</ul>
 								<ul class="catalog__item-bottom">
 									<li class="catalog__item-date">
-										<img src="../../img/icons/calendar_icon.svg" alt="" />2021
+										<img src="./img/icons/calendar_icon.svg" alt="" />2021
 									</li>
 									<li class="catalog__item-price">
 										19 000 $
 										<img
-											src="../../img/icons/fluent_arrow-up-48-regular.svg"
+											src="./img/icons/fluent_arrow-up-48-regular.svg"
 											alt=""
 										/>
 									</li>
@@ -706,15 +919,15 @@
 						<a href="#" class="catalog__item">
 							<img
 								class="catalog__item-img"
-								src="../../img/car/car-6.jpg"
+								src="./img/car/car-12.jpg"
 								alt=""
 							/>
 							<button class="catalog__item-like">
 								<div class="catalog__item-like--wrap">
-									<img src="../../img/icons/favorite_icon.svg" alt="" />
+									<img src="./img/icons/favorite_icon.svg" alt="" />
 									<img
 										class="favorite"
-										src="../../img/icons/favorite_full_icon.svg"
+										src="./img/icons/favorite_full_icon.svg"
 										alt=""
 									/>
 								</div>
@@ -722,287 +935,19 @@
 							<div class="catalog__item-descr">
 								<h5 class="catalog__item-title">Land Rover Discovery Sport</h5>
 								<ul class="catalog__item-list">
-									<li>
-										<img src="../../img/car/dizel.svg" alt="" />Дизель 2 л.
-									</li>
-									<li>
-										<img src="../../img/car/speed.svg" alt="" />87 тис. км.
-									</li>
-									<li><img src="../../img/car/drive.svg" alt="" />Повний</li>
-									<li><img src="../../img/car/box.svg" alt="" />Автомат</li>
+									<li><img src="./img/car/dizel.svg" alt="" />Дизель 2 л.</li>
+									<li><img src="./img/car/speed.svg" alt="" />87 тис. км.</li>
+									<li><img src="./img/car/drive.svg" alt="" />Повний</li>
+									<li><img src="./img/car/box.svg" alt="" />Автомат</li>
 								</ul>
 								<ul class="catalog__item-bottom">
 									<li class="catalog__item-date">
-										<img src="../../img/icons/calendar_icon.svg" alt="" />2021
+										<img src="./img/icons/calendar_icon.svg" alt="" />2021
 									</li>
 									<li class="catalog__item-price">
 										19 000 $
 										<img
-											src="../../img/icons/fluent_arrow-up-48-regular.svg"
-											alt=""
-										/>
-									</li>
-								</ul>
-							</div>
-						</a>
-					</li>
-					<li class="col-lg-4 col-md-6 col-12">
-						<a href="#" class="catalog__item">
-							<img
-								class="catalog__item-img"
-								src="../../img/car/car-7.jpg"
-								alt=""
-							/>
-							<button class="catalog__item-like">
-								<div class="catalog__item-like--wrap">
-									<img src="../../img/icons/favorite_icon.svg" alt="" />
-									<img
-										class="favorite"
-										src="../../img/icons/favorite_full_icon.svg"
-										alt=""
-									/>
-								</div>
-							</button>
-							<div class="catalog__item-descr">
-								<h5 class="catalog__item-title">Land Rover Discovery Sport</h5>
-								<ul class="catalog__item-list">
-									<li>
-										<img src="../../img/car/dizel.svg" alt="" />Дизель 2 л.
-									</li>
-									<li>
-										<img src="../../img/car/speed.svg" alt="" />87 тис. км.
-									</li>
-									<li><img src="../../img/car/drive.svg" alt="" />Повний</li>
-									<li><img src="../../img/car/box.svg" alt="" />Автомат</li>
-								</ul>
-								<ul class="catalog__item-bottom">
-									<li class="catalog__item-date">
-										<img src="../../img/icons/calendar_icon.svg" alt="" />2021
-									</li>
-									<li class="catalog__item-price">
-										19 000 $
-										<img
-											src="../../img/icons/fluent_arrow-up-48-regular.svg"
-											alt=""
-										/>
-									</li>
-								</ul>
-							</div>
-						</a>
-					</li>
-					<li class="col-lg-4 col-md-6 col-12">
-						<a href="#" class="catalog__item">
-							<img
-								class="catalog__item-img"
-								src="../../img/car/car-8.jpg"
-								alt=""
-							/>
-							<button class="catalog__item-like">
-								<div class="catalog__item-like--wrap">
-									<img src="../../img/icons/favorite_icon.svg" alt="" />
-									<img
-										class="favorite"
-										src="../../img/icons/favorite_full_icon.svg"
-										alt=""
-									/>
-								</div>
-							</button>
-							<div class="catalog__item-descr">
-								<h5 class="catalog__item-title">Land Rover Discovery Sport</h5>
-								<ul class="catalog__item-list">
-									<li>
-										<img src="../../img/car/dizel.svg" alt="" />Дизель 2 л.
-									</li>
-									<li>
-										<img src="../../img/car/speed.svg" alt="" />87 тис. км.
-									</li>
-									<li><img src="../../img/car/drive.svg" alt="" />Повний</li>
-									<li><img src="../../img/car/box.svg" alt="" />Автомат</li>
-								</ul>
-								<ul class="catalog__item-bottom">
-									<li class="catalog__item-date">
-										<img src="../../img/icons/calendar_icon.svg" alt="" />2021
-									</li>
-									<li class="catalog__item-price">
-										19 000 $
-										<img
-											src="../../img/icons/fluent_arrow-up-48-regular.svg"
-											alt=""
-										/>
-									</li>
-								</ul>
-							</div>
-						</a>
-					</li>
-					<li class="col-lg-4 col-md-6 col-12">
-						<a href="#" class="catalog__item">
-							<img
-								class="catalog__item-img"
-								src="../../img/car/car-9.jpg"
-								alt=""
-							/>
-							<button class="catalog__item-like">
-								<div class="catalog__item-like--wrap">
-									<img src="../../img/icons/favorite_icon.svg" alt="" />
-									<img
-										class="favorite"
-										src="../../img/icons/favorite_full_icon.svg"
-										alt=""
-									/>
-								</div>
-							</button>
-							<div class="catalog__item-descr">
-								<h5 class="catalog__item-title">Land Rover Discovery Sport</h5>
-								<ul class="catalog__item-list">
-									<li>
-										<img src="../../img/car/dizel.svg" alt="" />Дизель 2 л.
-									</li>
-									<li>
-										<img src="../../img/car/speed.svg" alt="" />87 тис. км.
-									</li>
-									<li><img src="../../img/car/drive.svg" alt="" />Повний</li>
-									<li><img src="../../img/car/box.svg" alt="" />Автомат</li>
-								</ul>
-								<ul class="catalog__item-bottom">
-									<li class="catalog__item-date">
-										<img src="../../img/icons/calendar_icon.svg" alt="" />2021
-									</li>
-									<li class="catalog__item-price">
-										19 000 $
-										<img
-											src="../../img/icons/fluent_arrow-up-48-regular.svg"
-											alt=""
-										/>
-									</li>
-								</ul>
-							</div>
-						</a>
-					</li>
-					<li class="col-lg-4 col-md-6 col-12">
-						<a href="#" class="catalog__item">
-							<img
-								class="catalog__item-img"
-								src="../../img/car/car-10.jpg"
-								alt=""
-							/>
-							<button class="catalog__item-like">
-								<div class="catalog__item-like--wrap">
-									<img src="../../img/icons/favorite_icon.svg" alt="" />
-									<img
-										class="favorite"
-										src="../../img/icons/favorite_full_icon.svg"
-										alt=""
-									/>
-								</div>
-							</button>
-							<div class="catalog__item-descr">
-								<h5 class="catalog__item-title">Land Rover Discovery Sport</h5>
-								<ul class="catalog__item-list">
-									<li>
-										<img src="../../img/car/dizel.svg" alt="" />Дизель 2 л.
-									</li>
-									<li>
-										<img src="../../img/car/speed.svg" alt="" />87 тис. км.
-									</li>
-									<li><img src="../../img/car/drive.svg" alt="" />Повний</li>
-									<li><img src="../../img/car/box.svg" alt="" />Автомат</li>
-								</ul>
-								<ul class="catalog__item-bottom">
-									<li class="catalog__item-date">
-										<img src="../../img/icons/calendar_icon.svg" alt="" />2021
-									</li>
-									<li class="catalog__item-price">
-										19 000 $
-										<img
-											src="../../img/icons/fluent_arrow-up-48-regular.svg"
-											alt=""
-										/>
-									</li>
-								</ul>
-							</div>
-						</a>
-					</li>
-					<li class="col-lg-4 col-md-6 col-12">
-						<a href="#" class="catalog__item">
-							<img
-								class="catalog__item-img"
-								src="../../img/car/car-11.jpg"
-								alt=""
-							/>
-							<button class="catalog__item-like">
-								<div class="catalog__item-like--wrap">
-									<img src="../../img/icons/favorite_icon.svg" alt="" />
-									<img
-										class="favorite"
-										src="../../img/icons/favorite_full_icon.svg"
-										alt=""
-									/>
-								</div>
-							</button>
-							<div class="catalog__item-descr">
-								<h5 class="catalog__item-title">Land Rover Discovery Sport</h5>
-								<ul class="catalog__item-list">
-									<li>
-										<img src="../../img/car/dizel.svg" alt="" />Дизель 2 л.
-									</li>
-									<li>
-										<img src="../../img/car/speed.svg" alt="" />87 тис. км.
-									</li>
-									<li><img src="../../img/car/drive.svg" alt="" />Повний</li>
-									<li><img src="../../img/car/box.svg" alt="" />Автомат</li>
-								</ul>
-								<ul class="catalog__item-bottom">
-									<li class="catalog__item-date">
-										<img src="../../img/icons/calendar_icon.svg" alt="" />2021
-									</li>
-									<li class="catalog__item-price">
-										19 000 $
-										<img
-											src="../../img/icons/fluent_arrow-up-48-regular.svg"
-											alt=""
-										/>
-									</li>
-								</ul>
-							</div>
-						</a>
-					</li>
-					<li class="col-lg-4 col-md-6 col-12">
-						<a href="#" class="catalog__item">
-							<img
-								class="catalog__item-img"
-								src="../../img/car/car-12.jpg"
-								alt=""
-							/>
-							<button class="catalog__item-like">
-								<div class="catalog__item-like--wrap">
-									<img src="../../img/icons/favorite_icon.svg" alt="" />
-									<img
-										class="favorite"
-										src="../../img/icons/favorite_full_icon.svg"
-										alt=""
-									/>
-								</div>
-							</button>
-							<div class="catalog__item-descr">
-								<h5 class="catalog__item-title">Land Rover Discovery Sport</h5>
-								<ul class="catalog__item-list">
-									<li>
-										<img src="../../img/car/dizel.svg" alt="" />Дизель 2 л.
-									</li>
-									<li>
-										<img src="../../img/car/speed.svg" alt="" />87 тис. км.
-									</li>
-									<li><img src="../../img/car/drive.svg" alt="" />Повний</li>
-									<li><img src="../../img/car/box.svg" alt="" />Автомат</li>
-								</ul>
-								<ul class="catalog__item-bottom">
-									<li class="catalog__item-date">
-										<img src="../../img/icons/calendar_icon.svg" alt="" />2021
-									</li>
-									<li class="catalog__item-price">
-										19 000 $
-										<img
-											src="../../img/icons/fluent_arrow-up-48-regular.svg"
+											src="./img/icons/fluent_arrow-up-48-regular.svg"
 											alt=""
 										/>
 									</li>
@@ -1020,26 +965,21 @@
 	</div>
 </section>
 </main>
-		<footer
-	data-aos="fade-up"
-	data-aos-offset="300"
-	id="footer"
-	class="footer-wrap container"
->
+		<footer id="footer" class="footer-wrap container">
 	<div class="footer footer-second desktop">
 		<ul class="footer__links">
 			<li class="footer__link">
-				<a href=""><img src="../../img/icons/youtube_icon.svg" alt="" /></a>
+				<a href=""><img src="./img/icons/youtube_icon.svg" alt="" /></a>
 			</li>
 			<li class="footer__link">
-				<a href=""><img src="../../img/icons/telegram_icon.svg" alt="" /></a>
+				<a href=""><img src="./img/icons/telegram_icon.svg" alt="" /></a>
 			</li>
 			<li class="footer__link">
-				<a href=""><img src="../../img/icons/instagram_icon.svg" alt="" /></a>
+				<a href=""><img src="./img/icons/instagram_icon.svg" alt="" /></a>
 			</li>
 		</ul>
 		<a class="footer__logo" href="/../"
-			><img src="../../img/logo-footer.svg" alt=""
+			><img src="./img/logo-footer.svg" alt=""
 		/></a>
 		<div class="footer__contact">
 			<p style="margin-bottom: 16px">вул. Раїси Окіпної, 2, Київ, 02002</p>
@@ -1048,17 +988,17 @@
 	</div>
 	<div class="footer mobile-col">
 		<a class="footer__logo" href="/../"
-			><img src="../../img/logo-footer.svg" alt=""
+			><img src="./img/logo-footer.svg" alt=""
 		/></a>
 		<ul class="footer__links">
 			<li class="footer__link">
-				<a href=""><img src="../../img/icons/youtube_icon.svg" alt="" /></a>
+				<a href=""><img src="./img/icons/youtube_icon.svg" alt="" /></a>
 			</li>
 			<li class="footer__link">
-				<a href=""><img src="../../img/icons/telegram_icon.svg" alt="" /></a>
+				<a href=""><img src="./img/icons/telegram_icon.svg" alt="" /></a>
 			</li>
 			<li class="footer__link">
-				<a href=""><img src="../../img/icons/instagram_icon.svg" alt="" /></a>
+				<a href=""><img src="./img/icons/instagram_icon.svg" alt="" /></a>
 			</li>
 		</ul>
 		<p style="margin-bottom: 16px">вул. Раїси Окіпної, 2, Київ, 02002</p>

@@ -4,15 +4,22 @@
 .no-scroll {
 	overflow-y: hidden;
 }
+.filter-open {
+	overflow-y: hidden;
+}
+.show {
+	display: block !important;
+}
 .desktop {
 	@include flex(row, center, center);
 	@media (max-width: 991px) {
-		display: none;
+		display: none !important;
 	}
 }
 .mobile {
-	display: none;
+	display: none !important;
 	@media (max-width: 991px) {
+		display: flex !important;
 		@include flex(row, center, center);
 	}
 }
@@ -128,15 +135,13 @@
 }
 .title-page {
 	color: $white;
-	text-shadow: 0px 0px 25px rgba(255, 213, 133, 0.4);
 	font-size: 28px;
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
-	margin-bottom: 32px;
+
 	@media (max-width: 991px) {
 		font-size: 23px;
-		margin-bottom: 24px;
 	}
 }
 .fade-in {
