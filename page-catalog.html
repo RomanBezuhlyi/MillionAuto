@@ -23,7 +23,7 @@
 		<link rel="stylesheet" href="./css/main.css" />
 	</head>
 	<body>
-		<header id="header" class="header-wrap container fade-in">
+		<header id="header" class="header-wrap container">
 	<div class="header">
 		<a class="header__logo" href="/../">
 			<img src="./img/logo-header.svg" alt="" />
@@ -60,287 +60,290 @@
 	<h3 class="title-page">Каталог автомобілів</h3>
 	<div class="catalog">
 		<div class="catalog__filter">
-			<p class="catalog__filter-label">Фільтр</p>
-			<div class="row align-items-end g-3">
-				<div class="col-12 dropdown">
-					<label class="label" for="drop">Марка авто</label>
-					<div class="input">
-						<input
-							id="marka-auto"
-							readonly
-							type="text"
-							placeholder="Усі марки"
-							data-placeholder="Усі марки"
-						/>
-						<img
-							class="input-chev"
-							src="./img/icons/chevron_more_icon.svg"
-							alt=""
-						/>
+			<div class="catalog__filter-wrap">
+				<p class="catalog__filter-label">Фільтр</p>
+				<button>close</button>
+				<div class="row align-items-end g-3">
+					<div class="col-12 dropdown">
+						<label class="label" for="drop">Марка авто</label>
+						<div class="input">
+							<input
+								id="marka-auto"
+								readonly
+								type="text"
+								placeholder="Усі марки"
+								data-placeholder="Усі марки"
+							/>
+							<img
+								class="input-chev"
+								src="./img/icons/chevron_more_icon.svg"
+								alt=""
+							/>
+						</div>
+						<div class="dropdown-list">
+							<ul class="dropdown-items">
+								<li>Title One</li>
+								<li>Title Two</li>
+								<li>Title Three</li>
+								<li>Title Four</li>
+								<li>Title Five</li>
+								<li>Title Six</li>
+								<li>Title Seven</li>
+								<li>Title Eight</li>
+								<li>Title Nine</li>
+								<li>Title Ten</li>
+							</ul>
+						</div>
 					</div>
-					<div class="dropdown-list">
-						<ul class="dropdown-items">
-							<li>Title One</li>
-							<li>Title Two</li>
-							<li>Title Three</li>
-							<li>Title Four</li>
-							<li>Title Five</li>
-							<li>Title Six</li>
-							<li>Title Seven</li>
-							<li>Title Eight</li>
-							<li>Title Nine</li>
-							<li>Title Ten</li>
-						</ul>
+					<div class="col-12 dropdown">
+						<label class="label" for="drop">Модель</label>
+						<div class="input">
+							<input
+								id="model"
+								readonly
+								type="text"
+								placeholder="Усі моделі"
+								data-placeholder="Усі моделі"
+							/>
+							<img
+								class="input-chev"
+								src="./img/icons/chevron_more_icon.svg"
+								alt=""
+							/>
+						</div>
+						<div class="dropdown-list">
+							<ul class="dropdown-items">
+								<li>Title One</li>
+								<li>Title Two</li>
+								<li>Title Three</li>
+								<li>Title Four</li>
+								<li>Title Five</li>
+								<li>Title Six</li>
+								<li>Title Seven</li>
+								<li>Title Eight</li>
+								<li>Title Nine</li>
+								<li>Title Ten</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-6 dropdown">
+						<label class="label" for="drop">Рік випуску</label>
+						<div class="input">
+							<input
+								id="year-from"
+								type="number"
+								placeholder="Від"
+								data-placeholder="Від"
+							/>
+						</div>
+					</div>
+					<div class="col-6 dropdown">
+						<div class="input">
+							<input
+								id="year-to"
+								type="number"
+								placeholder="До"
+								data-placeholder="До"
+							/>
+						</div>
+					</div>
+					<div class="col-12 dropdown">
+						<label class="label" for="drop">Пробіг до</label>
+						<div class="input">
+							<input
+								id="probig"
+								readonly
+								type="text"
+								placeholder="Пробіг до"
+								data-placeholder="Пробіг до"
+							/>
+							<img
+								class="input-chev"
+								src="./img/icons/chevron_more_icon.svg"
+								alt=""
+							/>
+						</div>
+						<div class="dropdown-list">
+							<ul class="dropdown-items">
+								<li>Title One</li>
+								<li>Title Two</li>
+								<li>Title Three</li>
+								<li>Title Four</li>
+								<li>Title Five</li>
+								<li>Title Six</li>
+								<li>Title Seven</li>
+								<li>Title Eight</li>
+								<li>Title Nine</li>
+								<li>Title Ten</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-12 dropdown">
+						<label class="label" for="drop">Коробка передач</label>
+						<div class="input">
+							<input
+								id="korobka-peredach"
+								readonly
+								type="text"
+								placeholder="Усі"
+								data-placeholder="Усі"
+							/>
+							<img
+								class="input-chev"
+								src="./img/icons/chevron_more_icon.svg"
+								alt=""
+							/>
+						</div>
+						<div class="dropdown-list">
+							<ul class="dropdown-items">
+								<li>Title One</li>
+								<li>Title Two</li>
+								<li>Title Three</li>
+								<li>Title Four</li>
+								<li>Title Five</li>
+								<li>Title Six</li>
+								<li>Title Seven</li>
+								<li>Title Eight</li>
+								<li>Title Nine</li>
+								<li>Title Ten</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-12 dropdown">
+						<label class="label" for="drop">Тип пального</label>
+						<div class="input">
+							<input
+								id="typ-palnoho"
+								readonly
+								type="text"
+								placeholder="Усі"
+								data-placeholder="Усі"
+							/>
+							<img
+								class="input-chev"
+								src="./img/icons/chevron_more_icon.svg"
+								alt=""
+							/>
+						</div>
+						<div class="dropdown-list">
+							<ul class="dropdown-items">
+								<li>Title One</li>
+								<li>Title Two</li>
+								<li>Title Three</li>
+								<li>Title Four</li>
+								<li>Title Five</li>
+								<li>Title Six</li>
+								<li>Title Seven</li>
+								<li>Title Eight</li>
+								<li>Title Nine</li>
+								<li>Title Ten</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-12 dropdown">
+						<label class="label" for="drop">Привод</label>
+						<div class="input">
+							<input
+								id="pryvod"
+								readonly
+								type="text"
+								placeholder="Усі"
+								data-placeholder="Усі"
+							/>
+							<img
+								class="input-chev"
+								src="./img/icons/chevron_more_icon.svg"
+								alt=""
+							/>
+						</div>
+						<div class="dropdown-list">
+							<ul class="dropdown-items">
+								<li>Title One</li>
+								<li>Title Two</li>
+								<li>Title Three</li>
+								<li>Title Four</li>
+								<li>Title Five</li>
+								<li>Title Six</li>
+								<li>Title Seven</li>
+								<li>Title Eight</li>
+								<li>Title Nine</li>
+								<li>Title Ten</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-6 dropdown">
+						<label class="label" for="drop">Ціна, $</label>
+						<div class="input">
+							<input
+								id="price-from"
+								type="number"
+								placeholder="Від"
+								data-placeholder="Від"
+							/>
+						</div>
+					</div>
+					<div class="col-6 dropdown">
+						<div class="input">
+							<input
+								id="price-to"
+								type="number"
+								placeholder="До"
+								data-placeholder="До"
+							/>
+						</div>
+					</div>
+					<div class="col-12 dropdown">
+						<label class="label" for="drop">Тип кузова</label>
+						<div class="input">
+							<input
+								id="typ-kuzova"
+								readonly
+								type="text"
+								placeholder="Усі"
+								data-placeholder="Усі"
+							/>
+							<img
+								class="input-chev"
+								src="./img/icons/chevron_more_icon.svg"
+								alt=""
+							/>
+						</div>
+						<div class="dropdown-list">
+							<ul class="dropdown-items">
+								<li>Title One</li>
+								<li>Title Two</li>
+								<li>Title Three</li>
+								<li>Title Four</li>
+								<li>Title Five</li>
+								<li>Title Six</li>
+								<li>Title Seven</li>
+								<li>Title Eight</li>
+								<li>Title Nine</li>
+								<li>Title Ten</li>
+							</ul>
+						</div>
 					</div>
 				</div>
-				<div class="col-12 dropdown">
-					<label class="label" for="drop">Модель</label>
-					<div class="input">
-						<input
-							id="model"
-							readonly
-							type="text"
-							placeholder="Усі моделі"
-							data-placeholder="Усі моделі"
-						/>
-						<img
-							class="input-chev"
-							src="./img/icons/chevron_more_icon.svg"
-							alt=""
-						/>
-					</div>
-					<div class="dropdown-list">
-						<ul class="dropdown-items">
-							<li>Title One</li>
-							<li>Title Two</li>
-							<li>Title Three</li>
-							<li>Title Four</li>
-							<li>Title Five</li>
-							<li>Title Six</li>
-							<li>Title Seven</li>
-							<li>Title Eight</li>
-							<li>Title Nine</li>
-							<li>Title Ten</li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-6 dropdown">
-					<label class="label" for="drop">Рік випуску</label>
-					<div class="input">
-						<input
-							id="year-from"
-							type="number"
-							placeholder="Від"
-							data-placeholder="Від"
-						/>
-					</div>
-				</div>
-				<div class="col-6 dropdown">
-					<div class="input">
-						<input
-							id="year-to"
-							type="number"
-							placeholder="До"
-							data-placeholder="До"
-						/>
-					</div>
-				</div>
-				<div class="col-12 dropdown">
-					<label class="label" for="drop">Пробіг до</label>
-					<div class="input">
-						<input
-							id="probig"
-							readonly
-							type="text"
-							placeholder="Пробіг до"
-							data-placeholder="Пробіг до"
-						/>
-						<img
-							class="input-chev"
-							src="./img/icons/chevron_more_icon.svg"
-							alt=""
-						/>
-					</div>
-					<div class="dropdown-list">
-						<ul class="dropdown-items">
-							<li>Title One</li>
-							<li>Title Two</li>
-							<li>Title Three</li>
-							<li>Title Four</li>
-							<li>Title Five</li>
-							<li>Title Six</li>
-							<li>Title Seven</li>
-							<li>Title Eight</li>
-							<li>Title Nine</li>
-							<li>Title Ten</li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-12 dropdown">
-					<label class="label" for="drop">Коробка передач</label>
-					<div class="input">
-						<input
-							id="korobka-peredach"
-							readonly
-							type="text"
-							placeholder="Усі"
-							data-placeholder="Усі"
-						/>
-						<img
-							class="input-chev"
-							src="./img/icons/chevron_more_icon.svg"
-							alt=""
-						/>
-					</div>
-					<div class="dropdown-list">
-						<ul class="dropdown-items">
-							<li>Title One</li>
-							<li>Title Two</li>
-							<li>Title Three</li>
-							<li>Title Four</li>
-							<li>Title Five</li>
-							<li>Title Six</li>
-							<li>Title Seven</li>
-							<li>Title Eight</li>
-							<li>Title Nine</li>
-							<li>Title Ten</li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-12 dropdown">
-					<label class="label" for="drop">Тип пального</label>
-					<div class="input">
-						<input
-							id="typ-palnoho"
-							readonly
-							type="text"
-							placeholder="Усі"
-							data-placeholder="Усі"
-						/>
-						<img
-							class="input-chev"
-							src="./img/icons/chevron_more_icon.svg"
-							alt=""
-						/>
-					</div>
-					<div class="dropdown-list">
-						<ul class="dropdown-items">
-							<li>Title One</li>
-							<li>Title Two</li>
-							<li>Title Three</li>
-							<li>Title Four</li>
-							<li>Title Five</li>
-							<li>Title Six</li>
-							<li>Title Seven</li>
-							<li>Title Eight</li>
-							<li>Title Nine</li>
-							<li>Title Ten</li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-12 dropdown">
-					<label class="label" for="drop">Привод</label>
-					<div class="input">
-						<input
-							id="pryvod"
-							readonly
-							type="text"
-							placeholder="Усі"
-							data-placeholder="Усі"
-						/>
-						<img
-							class="input-chev"
-							src="./img/icons/chevron_more_icon.svg"
-							alt=""
-						/>
-					</div>
-					<div class="dropdown-list">
-						<ul class="dropdown-items">
-							<li>Title One</li>
-							<li>Title Two</li>
-							<li>Title Three</li>
-							<li>Title Four</li>
-							<li>Title Five</li>
-							<li>Title Six</li>
-							<li>Title Seven</li>
-							<li>Title Eight</li>
-							<li>Title Nine</li>
-							<li>Title Ten</li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-6 dropdown">
-					<label class="label" for="drop">Ціна, $</label>
-					<div class="input">
-						<input
-							id="price-from"
-							type="number"
-							placeholder="Від"
-							data-placeholder="Від"
-						/>
-					</div>
-				</div>
-				<div class="col-6 dropdown">
-					<div class="input">
-						<input
-							id="price-to"
-							type="number"
-							placeholder="До"
-							data-placeholder="До"
-						/>
-					</div>
-				</div>
-				<div class="col-12 dropdown">
-					<label class="label" for="drop">Тип кузова</label>
-					<div class="input">
-						<input
-							id="typ-kuzova"
-							readonly
-							type="text"
-							placeholder="Усі"
-							data-placeholder="Усі"
-						/>
-						<img
-							class="input-chev"
-							src="./img/icons/chevron_more_icon.svg"
-							alt=""
-						/>
-					</div>
-					<div class="dropdown-list">
-						<ul class="dropdown-items">
-							<li>Title One</li>
-							<li>Title Two</li>
-							<li>Title Three</li>
-							<li>Title Four</li>
-							<li>Title Five</li>
-							<li>Title Six</li>
-							<li>Title Seven</li>
-							<li>Title Eight</li>
-							<li>Title Nine</li>
-							<li>Title Ten</li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-12 catalog__filter-btns">
-					<button class="catalog__filter-reset none" id="reset-filter">
-						<img src="./img/icons/cross_icon.svg" alt="" />
-					</button>
-					<button
-						disabled
-						class="primary catalog__filter-btn"
-						style="width: 100%; margin-top: 8px"
-						type="submit"
-					>
-						Знайти
-					</button>
-				</div>
+			</div>
+			<div class="col-12 catalog__filter-btns">
+				<button class="catalog__filter-reset none" id="reset-filter">
+					<img src="./img/icons/cross_icon.svg" alt="" />
+				</button>
+				<button
+					disabled
+					class="primary catalog__filter-btn"
+					style="width: 100%; margin-top: 8px"
+					type="submit"
+				>
+					Знайти
+				</button>
 			</div>
 		</div>
 		<div class="catalog__content">
 			<div class="catalog__sort">
-				<div class="catalog__sort-search">
+				<div class="catalog__sort-search desktop">
 					<label for="">Швидкий пошук</label>
-					<div class="dropdown" style="width: 422px">
+					<div class="dropdown">
 						<div class="input">
 							<input
 								id="search"
@@ -366,10 +369,12 @@
 						</div>
 					</div>
 				</div>
-
+				<button class="catalog__sort-btn--filter primary">
+					<img src="./img/icons/filter_icon_2.svg" alt="" />ФІЛЬТРИ
+				</button>
 				<div class="catalog__sort-drop">
 					<label for="">Сортувати</label>
-					<div class="dropdown" style="width: 225px">
+					<div class="dropdown">
 						<div class="input">
 							<input
 								id="filter-price"
@@ -478,6 +483,30 @@
 								</li>
 							</ul>
 						</div>
+					</div>
+				</div>
+			</div>
+			<div class="catalog__sort-search mobile" style="margin-bottom: 32px">
+				<label for="">Швидкий пошук</label>
+				<div class="dropdown">
+					<div class="input">
+						<input
+							id="search"
+							type="text"
+							placeholder="Почніть вводити назву авто"
+							data-placeholder="Почніть вводити назву авто"
+						/>
+						<img class="input-chev" src="./img/icons/search_icon.svg" alt="" />
+					</div>
+					<div class="dropdown-list">
+						<ul class="dropdown-items">
+							<li>Title One</li>
+							<li>Title Two</li>
+							<li>Title Three</li>
+							<li>Title Four</li>
+							<li>Title Five</li>
+							<li>Title Six</li>
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -936,12 +965,7 @@
 	</div>
 </section>
 </main>
-		<footer
-	data-aos="fade-up"
-	data-aos-offset="300"
-	id="footer"
-	class="footer-wrap container"
->
+		<footer id="footer" class="footer-wrap container">
 	<div class="footer footer-second desktop">
 		<ul class="footer__links">
 			<li class="footer__link">
