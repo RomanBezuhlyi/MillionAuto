@@ -127,13 +127,13 @@
 	font-weight: 400;
 	line-height: normal;
 	text-transform: uppercase;
-	margin: 32px 0 8px 0;
+	padding: 32px 0 8px 0;
 	.active {
 		color: $accent;
 	}
 	@media (max-width: 991px) {
 		gap: 8px;
-		margin-top: 16px;
+		padding-top: 16px;
 	}
 }
 .title-page {

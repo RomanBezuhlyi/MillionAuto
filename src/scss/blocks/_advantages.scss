@@ -1,0 +1,64 @@
+.advantages-wrap {
+	padding-bottom: 160px;
+	@media (max-width: 991px) {
+		padding-bottom: 120px;
+	}
+}
+
+.advantages {
+	@include flex(row, center, center);
+	flex-wrap: wrap;
+	gap: 24px;
+	@media (max-width: 991px) {
+		gap: 32px;
+		flex-direction: column;
+	}
+	&__line {
+		width: 1px;
+		height: 156px;
+		background-color: #2b2b2b;
+		@media (max-width: 991px) {
+			display: none;
+		}
+	}
+	&__card {
+		@include flex(column, center, center);
+		width: 30%;
+		@media (max-width: 1100px) {
+			width: 28%;
+		}
+		@media (max-width: 991px) {
+			width: 100%;
+		}
+		img {
+			margin-bottom: 24px;
+			@media (max-width: 991px) {
+				margin-bottom: 16px;
+			}
+		}
+		h5 {
+			color: $accent;
+			text-align: center;
+			text-shadow: 0px 0px 25px rgba(255, 213, 133, 0.4);
+			font-size: 23px;
+			font-weight: 500;
+			line-height: normal;
+			margin-bottom: 12px;
+			@media (max-width: 991px) {
+				font-size: 18px;
+				margin-bottom: 8px;
+			}
+		}
+		p {
+			color: $text;
+			text-align: center;
+			font-size: 18px;
+			font-weight: 400;
+			line-height: normal;
+			@media (max-width: 991px) {
+				font-size: 14px;
+				line-height: 17.5px;
+			}
+		}
+	}
+}

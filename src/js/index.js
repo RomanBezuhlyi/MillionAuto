@@ -1,4 +1,5 @@
 import './modules/animation'
+import './modules/application'
 import './modules/catalog-filter'
 import './modules/dropdown'
 import './modules/mobile-menu'

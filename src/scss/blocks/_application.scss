@@ -1,0 +1,43 @@
+.application-wrap {
+	position: relative;
+	padding-bottom: 160px;
+	@media (max-width: 991px) {
+		padding-bottom: 120px;
+	}
+	&__bg {
+		position: absolute;
+		top: -130px;
+		right: 0;
+		@media (max-width: 991px) {
+			display: none;
+		}
+	}
+}
+.application {
+	margin: auto;
+	width: 616px;
+	@media (max-width: 991px) {
+		width: 100%;
+	}
+	&__privacy {
+		margin-top: 16px;
+		border-top: 1px solid #2b2b2b;
+		margin-bottom: 24px;
+	}
+	&__btn {
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 316px;
+	}
+	&__btn {
+		@media (max-width: 768px) {
+			width: 100%;
+		}
+	}
+	&__btn:disabled {
+		border-radius: 50px;
+		background: #5c4d30;
+		box-shadow: none;
+	}
+}
