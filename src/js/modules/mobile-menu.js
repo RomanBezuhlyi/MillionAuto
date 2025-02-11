@@ -10,9 +10,9 @@ document.addEventListener('DOMContentLoaded', function () {
 		body.classList.toggle('no-scroll')
 
 		if (burger.classList.contains('active')) {
-			burgerIcon.src = '../../img/icons/cross_icon.svg'
+			burgerIcon.src = './img/icons/cross_icon.svg'
 		} else {
-			burgerIcon.src = '../../img/icons/burger_menu_icon.svg'
+			burgerIcon.src = './img/icons/burger_menu_icon.svg'
 		}
 	})
 
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			nav.classList.remove('active')
 			burger.classList.remove('active')
 			body.classList.remove('no-scroll')
-			burgerIcon.src = '../../img/icons/burger_menu_icon.svg'
+			burgerIcon.src = './img/icons/burger_menu_icon.svg'
 		}
 	})
 })

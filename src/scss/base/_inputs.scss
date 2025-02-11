@@ -29,7 +29,7 @@
 .input > input {
 	cursor: pointer;
 	width: 100%;
-	overflow: hidden;
+	overflow-y: hidden;
 	color: #fff;
 	text-overflow: ellipsis;
 	font-size: 18px;
@@ -118,7 +118,7 @@
 .input-primary {
 	cursor: pointer;
 	width: 100%;
-	overflow: hidden;
+	overflow-y: hidden;
 	color: #fff;
 	text-overflow: ellipsis;
 	font-size: 18px;

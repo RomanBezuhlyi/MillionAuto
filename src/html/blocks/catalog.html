@@ -9,7 +9,9 @@
 		<div class="catalog__filter">
 			<div class="catalog__filter-wrap">
 				<p class="catalog__filter-label">Фільтр</p>
-				<button>close</button>
+				<button class="catalog__filter-close">
+					<img src="../../img/icons/cross_icon.svg" alt="" />
+				</button>
 				<div class="row align-items-end g-3">
 					<div class="col-12 dropdown">
 						<label class="label" for="drop">Марка авто</label>
@@ -275,11 +277,12 @@
 			<div class="col-12 catalog__filter-btns">
 				<button class="catalog__filter-reset none" id="reset-filter">
 					<img src="./img/icons/cross_icon.svg" alt="" />
+					<span>Очистити</span>
 				</button>
 				<button
 					disabled
 					class="primary catalog__filter-btn"
-					style="width: 100%; margin-top: 8px"
+					style="width: 100%"
 					type="submit"
 				>
 					Знайти
