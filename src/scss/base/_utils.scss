@@ -26,7 +26,10 @@
 .mobile-col {
 	display: none !important;
 	@media (max-width: 991px) {
-		@include flex(column, center, center);
+		display: flex !important;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
 }
 .primary {

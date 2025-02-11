@@ -1,0 +1,19 @@
+.form-wrap {
+	padding-bottom: 160px;
+	@media (max-width: 991px) {
+		padding-bottom: 120px;
+	}
+}
+.form {
+	margin: auto;
+	width: 316px;
+	input {
+		margin-bottom: 16px;
+	}
+}
+.pre-title {
+}
+.title {
+}
+.sub-title {
+}

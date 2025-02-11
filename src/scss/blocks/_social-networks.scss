@@ -1,0 +1,27 @@
+.social-networks-wrap {
+	padding-bottom: 160px;
+	@media (max-width: 991px) {
+		padding-bottom: 120px;
+	}
+}
+.social-networks {
+	@include flex(row, center, center);
+	gap: 16px;
+	&__item {
+		@include flex(row, center, center);
+		a {
+			@include flex(row, center, center);
+			width: 56px;
+			height: 56px;
+			border: 1px solid $accent;
+			border-radius: 50%;
+			@media (max-width: 991px) {
+				width: 40px;
+				height: 40px;
+			}
+		}
+		a:hover {
+			transform: scale(1.2);
+		}
+	}
+}
