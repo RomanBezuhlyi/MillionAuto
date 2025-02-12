@@ -19,6 +19,32 @@
 	@media (max-width: 991px) {
 		width: 100%;
 	}
+	&__thank {
+		h5 {
+			color: $accent;
+			text-align: center;
+			text-shadow: 0px 0px 25px rgba(255, 213, 133, 0.4);
+			font-size: 28px;
+			font-weight: 700;
+			line-height: normal;
+			margin-bottom: 16px;
+			@media (max-width: 991px) {
+				font-size: 23px;
+			}
+		}
+		p {
+			margin: auto;
+			width: 447px;
+			color: $white;
+			text-align: center;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 17.5px;
+			@media (max-width: 991px) {
+				width: 100%;
+			}
+		}
+	}
 	&__privacy {
 		margin-top: 16px;
 		border-top: 1px solid #2b2b2b;

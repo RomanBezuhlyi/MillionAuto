@@ -1,3 +1,15 @@
+.footer-wrap {
+	position: relative;
+	&__bg {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		@media (max-width: 991px) {
+			display: none;
+		}
+	}
+}
+
 .footer {
 	@include flex(column, center, center);
 	padding-bottom: 80px;
