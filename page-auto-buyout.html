@@ -57,37 +57,66 @@
 		<div class="breadcrumbs">
 			<span>Головна</span>
 			<img src="./img/icons/right_arrow_icon.svg" alt="" />
-			<span class="active">АВТОПІДБІР</span>
+			<span class="active">Автовикуп</span>
 		</div>
 		<div class="intro" data-aos="fade-up" data-aos-offset="300">
-			<h1>
-				Автопідбір від Million Auto<span> - ваш шлях до</span> ідеального авто!
+			<h1 style="width: 100%">
+				<span>Продайте авто за 1 день з</span> Million Auto!
 			</h1>
-			<p>
-				Заповніть форму, і наші експерти знайдуть авто, яке відповідає всім
-				вашим вимогам!
-			</p>
+			<p>Швидко, вигідно та без зайвих турбот</p>
 		</div>
 	</div>
 </section>
 <style>
 	@media (max-width: 991px) {
 		.intro-wrap {
-			background: url('./img/autosearch.png') center/cover no-repeat;
+			background: url('./img/autobuyout.png') center/cover no-repeat;
 		}
 	}
 	.intro-wrap::before {
-		background: url('./img/autosearch.png') center/cover no-repeat;
+		background: url('./img/autobuyout.png') center/cover no-repeat;
 	}
 </style>
- <section class="application-wrap" data-aos="fade-up" data-aos-offset="300">
-	<img src="./img/carbon-2.svg" alt="" class="application-wrap__bg" />
+ <section class="steps-wrap" data-aos="fade-up" data-aos-offset="300">
+	<img src="./img/carbon-2.svg" alt="" class="steps-wrap__bg" />
+	<div class="container">
+		<div class="pre-title">
+			<p>кроки</p>
+		</div>
+		<h2 class="title">
+			<span>Миттевий викуп авто за</span> <br />
+			3 кроки
+		</h2>
+		<p class="sub-title">Швидко, зручно та вигідно</p>
+		<ul class="steps">
+			<li class="steps__item">
+				<img src="./img/icons/form_icon.svg" alt="" /><span
+					>Ви заповнюєте форму</span
+				>
+			</li>
+			<li class="steps__item">
+				<img src="./img/icons/arrow_big_icon.svg" alt="" />
+			</li>
+			<li class="steps__item">
+				<img src="./img/icons/car.svg" alt="" /><span>Ми оглядаємо авто</span>
+			</li>
+			<li class="steps__item">
+				<img src="./img/icons/arrow_big_icon.svg" alt="" />
+			</li>
+			<li class="steps__item">
+				<img src="./img/icons/pen.svg" alt="" /><span>Укладаємо угоду</span>
+			</li>
+		</ul>
+	</div>
+</section>
+
+			<section class="application-wrap" data-aos="fade-up" data-aos-offset="300">
 	<div class="container">
 		<div class="pre-title">
 			<p>заявка</p>
 		</div>
-		<h2 class="title"><span>Заповнюй</span> заявку на підбір</h2>
-		<p class="sub-title">Швидко та вигідно</p>
+		<h2 class="title">Не зволікай<span> - заповнюй</span></h2>
+		<p class="sub-title">Найкращі умови для вас</p>
 		<form class="application">
 			<div class="row g-3">
 				<div class="col-lg-6 col-12 dropdown">
@@ -246,14 +275,14 @@
 					</div>
 				</div>
 				<div class="col-lg-6 col-12 dropdown">
-					<label class="label" for="drop">Бюджет</label>
+					<label class="label" for="kuzov">Тип кузова</label>
 					<div class="input">
 						<input
-							id="price"
+							id="kuzov"
 							readonly
 							type="text"
-							placeholder="---"
-							data-placeholder="Усі моделі"
+							placeholder="Тип кузова"
+							data-placeholder="Тип кузова"
 						/>
 						<img
 							class="input-chev"
@@ -274,6 +303,55 @@
 							<li>Title Nine</li>
 							<li>Title Ten</li>
 						</ul>
+					</div>
+				</div>
+				<div class="col-lg-6 col-12 dropdown">
+					<label class="label" for="privod">Привод</label>
+					<div class="input">
+						<input
+							id="privod"
+							readonly
+							type="text"
+							placeholder="---"
+							data-placeholder="---"
+						/>
+						<img
+							class="input-chev"
+							src="./img/icons/chevron_more_icon.svg"
+							alt=""
+						/>
+					</div>
+					<div class="dropdown-list">
+						<ul class="dropdown-items">
+							<li>Title One</li>
+							<li>Title Two</li>
+							<li>Title Three</li>
+							<li>Title Four</li>
+							<li>Title Five</li>
+							<li>Title Six</li>
+							<li>Title Seven</li>
+							<li>Title Eight</li>
+							<li>Title Nine</li>
+							<li>Title Ten</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-6 col-12">
+					<div class="input">
+						<label class="label" for="volume">Об'єм двигуна</label>
+						<input id="volume" type="text" placeholder="Об'єм" />
+					</div>
+				</div>
+				<div class="col-lg-6 col-12">
+					<div class="input">
+						<label class="label" for="run">Пробіг</label>
+						<input id="run" type="text" placeholder="---" />
+					</div>
+				</div>
+				<div class="col-lg-6 col-12">
+					<div class="input">
+						<label class="label" for="price">Бажана ціна (грн.)</label>
+						<input id="price" type="text" placeholder="---" />
 					</div>
 				</div>
 			</div>
@@ -300,40 +378,90 @@
 				ЗАМОВИТИ ПОСЛУГУ
 			</button>
 		</form>
+		<div class="application__thank none">
+			<h5>Заявка успішно відправлена!</h5>
+			<p>Дякуємо! Наш менеджер зв’яжеться з вами протягом 30 хвилин</p>
+		</div>
+	</div>
+</section>
+ <section class="benefits-wrap" data-aos="fade-up" data-aos-offset="300">
+	<img src="./img/carbon-1.svg" alt="" class="benefits-wrap__bg" />
+	<div class="container">
+		<div class="pre-title">
+			<p>переваги</p>
+		</div>
+		<h2 class="title">
+			<span>Переваги автовикупу <br />в</span> Million Auto
+		</h2>
+		<p class="sub-title">Чому варто звернутися до нас?</p>
+		<ul class="benefits">
+			<li class="benefits__card">
+				<img src="./img/icons/percent_icon.svg" alt="" />
+				<h5>До 95% ринкової вартості</h5>
+				<p>ми пропонуємо чесну оцінку</p>
+			</li>
+			<li class="benefits__line"></li>
+			<li class="benefits__card">
+				<img src="./img/icons/flash_icon.svg" alt="" />
+				<h5>Швидкий процес</h5>
+				<p>гроші отримуєте в день звернення</p>
+			</li>
+			<li class="benefits__line"></li>
+			<li class="benefits__card">
+				<img src="./img/icons/property_icon.svg" alt="" />
+				<h5>Просте оформлення</h5>
+				<p>ми беремо на себе всі документи</p>
+			</li>
+			<li class="benefits__card">
+				<img src="./img/icons/broken_car_a.svg" alt="" />
+				<h5>Викуп авто будь-якого стану</h5>
+				<p>незалежно від марки, моделі чи пробігу</p>
+			</li>
+			<li class="benefits__line"></li>
+			<li class="benefits__card">
+				<img src="./img/icons/bank.svg" alt="" />
+				<h5>Викуп кредитних авто</h5>
+				<p>допомагаємо закрити залишки по кредиту</p>
+			</li>
+		</ul>
 	</div>
 </section>
 
-			<section
-	class="advantages-wrap container"
-	data-aos="fade-up"
-	data-aos-offset="300"
->
+			<section class="simply-wrap container" data-aos="fade-up" data-aos-offset="300">
 	<div class="pre-title">
-		<p>ПЕРЕВАГИ</p>
+		<p>просто</p>
 	</div>
-	<h2 class="title">
-		Million Auto <span>— ваш надійний партнер в автопідборі!</span>
-	</h2>
-	<p class="sub-title">Швидко та вигідно</p>
-	<ul class="advantages">
-		<li class="advantages__card">
-			<img src="./img/icons/search_a.svg" alt="" />
-			<h5>Досвідчені експерти</h5>
-			<p>працюємо лише з перевіреними спеціалістами</p>
-		</li>
-		<li class="advantages__line"></li>
-		<li class="advantages__card">
-			<img src="./img/icons/clock-a.svg" alt="" />
-			<h5>Швидкий результат</h5>
-			<p>знайдемо ваш автомобіль у найкоротші терміни</p>
-		</li>
-		<li class="advantages__line"></li>
-		<li class="advantages__card">
-			<img src="./img/icons/broken_car_a.svg" alt="" />
-			<h5>Безпека угоди</h5>
-			<p>кожне авто проходить повну технічну та юридичну перевірку</p>
-		</li>
-	</ul>
+	<h2 class="title"><span>Як це працює?</span></h2>
+	<p class="sub-title">Як продати авто за 4 простих кроки</p>
+	<div class="simply">
+		<ul class="simply__list">
+			<li class="simply__item">
+				<img src="./img/icons/1..svg" alt="" />
+				<div class="simply__item-text">
+					<h5>Отримайте попередню оцінку</h5>
+					<p>на основі зазначених параметрів</p>
+				</div>
+			</li>
+			<li class="simply__item">
+				<img src="./img/icons/2..svg" alt="" />
+				<div class="simply__item-text">
+					<h5>Приїдьте на діагностику</h5>
+					<p>або запросіть нашого експерта для виїзної оцінки</p>
+				</div>
+			</li>
+			<li class="simply__item">
+				<img src="./img/icons/3..svg" alt="" />
+				<div class="simply__item-text">
+					<h5>Оформіть продаж</h5>
+					<p>та отримайте гроші на місці</p>
+				</div>
+			</li>
+		</ul>
+		<div class="simply__btns">
+			<button class="outline">ДЗВІНОК МЕНЕДЖЕРУ</button>
+			<button class="primary">ПОДАТИ ЗАЯВКУ</button>
+		</div>
+	</div>
 </section>
  <section
 	data-aos="fade-up"
@@ -345,8 +473,11 @@
 		<div class="pre-title">
 			<p>ВІДГУКИ</p>
 		</div>
-		<h2 class="title"><span>Наші клієнти</span> про нас</h2>
-		<p class="sub-title">Довіра понад усе!</p>
+		<h2 class="title"><span>На що</span> наголошують клієнти</h2>
+		<p class="sub-title" style="font-size: 14px">
+			Професіоналізм, індивідуальний підхід та швидкість обслуговування — ось
+			основні переваги, які відзначають наші клієнти
+		</p>
 		<div class="reviews reviewsSwiper">
 			<ul class="swiper-wrapper">
 				<li class="swiper-slide">
@@ -480,7 +611,7 @@
 					</div>
 				</li>
 			</ul>
-			<div class="reviews__list-nav" style="left: 0; transform: none">
+			<div class="reviews__list-nav">
 				<button class="reviews-button-prev" type="button">
 					<img src="./img/icons/swiper-arr-l.svg" alt="" />
 				</button>
@@ -489,55 +620,63 @@
 				</button>
 			</div>
 		</div>
-		<button class="primary reviews__list-btn">ЗАЛИШИТИ ВІДГУК</button>
 	</div>
 </section>
 
 		</main>
-		<footer id="footer" class="footer-wrap container">
-	<div class="footer footer-second desktop">
-		<ul class="footer__links">
-			<li class="footer__link">
-				<a href=""><img src="./img/icons/youtube_icon.svg" alt="" /></a>
-			</li>
-			<li class="footer__link">
-				<a href=""><img src="./img/icons/telegram_icon.svg" alt="" /></a>
-			</li>
-			<li class="footer__link">
-				<a href=""><img src="./img/icons/instagram_icon.svg" alt="" /></a>
-			</li>
-		</ul>
-		<a class="footer__logo" href="/../"
-			><img src="./img/logo-footer.svg" alt=""
-		/></a>
-		<div class="footer__contact">
+		<footer id="footer" class="footer-wrap">
+	<img src="./img/carbon-2.svg" alt="" class="footer-wrap__bg" />
+	<div class="container">
+		<div class="footer footer-second desktop">
+			<ul class="footer__links">
+				<li class="footer__link">
+					<a href=""><img src="./img/icons/youtube_icon.svg" alt="" /></a>
+				</li>
+				<li class="footer__link">
+					<a href=""><img src="./img/icons/telegram_icon.svg" alt="" /></a>
+				</li>
+				<li class="footer__link">
+					<a href=""><img src="./img/icons/instagram_icon.svg" alt="" /></a>
+				</li>
+			</ul>
+			<a class="footer__logo" href="/../"
+				><img src="./img/logo-footer.svg" alt=""
+			/></a>
+			<div class="footer__contact">
+				<p style="margin-bottom: 16px">вул. Раїси Окіпної, 2, Київ, 02002</p>
+				<p>067 324 66 90</p>
+			</div>
+		</div>
+		<div class="footer mobile-col">
+			<a class="footer__logo" href="/../"
+				><img src="./img/logo-footer.svg" alt=""
+			/></a>
+			<ul class="footer__links">
+				<li class="footer__link">
+					<a href=""><img src="./img/icons/youtube_icon.svg" alt="" /></a>
+				</li>
+				<li class="footer__link">
+					<a href=""><img src="./img/icons/telegram_icon.svg" alt="" /></a>
+				</li>
+				<li class="footer__link">
+					<a href=""><img src="./img/icons/instagram_icon.svg" alt="" /></a>
+				</li>
+			</ul>
 			<p style="margin-bottom: 16px">вул. Раїси Окіпної, 2, Київ, 02002</p>
 			<p>067 324 66 90</p>
 		</div>
-	</div>
-	<div class="footer mobile-col">
-		<a class="footer__logo" href="/../"
-			><img src="./img/logo-footer.svg" alt=""
-		/></a>
-		<ul class="footer__links">
-			<li class="footer__link">
-				<a href=""><img src="./img/icons/youtube_icon.svg" alt="" /></a>
-			</li>
-			<li class="footer__link">
-				<a href=""><img src="./img/icons/telegram_icon.svg" alt="" /></a>
-			</li>
-			<li class="footer__link">
-				<a href=""><img src="./img/icons/instagram_icon.svg" alt="" /></a>
-			</li>
-		</ul>
-		<p style="margin-bottom: 16px">вул. Раїси Окіпної, 2, Київ, 02002</p>
-		<p>067 324 66 90</p>
-	</div>
-	<div class="footer-description">
-		<a href="page-privacy.html">Юридична інформація</a>
-		<p>MILLIONAUTO 2024</p>
+		<div class="footer-description">
+			<a href="page-privacy.html">Юридична інформація</a>
+			<p>MILLIONAUTO 2024</p>
+		</div>
 	</div>
 </footer>
+
+		<script
+			src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+			async
+			defer
+		></script>
 
 		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 		<script src="https://unpkg.com/imask"></script>
