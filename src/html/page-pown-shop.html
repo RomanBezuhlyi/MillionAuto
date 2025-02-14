@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/png" href="../img/favicon.png" />
+		<title>MillionAuto</title>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+		/>
+
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.1/nouislider.min.css"
+		/>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.1/nouislider.min.js"></script>
+		<link rel="stylesheet" href="./css/main.css" />
+	</head>
+	<body>
+		@@include('blocks/header.html')
+		<main>
+			@@include('blocks/intro-3.html') @@include('blocks/application-3.html')
+			@@include('blocks/benefits-2.html') @@include('blocks/simply-2.html')
+			@@include('blocks/calculator.html') @@include('blocks/reviews-3.html')
+		</main>
+		@@include('blocks/footer-3.html')
+		<script
+			src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+			async
+			defer
+		></script>
+
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://unpkg.com/imask"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+		<script src="./js/index.bundle.js"></script>
+	</body>
+</html>

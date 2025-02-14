@@ -1,0 +1,123 @@
+<section
+	class="calculator-wrap container"
+	data-aos="fade-up"
+	data-aos-offset="300"
+>
+	<div class="pre-title">
+		<p>калькулятор</p>
+	</div>
+	<h2 class="title">
+		<span>Розрахуйте свій</span> кредит <br class="desktop" />
+		прямо зараз
+	</h2>
+	<div class="calculator">
+		<!-- Сума кредиту -->
+		<div class="slider-container">
+			<label class="label">Необхідна сума (грн.)</label>
+			<dib>
+				<input type="text" id="sumInput" class="input-box" readonly />
+			</dib>
+		</div>
+		<div id="sumSlider" class="slider"></div>
+		<div class="range-values">
+			<span>від 20 000 грн</span>
+			<span>до 1 000 000 грн</span>
+		</div>
+
+		<!-- Термін кредиту -->
+		<div class="slider-container">
+			<label class="label">Термін кредитування (міс.)</label>
+			<div>
+				<input type="text" id="termInput" class="input-box" readonly />
+			</div>
+		</div>
+		<div id="termSlider" class="slider"></div>
+		<div class="range-values">
+			<span>від 6 міс</span>
+			<span>до 36 міс</span>
+		</div>
+
+		<!-- Відсоткова ставка -->
+		<div class="input-container">
+			<label class="label">Відсоткова ставка (%)</label>
+			<input
+				type="number"
+				id="rateInput"
+				class="input-box-secondary"
+				value="21"
+			/>
+		</div>
+
+		<!-- Лінія -->
+		<span class="calculator-line"></span>
+
+		<!-- Щомісячний платіж -->
+		<div class="input-container">
+			<label class="label">Орієнтовний платіж (щоміс.)</label>
+			<input
+				type="text"
+				id="paymentOutput"
+				class="input-box"
+				readonly
+				value="---"
+			/>
+		</div>
+
+		<!-- Кнопка -->
+		<button class="calculator-btn primary" onclick="calculatePayment()">
+			РОЗРАХУВАТИ
+		</button>
+	</div>
+</section>
+
+<script>
+	// Слайдер суми кредиту
+	var sumSlider = document.getElementById('sumSlider')
+	var sumInput = document.getElementById('sumInput')
+
+	noUiSlider.create(sumSlider, {
+		start: 320000,
+		connect: [true, false],
+		range: { min: 20000, max: 1000000 },
+		step: 10000,
+		format: {
+			to: value => Math.round(value).toLocaleString('uk-UA'),
+			from: value => Number(value.replace(/\s/g, '')),
+		},
+	})
+
+	sumSlider.noUiSlider.on('update', function (values) {
+		sumInput.value = values[0]
+	})
+
+	// Слайдер терміну кредиту
+	var termSlider = document.getElementById('termSlider')
+	var termInput = document.getElementById('termInput')
+
+	noUiSlider.create(termSlider, {
+		start: 8,
+		connect: [true, false],
+		range: { min: 6, max: 36 },
+		step: 1,
+	})
+
+	termSlider.noUiSlider.on('update', function (values) {
+		termInput.value = values[0]
+	})
+
+	// Функція розрахунку платежу
+	function calculatePayment() {
+		let P = Number(sumInput.value.replace(/\s/g, '')) // Сума кредиту
+		let n = Number(termInput.value) // Кількість місяців
+		let annualRate = Number(document.getElementById('rateInput').value) // Річна ставка
+		let r = annualRate / 12 / 100 // Місячна ставка
+
+		if (P > 0 && n > 0 && annualRate > 0) {
+			let A = (P * r) / (1 - Math.pow(1 + r, -n)) // Формула аннуїтету
+			document.getElementById('paymentOutput').value =
+				Math.round(A).toLocaleString('uk-UA') + ' грн'
+		} else {
+			document.getElementById('paymentOutput').value = 'Помилка'
+		}
+	}
+</script>

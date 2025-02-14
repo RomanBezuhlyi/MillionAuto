@@ -1,0 +1,139 @@
+<section class="application-wrap" data-aos="fade-up" data-aos-offset="300">
+	<div class="container">
+		<div class="pre-title">
+			<p>форма</p>
+		</div>
+		<h2 class="title"><span>Розрахунок суми</span> фінансування</h2>
+		<p class="sub-title">Легкий спосіб визначитися</p>
+		<form class="application">
+			<div class="row g-3">
+				<div class="col-lg-6 col-12 dropdown">
+					<label class="label" for="summa">Необхідна сума</label>
+					<div class="input">
+						<input
+							id="summa"
+							readonly
+							type="text"
+							placeholder="---"
+							data-placeholder="---"
+						/>
+						<img
+							class="input-chev"
+							src="./img/icons/chevron_more_icon.svg"
+							alt=""
+						/>
+					</div>
+					<div class="dropdown-list">
+						<ul class="dropdown-items">
+							<li>10 000</li>
+							<li>20 000</li>
+							<li>30 000</li>
+							<li>40 000</li>
+							<li>50 000</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-6 col-12 dropdown">
+					<label class="label" for="rik-vipusku">Рік випуску авто</label>
+					<div class="input">
+						<input
+							id="rik-vipusku"
+							readonly
+							type="text"
+							placeholder="---"
+							data-placeholder="---"
+						/>
+						<img
+							class="input-chev"
+							src="./img/icons/chevron_more_icon.svg"
+							alt=""
+						/>
+					</div>
+					<div class="dropdown-list">
+						<ul class="dropdown-items">
+							<li>2000</li>
+							<li>2005</li>
+							<li>2010</li>
+							<li>2015</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-6 col-12 dropdown">
+					<label class="label" for="termin">Термін кредитування</label>
+					<div class="input">
+						<input
+							id="termin"
+							readonly
+							type="text"
+							placeholder="---"
+							data-placeholder="---"
+						/>
+						<img
+							class="input-chev"
+							src="./img/icons/chevron_more_icon.svg"
+							alt=""
+						/>
+					</div>
+					<div class="dropdown-list">
+						<ul class="dropdown-items">
+							<li>1 міс</li>
+							<li>3 міс</li>
+							<li>6 міс</li>
+							<li>9 міс</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-6 col-12 dropdown">
+					<label class="label" for="stan">Стан авто</label>
+					<div class="input">
+						<input
+							id="stan"
+							readonly
+							type="text"
+							placeholder="---"
+							data-placeholder="---"
+						/>
+						<img
+							class="input-chev"
+							src="./img/icons/chevron_more_icon.svg"
+							alt=""
+						/>
+					</div>
+					<div class="dropdown-list">
+						<ul class="dropdown-items">
+							<li>У користуванні клієнта</li>
+							<li>Новий</li>
+							<li>Після ДТП</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row g-3 application__privacy">
+				<div class="col-lg-6 col-12">
+					<div class="input">
+						<label class="label" for="phone-inputr">Номер телефону*</label>
+						<input
+							id="phone-input"
+							type="text"
+							placeholder="+38 ХХХ ХХ ХХ ХХ"
+							required
+						/>
+					</div>
+				</div>
+				<div class="col-lg-6 col-12">
+					<div class="input">
+						<label class="label" for="name">Ім’я</label>
+						<input id="name" type="text" placeholder="Ваше Ім’я" />
+					</div>
+				</div>
+			</div>
+			<button class="primary application__btn" type="submit" disabled>
+				РОЗРАХУВАТИ СУМУ
+			</button>
+		</form>
+		<div class="application__thank none">
+			<h5>Заявка успішно відправлена!</h5>
+			<p>Дякуємо! Наш менеджер зв’яжеться з вами протягом 30 хвилин</p>
+		</div>
+	</div>
+</section>
