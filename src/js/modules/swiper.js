@@ -32,3 +32,23 @@ var swiper2 = new Swiper('.reviewsSwiper', {
 		},
 	},
 })
+
+var swiper3 = new Swiper('.autoSwiper', {
+	navigation: {
+		nextEl: '.auto-button-next',
+		prevEl: '.auto-button-prev',
+	},
+	spaceBetween: 16,
+	slidesPerView: 1.2,
+	breakpoints: {
+		600: {
+			slidesPerView: 2.5,
+		},
+		1200: {
+			slidesPerView: 4.2,
+		},
+		1440: {
+			slidesPerView: 4,
+		},
+	},
+})

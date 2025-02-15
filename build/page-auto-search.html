@@ -489,9 +489,45 @@
 				</button>
 			</div>
 		</div>
-		<button class="primary reviews__list-btn">ЗАЛИШИТИ ВІДГУК</button>
+		<button id="openModal" class="primary reviews__list-btn">
+			ЗАЛИШИТИ ВІДГУК
+		</button>
 	</div>
 </section>
+<div id="modal" class="modal">
+	<div class="modal-content">
+		<h2>Залиши відгук</h2>
+		<label class="label">Ім'я</label>
+		<input
+			class="input-primary"
+			type="text"
+			id="modal-name"
+			placeholder="Ваше ім'я"
+		/>
+
+		<label class="label">Відгук</label>
+		<textarea
+			class="textarea-primary"
+			id="modal-review"
+			placeholder="Ваш відгук..."
+		></textarea>
+
+		<div class="stars" id="stars">
+			<img src="./img/icons/empty_star_icon.svg" data-value="1" class="star" />
+			<img src="./img/icons/empty_star_icon.svg" data-value="2" class="star" />
+			<img src="./img/icons/empty_star_icon.svg" data-value="3" class="star" />
+			<img src="./img/icons/empty_star_icon.svg" data-value="4" class="star" />
+			<img src="./img/icons/empty_star_icon.svg" data-value="5" class="star" />
+		</div>
+
+		<div class="modal-buttons">
+			<button id="closeModal" class="outline modal-cancel">Скасувати</button>
+			<button id="submitModal" class="primary modal-submit" disabled>
+				Відправити
+			</button>
+		</div>
+	</div>
+</div>
 
 		</main>
 		<footer id="footer" class="footer-wrap container">

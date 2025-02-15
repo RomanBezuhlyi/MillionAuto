@@ -1,0 +1,82 @@
+.benefits-wrap {
+	position: relative;
+	padding-bottom: 160px;
+	@media (max-width: 991px) {
+		padding-bottom: 120px;
+	}
+	&__bg {
+		position: absolute;
+		top: -150px;
+		left: 0;
+		@media (max-width: 991px) {
+			display: none;
+		}
+	}
+}
+.benefits-3 {
+	@include flex(row, center, flex-start);
+	flex-wrap: wrap;
+	gap: 24px;
+	gap: 32px;
+	@media (max-width: 991px) {
+		gap: 32px;
+		flex-direction: column;
+	}
+	&__line {
+		width: 1px;
+		height: 156px;
+		background-color: #2b2b2b;
+		@media (max-width: 991px) {
+			display: none;
+		}
+	}
+	&__card {
+		@include flex(column, flex-start, center);
+		width: 33%;
+		@media (max-width: 991px) {
+			width: 100%;
+		}
+		&:nth-child(-n + 3) {
+			height: 200px;
+			border-bottom: 1px solid #2b2b2b;
+			@media (max-width: 991px) {
+				height: auto;
+				border: none;
+			}
+		}
+		img {
+			width: 48px;
+			height: 48px;
+			margin-bottom: 24px;
+			@media (max-width: 991px) {
+				width: 40px;
+				height: 40px;
+				margin-bottom: 16px;
+			}
+		}
+		h5 {
+			color: $accent;
+			text-align: center;
+			text-shadow: 0px 0px 25px rgba(255, 213, 133, 0.4);
+			font-size: 23px;
+			font-weight: 500;
+			line-height: normal;
+			margin-bottom: 12px;
+			@media (max-width: 991px) {
+				font-size: 18px;
+				margin-bottom: 8px;
+			}
+		}
+		p {
+			color: $text;
+			text-align: center;
+			font-size: 18px;
+			font-weight: 400;
+			line-height: normal;
+			@media (max-width: 991px) {
+				font-size: 14px;
+				line-height: 17.5px;
+			}
+		}
+	}
+}

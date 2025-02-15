@@ -33,6 +33,7 @@
 	}
 }
 .primary {
+	@include flex(row, center, center);
 	color: $bg;
 	font-size: 14px;
 	font-style: normal;
@@ -49,6 +50,7 @@
 	}
 }
 .outline {
+	@include flex(row, center, center);
 	color: $accent;
 	font-size: 14px;
 	font-style: normal;
