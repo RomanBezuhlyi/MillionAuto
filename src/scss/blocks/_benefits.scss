@@ -12,6 +12,14 @@
 			display: none;
 		}
 	}
+	&__bg--right {
+		position: absolute;
+		top: -150px;
+		right: 0;
+		@media (max-width: 991px) {
+			display: none;
+		}
+	}
 }
 .benefits {
 	@include flex(row, center, flex-start);

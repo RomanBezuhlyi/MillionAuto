@@ -1,0 +1,235 @@
+<section class="application-wrap" data-aos="fade-up" data-aos-offset="300">
+	<div class="container">
+		<div class="pre-title">
+			<p>калькулятор</p>
+		</div>
+		<h2 class="title"><span>Лізінговий</span> калькулятор</h2>
+		<p class="sub-title">Розрахуйте свій платіж</p>
+		<form class="application">
+			<div class="row g-3">
+				<div class="col-lg-6 col-12 dropdown">
+					<label class="label" for="marka-auto-2">Марка авто</label>
+					<div class="input">
+						<input
+							id="marka-auto-2"
+							readonly
+							type="text"
+							placeholder="Усі марки"
+							data-placeholder="Усі марки"
+						/>
+						<img
+							class="input-chev"
+							src="./img/icons/chevron_more_icon.svg"
+							alt=""
+						/>
+					</div>
+					<div class="dropdown-list">
+						<ul class="dropdown-items">
+							<li>Title One</li>
+							<li>Title Two</li>
+							<li>Title Three</li>
+							<li>Title Four</li>
+							<li>Title Five</li>
+							<li>Title Six</li>
+							<li>Title Seven</li>
+							<li>Title Eight</li>
+							<li>Title Nine</li>
+							<li>Title Ten</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-6 col-12 dropdown">
+					<label class="label" for="drop">Рік випуску</label>
+					<div class="input">
+						<input
+							id="year-graduation-2"
+							readonly
+							type="text"
+							placeholder="Усі роки"
+							data-placeholder="Усі моделі"
+						/>
+						<img
+							class="input-chev"
+							src="./img/icons/chevron_more_icon.svg"
+							alt=""
+						/>
+					</div>
+					<div class="dropdown-list">
+						<ul class="dropdown-items">
+							<li>Title One</li>
+							<li>Title Two</li>
+							<li>Title Three</li>
+							<li>Title Four</li>
+							<li>Title Five</li>
+							<li>Title Six</li>
+							<li>Title Seven</li>
+							<li>Title Eight</li>
+							<li>Title Nine</li>
+							<li>Title Ten</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-6 col-12 dropdown">
+					<label class="label" for="drop">Модель</label>
+					<div class="input">
+						<input
+							id="model-2"
+							readonly
+							type="text"
+							placeholder="Усі моделі"
+							data-placeholder="Усі моделі"
+						/>
+						<img
+							class="input-chev"
+							src="./img/icons/chevron_more_icon.svg"
+							alt=""
+						/>
+					</div>
+					<div class="dropdown-list">
+						<ul class="dropdown-items">
+							<li>Title One</li>
+							<li>Title Two</li>
+							<li>Title Three</li>
+							<li>Title Four</li>
+							<li>Title Five</li>
+							<li>Title Six</li>
+							<li>Title Seven</li>
+							<li>Title Eight</li>
+							<li>Title Nine</li>
+							<li>Title Ten</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-6 col-12">
+					<div class="input">
+						<label class="label" for="price-auto">Вартість</label>
+						<input id="price-auto-2" type="number" placeholder="---" required />
+					</div>
+				</div>
+			</div>
+			<div class="row g-3 application__privacy">
+				<div class="col-lg-6 col-12">
+					<div class="input">
+						<label class="label" for="phone-input-2"
+							>Термін кредиту (міс.)</label
+						>
+						<input
+							id="termin-credit-2"
+							type="number"
+							placeholder="---"
+							required
+						/>
+					</div>
+				</div>
+				<div class="col-lg-6 col-12">
+					<div class="input">
+						<label class="label" for="first-pay-2">Перший внесок (%)</label>
+						<input id="first-pay-2" type="number" placeholder="---" />
+					</div>
+				</div>
+			</div>
+			<!-- Лінія -->
+			<span class="line"></span>
+			<!-- Щомісячний платіж -->
+			<div class="input-container">
+				<label class="label">Орієнтовний платіж (щоміс.)</label>
+				<input
+					type="text"
+					id="paymentOutputCredit-2"
+					class="input-box"
+					readonly
+					value="---"
+				/>
+			</div>
+			<button
+				class="primary application__btn"
+				id="calculate-credit-2"
+				type="button"
+				disabled
+			>
+				РОЗРАХУВАТИ
+			</button>
+		</form>
+	</div>
+</section>
+<script>
+	// Функція для перевірки заповненості полів
+	function checkFormCompletion() {
+		const price2 = document.getElementById('price-auto-2').value
+		const term2 = document.getElementById('termin-credit-2').value
+		const firstPay2 = document.getElementById('first-pay-2').value
+
+		const calculateButton2 = document.getElementById('calculate-credit-2')
+
+		// Якщо всі поля заповнені
+		if (price2 && term2 && firstPay2) {
+			calculateButton2.disabled = false // Розблокувати кнопку
+		} else {
+			calculateButton2.disabled = true // Заблокувати кнопку
+		}
+	}
+
+	// Перевірка на правильність введеного першого внеску (від 1% до 99%)
+	document.getElementById('first-pay-2').addEventListener('input', function () {
+		let firstPayValue = parseFloat(this.value)
+
+		// Якщо значення поза межами від 1 до 99, відновлюємо поле на 1 або 99
+		if (firstPayValue < 1) {
+			this.value = 1
+		} else if (firstPayValue > 99) {
+			this.value = 99
+		}
+
+		// Перевіряємо, чи значення коректне і чи всі поля заповнені
+		checkFormCompletion()
+	})
+
+	// Додаємо обробники подій для кожного поля вводу
+	document
+		.getElementById('price-auto-2')
+		.addEventListener('input', checkFormCompletion)
+	document
+		.getElementById('termin-credit-2')
+		.addEventListener('input', checkFormCompletion)
+
+	// Логіка для обробки натискання кнопки
+	document
+		.getElementById('calculate-credit-2')
+		.addEventListener('click', function () {
+			// Отримання значень полів
+			let price2 = parseFloat(document.getElementById('price-auto-2').value)
+			let term2 = parseInt(document.getElementById('termin-credit-2').value)
+			let firstPayPercent2 =
+				parseFloat(document.getElementById('first-pay-2').value) || 0
+			let output = document.getElementById('paymentOutputCredit-2')
+
+			// Валідація введених значень
+			if (isNaN(price2) || price2 <= 0) {
+				output.value = 'Некоректна вартість авто'
+				return
+			}
+			if (isNaN(term2) || term2 <= 0) {
+				output.value = 'Некоректний термін кредиту'
+				return
+			}
+
+			// Розрахунок першого внеску в грошах
+			let firstPay2 = (firstPayPercent2 / 100) * price2
+			let creditAmount2 = price2 - firstPay2
+
+			// Процентна ставка (можна налаштувати)
+			let interestRate2 = 10 / 100 / 12 // 10% річних, поділено на 12 місяців
+
+			// Формула ануїтетного платежу
+			let monthlyPayment2 =
+				(creditAmount2 * interestRate2) /
+				(1 - Math.pow(1 + interestRate2, -term2))
+
+			// Перевірка на коректність розрахунку
+			if (isNaN(monthlyPayment2) || monthlyPayment2 <= 0) {
+				output.value = 'Помилка в розрахунку'
+			} else {
+				output.value = monthlyPayment2.toFixed(2) + ' грн'
+			}
+		})
+</script>

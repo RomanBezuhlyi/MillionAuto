@@ -80,7 +80,27 @@
 		}
 	}
 }
-.reviewsSwiper {
+.reviewsSwiper1 {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	padding-bottom: 100px;
+	@media (max-width: 991px) {
+		padding-bottom: 80px;
+	}
+}
+.reviewsSwiper2 {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	padding-bottom: 100px;
+	@media (max-width: 991px) {
+		padding-bottom: 80px;
+	}
+}
+.reviewsSwiper3 {
 	position: relative;
 	width: 100%;
 	height: 100%;

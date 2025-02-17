@@ -1,0 +1,148 @@
+.vacancies-wrap {
+	padding-bottom: 160px;
+	@media (max-width: 991px) {
+		padding-bottom: 120px;
+	}
+	.container {
+		position: relative;
+		@media (min-width: 1200px) and (max-width: 1440px) {
+			padding-right: 0;
+		}
+	}
+}
+
+.vacancies {
+	&__card {
+		position: relative;
+		@include flex(column, flex-start, flex-start);
+		border-radius: 16px;
+		background: #191919;
+		box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.1);
+		padding: 32px;
+		@media (max-width: 991px) {
+			padding: 24px;
+		}
+	}
+
+	&__card-link {
+		position: absolute;
+		top: 32px;
+		right: 32px;
+		width: 40px;
+		height: 40px;
+		border-radius: 20px;
+		border: 1px solid $accent;
+		background: #191919;
+		padding: 8px;
+		@media (max-width: 991px) {
+			top: 24px;
+			right: 24px;
+		}
+	}
+
+	&__img {
+		margin-bottom: 24px;
+	}
+
+	&__title {
+		@include flex(row, center, center);
+		gap: 12px;
+		color: $accent;
+		text-shadow: 0px 0px 25px rgba(255, 213, 133, 0.4);
+		font-size: 23px;
+		font-weight: 500;
+		line-height: normal;
+		margin-bottom: 12px;
+		@media (max-width: 991px) {
+			font-size: 18px;
+		}
+		img {
+			@media (max-width: 991px) {
+				width: 24px;
+				height: 24px;
+			}
+		}
+	}
+
+	&__text {
+		color: $text;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 17.5px;
+		margin-bottom: 16px;
+	}
+
+	&__list {
+		@include flex(column, flex-start, flex-start);
+		gap: 14px;
+	}
+
+	&__item {
+		@include flex(row, center, center);
+		gap: 8px;
+		color: #fff;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 17.5px;
+	}
+}
+
+.vacanciesSwiper {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	padding-bottom: 100px;
+	@media (max-width: 991px) {
+		padding-bottom: 80px;
+	}
+}
+.vac-button-prev::after {
+	display: none;
+}
+.vac-button-next::after {
+	display: none;
+}
+.vac__list-btn {
+	position: absolute;
+	right: 60px;
+	bottom: 0;
+	width: 316px;
+	@media (max-width: 991px) {
+		position: relative;
+		left: 50%;
+		bottom: -30px;
+		transform: translateX(-50%);
+	}
+	@media (max-width: 768px) {
+		width: 100%;
+	}
+}
+.vac__list-nav {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 0;
+	@include flex(row, center, center);
+	gap: 24px;
+	@media (max-width: 991px) {
+		left: 50% !important;
+		transform: translateX(-50%) !important;
+	}
+}
+.vac-button-prev {
+	position: static;
+	width: 88px;
+	height: 48px;
+	border-radius: 50px;
+	border: 1px solid $accent;
+	box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.1);
+}
+.vac-button-next {
+	position: static;
+	width: 88px;
+	height: 48px;
+	border-radius: 50px;
+	border: 1px solid $accent;
+	box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.1);
+}

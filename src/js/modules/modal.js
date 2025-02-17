@@ -1,56 +1,68 @@
-const openModalBtn = document.getElementById('openModal')
-const closeModalBtn = document.getElementById('closeModal')
-const modal = document.getElementById('modal')
-const modalContent = document.querySelector('.modal-content')
-const stars = document.querySelectorAll('.star')
-const nameInput = document.getElementById('modal-name')
-const reviewInput = document.getElementById('modal-review')
-const submitBtn = document.getElementById('submitModal')
-
-let selectedRating = 0
-
-// Відкриття модалки + вимкнення скролу
-openModalBtn.addEventListener('click', () => {
-	modal.style.display = 'block'
-	document.body.style.overflow = 'hidden' // Забороняє скролінг
-})
-
-// Закриття модалки + ввімкнення скролу
-closeModalBtn.addEventListener('click', closeModal)
-modal.addEventListener('click', event => {
-	if (!modalContent.contains(event.target)) {
-		closeModal()
-	}
-})
-
-function closeModal() {
-	modal.style.display = 'none'
-	document.body.style.overflow = 'auto' // Дозволяє скролінг
-	resetForm()
-}
-
-// Функція для встановлення рейтингу
-stars.forEach(star => {
-	star.addEventListener('click', () => {
-		selectedRating = star.getAttribute('data-value')
-		updateStars(selectedRating)
-		validateForm()
-	})
-})
-
-// Оновлення вигляду зірок
-function updateStars(rating) {
-	stars.forEach(star => {
-		if (star.getAttribute('data-value') <= rating) {
-			star.src = './img/icons/full_star_icon.svg' // Заповнена зірка
-		} else {
-			star.src = './img/icons/empty_star_icon.svg' // Порожня зірка
+document.addEventListener('DOMContentLoaded', () => {
+	document.body.addEventListener('click', event => {
+		if (event.target.matches('[data-open-modal]')) {
+			openModal(event.target.getAttribute('data-open-modal'))
+		}
+		if (
+			event.target.matches('[data-close-modal]') ||
+			event.target.classList.contains('modal')
+		) {
+			closeModal(event.target.closest('.modal'))
 		}
 	})
+
+	document.body.addEventListener('input', event => {
+		if (event.target.matches('.modal-name, .modal-review')) {
+			validateForm(event.target.closest('.modal'))
+		}
+	})
+
+	document.body.addEventListener('click', event => {
+		if (event.target.matches('.star')) {
+			const modal = event.target.closest('.modal')
+			const rating = event.target.getAttribute('data-value')
+			updateStars(modal, rating)
+			validateForm(modal)
+		}
+		if (event.target.matches('[data-submit-modal]')) {
+			submitForm(event.target.closest('.modal'))
+		}
+	})
+})
+
+function openModal(modalId) {
+	const modal = document.getElementById(modalId)
+	if (modal) {
+		modal.style.display = 'block'
+		document.body.style.overflow = 'hidden'
+	}
 }
 
-// Перевірка валідності форми
-function validateForm() {
+function closeModal(modal) {
+	if (modal) {
+		modal.style.display = 'none'
+		document.body.style.overflow = 'auto'
+		resetForm(modal)
+	}
+}
+
+function updateStars(modal, rating) {
+	const stars = modal.querySelectorAll('.star')
+	stars.forEach(star => {
+		star.src =
+			star.getAttribute('data-value') <= rating
+				? './img/icons/full_star_icon.svg'
+				: './img/icons/empty_star_icon.svg'
+	})
+	modal.setAttribute('data-rating', rating)
+}
+
+function validateForm(modal) {
+	const nameInput = modal.querySelector('.modal-name')
+	const reviewInput = modal.querySelector('.modal-review')
+	const submitBtn = modal.querySelector('[data-submit-modal]')
+	const selectedRating = modal.getAttribute('data-rating') || 0
+
 	if (
 		nameInput.value.trim() &&
 		reviewInput.value.trim() &&
@@ -64,23 +76,22 @@ function validateForm() {
 	}
 }
 
-// Валідація на введення тексту
-nameInput.addEventListener('input', validateForm)
-reviewInput.addEventListener('input', validateForm)
+function submitForm(modal) {
+	const nameInput = modal.querySelector('.modal-name')
+	const reviewInput = modal.querySelector('.modal-review')
+	const selectedRating = modal.getAttribute('data-rating') || 0
 
-// Вивід даних у консоль при відправці
-submitBtn.addEventListener('click', () => {
 	console.log("Ім'я:", nameInput.value)
 	console.log('Відгук:', reviewInput.value)
 	console.log('Рейтинг:', selectedRating)
-	closeModal()
-})
 
-// Очистка форми після закриття
-function resetForm() {
-	nameInput.value = ''
-	reviewInput.value = ''
-	selectedRating = 0
-	updateStars(0)
-	validateForm()
+	closeModal(modal)
+}
+
+function resetForm(modal) {
+	modal.querySelector('.modal-name').value = ''
+	modal.querySelector('.modal-review').value = ''
+	modal.setAttribute('data-rating', 0)
+	updateStars(modal, 0)
+	validateForm(modal)
 }
