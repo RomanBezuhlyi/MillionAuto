@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/png" href="../img/favicon.png" />
+		<title>MillionAuto</title>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+		/>
+
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.1/nouislider.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+		/>
+		<link rel="stylesheet" href="./css/main.css" />
+	</head>
+	<body>
+		<header id="header" class="header-wrap container">
+	<div class="header">
+		<a class="header__logo" href="/../">
+			<img src="./img/logo-header.svg" alt="" />
+		</a>
+		<nav class="header__nav">
+			<a href="page-catalog.html">Автомобілі</a>
+			<a href="#">Послуги</a>
+			<a href="page-contact.html">Контакти</a>
+			<a href="#">Зателефонувати</a>
+			<div class="header__nav-opt">
+				<div class="header__nav-lang">
+					<a href="#"><img src="./img/united kingdom.svg" alt="" /> Ua</a>
+					<a class="active" href="#"
+						><img src="./img/ukraine.svg" alt="" /> En</a
+					>
+				</div>
+				<div class="header__nav-log none">
+					<a href="#">Вхід</a>
+				</div>
+			</div>
+		</nav>
+		<button class="header__burger mobile">
+			<img src="./img/icons/burger_menu_icon.svg" alt="" />
+		</button>
+	</div>
+</header>
+
+		<main><section class="car-wrap container">
+	<div class="breadcrumbs">
+		<span>Головна</span>
+		<img src="./img/icons/right_arrow_icon.svg" alt="" />
+		<span>Каталог автомобілів</span>
+		<img src="./img/icons/right_arrow_icon.svg" alt="" />
+		<span class="active">Land Rover Discovery Sport (ID: 208912021)</span>
+	</div>
+	<div class="car">
+		<div class="car__gallery">
+			<div class="car__preview">
+				<img class="car__preview-img" src="./img/car/car-1.jpg" alt="" />
+				<div class="car__list-nav">
+					<button class="car__button-prev" type="button">
+						<img src="./img/icons/swiper-arr-l.svg" alt="" />
+					</button>
+					<button class="car__button-next" type="button">
+						<img src="./img/icons/swiper-arr-r.svg" alt="" />
+					</button>
+				</div>
+				<button
+					class="car__zoom"
+					data-fancybox="gallery"
+					href="./img/car/car-1.jpg"
+				>
+					<img src="./img/icons/zoom_icon.svg" alt="" />
+				</button>
+			</div>
+			<ul class="car__list">
+				<li class="car__item active">
+					<img src="./img/car/car-1.jpg" alt="" />
+				</li>
+				<li class="car__item">
+					<img src="./img/car/car-2.jpg" alt="" />
+				</li>
+				<li class="car__item">
+					<img src="./img/car/car-3.jpg" alt="" />
+				</li>
+				<li class="car__item">
+					<img src="./img/car/car-4.jpg" alt="" />
+				</li>
+				<li class="car__item">
+					<img src="./img/car/car-5.jpg" alt="" />
+				</li>
+				<li class="car__item">
+					<img src="./img/car/car-6.jpg" alt="" />
+				</li>
+			</ul>
+		</div>
+		<div class="car__info">
+			<div class="car__info-wrap">
+				<div class="car__info-title">
+					<h2>Land Rover Discovery Sport</h2>
+					<a href="#"
+						><img src="./img/icons/entry_icon.svg" alt="" /> ЗАПИС НА
+						ТЕСТДРАЙВ</a
+					>
+				</div>
+				<button class="car__info-like" id="likeButton">
+					<img src="./img/icons/favorite_icon.svg" alt="" />
+					<img class="full" src="./img/icons/favorite_full_icon.svg" alt="" />
+				</button>
+			</div>
+			<ul class="car__info-list">
+				<li class="car__info-item">
+					<img src="./img/icons/calendar_icon.svg" alt="" />2021
+				</li>
+				<li class="car__info-item">
+					<img src="./img/icons/speed_icon.svg" alt="" />87 тис. км.
+				</li>
+				<li class="car__info-item">
+					<img src="./img/icons/car_body.svg" alt="" />SUV
+				</li>
+				<li class="car__info-item">
+					<img src="./img/icons/paint_icon.svg" alt="" />Чорний
+				</li>
+				<li class="car__info-item">
+					<img src="./img/icons/box-r.svg" alt="" />Автомат
+				</li>
+				<li class="car__info-item">
+					<img src="./img/icons/drive_icon.svg" alt="" />Повний
+				</li>
+				<li class="car__info-item">
+					<img src="./img/icons/enjine.svg" alt="" />Дизель 2 л.
+				</li>
+				<li class="car__info-item">
+					<img src="./img/icons/search_icon_g.svg" alt="" />У власника
+				</li>
+			</ul>
+			<span class="car__info-price">19 000 $</span>
+			<div class="car__info-btns">
+				<button class="primary" type="button">ПРИДБАТИ ЗАРАЗ</button>
+				<button class="outline" type="button">ЗАЛИШИТИ ЗАЯВКУ</button>
+			</div>
+		</div>
+	</div>
+</section>
+</main>
+		<footer id="footer" class="footer-wrap container">
+	<div class="footer footer-second desktop">
+		<ul class="footer__links">
+			<li class="footer__link">
+				<a href=""><img src="./img/icons/youtube_icon.svg" alt="" /></a>
+			</li>
+			<li class="footer__link">
+				<a href=""><img src="./img/icons/telegram_icon.svg" alt="" /></a>
+			</li>
+			<li class="footer__link">
+				<a href=""><img src="./img/icons/instagram_icon.svg" alt="" /></a>
+			</li>
+		</ul>
+		<a class="footer__logo" href="/../"
+			><img src="./img/logo-footer.svg" alt=""
+		/></a>
+		<div class="footer__contact">
+			<p style="margin-bottom: 16px">вул. Раїси Окіпної, 2, Київ, 02002</p>
+			<p>067 324 66 90</p>
+		</div>
+	</div>
+	<div class="footer mobile-col">
+		<a class="footer__logo" href="/../"
+			><img src="./img/logo-footer.svg" alt=""
+		/></a>
+		<ul class="footer__links">
+			<li class="footer__link">
+				<a href=""><img src="./img/icons/youtube_icon.svg" alt="" /></a>
+			</li>
+			<li class="footer__link">
+				<a href=""><img src="./img/icons/telegram_icon.svg" alt="" /></a>
+			</li>
+			<li class="footer__link">
+				<a href=""><img src="./img/icons/instagram_icon.svg" alt="" /></a>
+			</li>
+		</ul>
+		<p style="margin-bottom: 16px">вул. Раїси Окіпної, 2, Київ, 02002</p>
+		<p>067 324 66 90</p>
+	</div>
+	<div class="footer-description">
+		<a href="page-privacy.html">Юридична інформація</a>
+		<p>MILLIONAUTO 2024</p>
+	</div>
+</footer>
+
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://unpkg.com/imask"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.1/nouislider.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+		<script src="./js/index.bundle.js"></script>
+	</body>
+</html>
