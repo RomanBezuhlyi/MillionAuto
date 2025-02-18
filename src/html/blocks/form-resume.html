@@ -1,0 +1,135 @@
+<section
+	class="form-resume-wrap container"
+	data-aos="fade-up"
+	data-aos-offset="300"
+>
+	<div class="pre-title">
+		<p>ЗАЯВКА</p>
+	</div>
+	<h2 class="title">
+		<span>Залиште свою </span> заявку <br class="desktop" />
+		прямо зараз!
+	</h2>
+	<p class="sub-title">Не зволікай - приєднуйся!</p>
+	<form class="form-resume">
+		<div class="input">
+			<label class="label" for="name">Ім’я</label>
+			<input
+				id="name"
+				name="name"
+				type="text"
+				placeholder="Ваше Ім’я"
+				autocomplete="name"
+			/>
+		</div>
+		<div class="input">
+			<label class="label" for="phone-inputr">Номер телефону</label>
+			<input
+				id="phone"
+				name="phone"
+				type="text"
+				placeholder="+38 ХХХ ХХ ХХ ХХ"
+				autocomplete="tel"
+			/>
+		</div>
+		<div class="input">
+			<label class="label" for="phone-inputr">Email</label>
+			<input
+				id="email"
+				name="email"
+				type="email"
+				placeholder="Ваш Email"
+				autocomplete="email"
+			/>
+		</div>
+		<div class="dropdown">
+			<label class="label" for="drop">Вакансія</label>
+			<div class="input">
+				<input
+					id="vacancia"
+					readonly
+					type="text"
+					placeholder="Оберіть вакансію"
+					data-placeholder="Оберіть вакансію"
+				/>
+				<img
+					class="input-chev"
+					src="./img/icons/chevron_more_icon.svg"
+					alt=""
+				/>
+			</div>
+			<div class="dropdown-list">
+				<ul class="dropdown-items">
+					<li>Директор</li>
+					<li>Помічник директора</li>
+				</ul>
+			</div>
+		</div>
+		<button class="add-resume" type="button">
+			<img src="./img/icons/add_icon.svg" alt="" />
+			Додати резюме
+		</button>
+		<div class="upload-container">
+			<p class="file-name" id="file-name"></p>
+			<input type="file" id="file-input" accept=".pdf,.doc,.docx" />
+			<label for="file-input" class="file-label">ОБРАТИ</label>
+		</div>
+		<button class="primary form-resume-btn" type="submit" disabled>
+			НАДІСЛАТИ
+		</button>
+	</form>
+	<div class="form-resume__thank none">
+		<h5>Заявка успішно відправлена!</h5>
+		<p>Наш відділ кардрів розгляне вашу заявку в найближчий час</p>
+	</div>
+</section>
+<script>
+	document.addEventListener('DOMContentLoaded', function () {
+		const addResumeBtn = document.querySelector('.add-resume')
+		const uploadContainer = document.querySelector('.upload-container')
+		const fileInput = document.getElementById('file-input')
+		const fileNameDisplay = document.getElementById('file-name')
+		const fileLabel = document.querySelector('.file-label')
+		const submitButton = document.querySelector('.form-resume-btn')
+		const inputs = document.querySelectorAll(
+			'.form-resume input[type="text"], .form-resume input[type="email"]'
+		)
+
+		// Ховаємо upload-container при завантаженні сторінки
+		uploadContainer.style.display = 'none'
+
+		addResumeBtn.addEventListener('click', function (event) {
+			event.preventDefault() // Запобігає оновленню сторінки
+			uploadContainer.style.display = 'block'
+			addResumeBtn.style.display = 'none'
+		})
+
+		fileInput.addEventListener('change', function () {
+			if (this.files.length > 0) {
+				fileNameDisplay.textContent = this.files[0].name
+				fileLabel.textContent = 'ЗМІНИТИ'
+			} else {
+				fileNameDisplay.textContent = 'Файл не обрано'
+				fileLabel.textContent = 'ОБРАТИ'
+			}
+			checkFormValidity()
+		})
+
+		function checkFormValidity() {
+			let isValid = true
+			inputs.forEach(input => {
+				if (!input.value.trim()) {
+					isValid = false
+				}
+			})
+			if (!fileInput.files.length) {
+				isValid = false
+			}
+			submitButton.disabled = !isValid
+		}
+
+		inputs.forEach(input => {
+			input.addEventListener('input', checkFormValidity)
+		})
+	})
+</script>
