@@ -132,3 +132,23 @@ var swiper7 = new Swiper('.successSwiper', {
 		},
 	},
 })
+
+var swiper8 = new Swiper('.swiperCarPreview', {
+	navigation: {
+		nextEl: '.suc-button-next',
+		prevEl: '.suc-button-prev',
+	},
+	spaceBetween: 8,
+	slidesPerView: 1,
+	breakpoints: {
+		550: {
+			slidesPerView: 1.5,
+		},
+		768: {
+			slidesPerView: 2,
+		},
+		1100: {
+			slidesPerView: 6,
+		},
+	},
+})
