@@ -1,72 +1,46 @@
-Команда для установки всех пакетов:
-npm i gulp gulp-sass sass gulp-file-include gulp-clean gulp-server-livereload gulp-sourcemaps gulp-plumber gulp-notify gulp-group-css-media-queries --save-dev
+# README
 
-Описание пакетов:
-gulp - собственно Gulp
-gulp-sass - Сборка SASS / SCSS
-sass - Необходим для сборки SASS / SCSS
-gulp-file-include - Подключение файлов друг в друга. HTML include
-gulp-clean - Удаление файлов
-gulp-server-livereload - Сервер с автообновлением страницы
-gulp-sourcemaps - Исходные карты для CSS
-gulp-plumber - Фикс ошибок при сборке
-gulp-notify - Нотификации
-gulp-group-css-media-queries - Группировка CSS медиа запросов
+## Опис
+Цей проєкт використовує Gulp для автоматизації збірки веб-ресурсів. Він включає обробку HTML, CSS (SASS), зображень, шрифтів та JavaScript, а також підтримує live reload.
 
-----------------------------------------------------------------------
+## Встановлення
+1. Встановіть [Node.js](https://nodejs.org/).
+2. Встановіть залежності:
+   ```sh
+   npm install
+   ```
 
-Сборка скриптов. webpack, babel
+## Команди
+- **Запуск режиму розробки**
+  ```sh
+  npm run dev
+  ```
+  Ця команда запускає сервер розробки з автоматичним оновленням файлів.
 
-Установка babel:
-npm i gulp-babel @babel/core @babel/preset-env
+- **Збірка проєкту**
+  ```sh
+  npm run build
+  ```
+  Збирає оптимізовану версію проєкту.
 
-- JS таск
-- Настройки package-json
+- **Деплой на GitHub Pages**
+  ```sh
+  npm run deploy
+  ```
+  Будує проєкт і розгортає його на GitHub Pages.
 
-----------------------------------------------------------------------
+## Структура проєкту
+- `gulp/` – налаштування завдань Gulp.
+- `src/` – вихідні файли проєкту.
+- `build/` – зібрані файли (папка створюється після команди `build`).
 
-Установка webpack:
-npm i webpack-stream style-loader css-loader --save-dev
+## Вимоги
+- Node.js (версія 14+)
+- NPM або Yarn
 
-- JS таск
-- webpack конфиг
-- пример файлов с модулями
+## Автор
+Цю збірку створив Роман Безуглий(https://github.com/RomanBezuhlyi).
 
-Пример с datepicker:
-npm i air-datepicker -S
+## Ліцензія
+Цей проєкт розповсюджується під відкритою ліцензією.
 
-
-JS:
-import AirDatepicker from 'air-datepicker';
-import 'air-datepicker/air-datepicker.css';
-
-document.addEventListener('DOMContentLoaded', () => {
-	new AirDatepicker('#my-element');
-});
-
-HTML:
-<input type="text" id="my-element">
-
-----------------------------------------------------------------------
-
-Картинки:
-npm i gulp-imagemin@7 --save-dev
-
-.pipe(imagemin({ verbose: true }))
-
-
-----------------------------------------------------------------------
-
-Ускорение сборки
-
-npm install --save-dev gulp-changed
-
-- использование в картинках, HTML, JS, CSS
-
-
-----------------------------------------------------------------------
-
-
-web-p
-
-npm i gulp-webp gulp-webp-html gulp-webp-css --save-dev
