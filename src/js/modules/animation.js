@@ -17,4 +17,12 @@ document.addEventListener('DOMContentLoaded', function () {
 			}, 300)
 		})
 	})
+
+	// Додаємо обробник для події pageshow
+	window.addEventListener('pageshow', function (event) {
+		if (event.persisted) {
+			// Якщо сторінка була завантажена з кешу
+			document.body.classList.remove('fade-out')
+		}
+	})
 })
