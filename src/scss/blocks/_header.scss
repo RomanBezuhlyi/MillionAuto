@@ -1,11 +1,9 @@
 .header-wrap {
-	@media (max-width: 991px) {
-		position: sticky;
-		left: 0;
-		top: 0;
-		z-index: 10;
-		background-color: $bg;
-	}
+	position: sticky;
+	left: 0;
+	top: 0;
+	z-index: 10;
+	background-color: $bg;
 }
 .header {
 	@include flex(row, space-between, center);

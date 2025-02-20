@@ -5,7 +5,7 @@ var swiper1 = new Swiper('.servicesSwiper', {
 	},
 	spaceBetween: 16,
 	slidesPerView: 1,
-
+	grabCursor: true,
 	breakpoints: {
 		768: {
 			slidesPerView: 2,
@@ -20,6 +20,7 @@ var swiper2 = new Swiper('.reviewsSwiper1', {
 	},
 	spaceBetween: 16,
 	slidesPerView: 1,
+	grabCursor: true,
 	breakpoints: {
 		768: {
 			slidesPerView: 2,
@@ -40,6 +41,7 @@ var swiper3 = new Swiper('.reviewsSwiper2', {
 	},
 	spaceBetween: 16,
 	slidesPerView: 1,
+	grabCursor: true,
 	breakpoints: {
 		768: {
 			slidesPerView: 2,
@@ -60,6 +62,7 @@ var swiper4 = new Swiper('.reviewsSwiper3', {
 	},
 	spaceBetween: 16,
 	slidesPerView: 1,
+	grabCursor: true,
 	breakpoints: {
 		768: {
 			slidesPerView: 2,
@@ -80,6 +83,8 @@ var swiper5 = new Swiper('.autoSwiper', {
 	},
 	spaceBetween: 16,
 	slidesPerView: 1.2,
+	grabCursor: true,
+	loop: true,
 	breakpoints: {
 		600: {
 			slidesPerView: 2.5,
@@ -100,6 +105,7 @@ var swiper6 = new Swiper('.vacanciesSwiper', {
 	},
 	spaceBetween: 16,
 	slidesPerView: 1,
+	grabCursor: true,
 	breakpoints: {
 		600: {
 			slidesPerView: 2,
@@ -120,6 +126,7 @@ var swiper7 = new Swiper('.successSwiper', {
 	},
 	spaceBetween: 16,
 	slidesPerView: 1,
+	grabCursor: true,
 	breakpoints: {
 		550: {
 			slidesPerView: 1.5,
@@ -134,21 +141,30 @@ var swiper7 = new Swiper('.successSwiper', {
 })
 
 var swiper8 = new Swiper('.swiperCarPreview', {
-	navigation: {
-		nextEl: '.suc-button-next',
-		prevEl: '.suc-button-prev',
-	},
 	spaceBetween: 8,
-	slidesPerView: 1,
+	slidesPerView: 4,
+	grabCursor: true,
 	breakpoints: {
+		450: {
+			slidesPerView: 5,
+		},
 		550: {
-			slidesPerView: 1.5,
+			slidesPerView: 6,
+		},
+		700: {
+			slidesPerView: 7,
 		},
 		768: {
-			slidesPerView: 2,
+			slidesPerView: 8,
 		},
-		1100: {
+		991: {
 			slidesPerView: 6,
 		},
 	},
+})
+
+var swiper9 = new Swiper('.swiperTabs', {
+	spaceBetween: 0,
+	slidesPerView: 'auto',
+	grabCursor: true,
 })

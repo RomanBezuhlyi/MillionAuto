@@ -35,9 +35,9 @@ document.addEventListener('DOMContentLoaded', function () {
 	})
 
 	updateActiveItem()
-})
-const likeButton = document.getElementById('likeButton')
 
-likeButton.addEventListener('click', function () {
-	this.classList.toggle('like') // Додає або знімає клас "like"
+	const likeButton = document.getElementById('likeButton')
+	likeButton.addEventListener('click', function () {
+		this.classList.toggle('like')
+	})
 })
