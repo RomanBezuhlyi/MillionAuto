@@ -1,0 +1,85 @@
+<section class="signin-wrap">
+	<img
+		src="./img/carbon-1-cabinet.svg"
+		alt="image"
+		class="signin-wrap__bg-left"
+		loading="lazy"
+	/>
+	<img
+		src="./img/carbon-2-cabinet.svg"
+		alt="image"
+		class="signin-wrap__bg-right"
+		loading="lazy"
+	/>
+	<div class="container">
+		<div class="signin">
+			<h4>Вхід</h4>
+			<div class="signin__error none">
+				<p>Невірний пароль. Спрбуйте знову</p>
+			</div>
+			<form class="signin__form" action="login">
+				<label class="label" for="email">Email</label>
+				<input
+					id="email"
+					type="email"
+					class="input-primary"
+					placeholder="Ваш Email"
+					required
+					style="margin-bottom: 16px"
+				/>
+				<label class="label">Пароль</label>
+				<div class="password" for="password" style="margin-bottom: 16px">
+					<input
+						type="password"
+						id="password"
+						class="password-input"
+						placeholder="Ваш пароль"
+						required
+					/>
+					<img
+						id="togglePassword"
+						class="password-icon"
+						src="./img/icons/eye.svg"
+						alt="image"
+						loading="lazy"
+					/>
+				</div>
+				<div class="flex-between" style="margin-bottom: 24px">
+					<label class="checkbox">
+						<input type="checkbox" id="customCheckbox" />
+						<div class="custom-box">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="25"
+								viewBox="0 0 24 25"
+								fill="none"
+							>
+								<path
+									d="M9.5501 18.5L3.8501 12.8L5.2751 11.375L9.5501 15.65L18.7251 6.475L20.1501 7.9L9.5501 18.5Z"
+								/>
+							</svg>
+						</div>
+						<span>Запам’ятати мене</span>
+					</label>
+					<a href="#" class="forget-pass">Забув пароль</a>
+				</div>
+				<button class="primary" id="submitBtn" disabled>УВІЙТИ</button>
+			</form>
+			<div class="signin__alternative">
+				<span></span>
+				<p>чи скористайтесь</p>
+				<span></span>
+			</div>
+			<ul class="signin__list">
+				<li class="signin__list-item">
+					<a href="#"><img src="./img/googlelogo_icon.svg" alt="" /></a>
+				</li>
+				<li class="signin__list-item">
+					<a href="#"><img src="./img/apple_icon.svg" alt="" /></a>
+				</li>
+			</ul>
+			<p class="signin__reg">Ще немає аккаунта? <a href="#">Реєстрація</a></p>
+		</div>
+	</div>
+</section>

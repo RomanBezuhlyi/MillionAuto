@@ -163,3 +163,7 @@
 		opacity: 1;
 	}
 }
+.flex-between {
+	@include flex(row, space-between, center);
+	width: 100%;
+}
