@@ -1,0 +1,116 @@
+<section class="registr-wrap">
+	<img
+		src="./img/carbon-1-cabinet.svg"
+		alt="image"
+		class="registr-wrap__bg-left"
+		loading="lazy"
+	/>
+	<img
+		src="./img/carbon-2-cabinet.svg"
+		alt="image"
+		class="registr-wrap__bg-right"
+		loading="lazy"
+	/>
+	<div class="container">
+		<div class="registr">
+			<h4>Реєстрація</h4>
+			<ul class="registr__list">
+				<li class="registr__list-item">
+					<a href="#"><img src="./img/googlelogo_icon.svg" alt="" /></a>
+				</li>
+				<li class="registr__list-item">
+					<a href="#"><img src="./img/apple_icon.svg" alt="" /></a>
+				</li>
+			</ul>
+			<div class="registr__alternative">
+				<span></span>
+				<p>чи заповніть дані</p>
+				<span></span>
+			</div>
+			<div class="registr__error none">
+				<p>Незадовільний пароль</p>
+			</div>
+			<form class="registr__form" action="login">
+				<label class="label" for="name">Ім’я</label>
+				<input
+					id="name"
+					type="text"
+					class="input-primary"
+					placeholder="Ваше Ім’я"
+					required
+					style="margin-bottom: 16px"
+				/>
+				<label class="label" for="email">Email*</label>
+				<input
+					id="email"
+					type="email"
+					class="input-primary"
+					placeholder="Ваш Email"
+					required
+					style="margin-bottom: 16px"
+				/>
+				<label class="label" for="password">Пароль*</label>
+				<div class="password" style="margin-bottom: 16px">
+					<input
+						type="password"
+						id="password"
+						class="password-input"
+						placeholder="Ваш пароль"
+						required
+					/>
+					<img
+						id="togglePassword"
+						class="password-icon"
+						src="./img/icons/eye.svg"
+						alt="image"
+						loading="lazy"
+					/>
+				</div>
+				<label class="label" for="password-rpt">Підтвердити пароль*</label>
+				<div class="password" style="margin-bottom: 16px">
+					<input
+						type="password"
+						id="password-rpt"
+						class="password-input"
+						placeholder="Ваш пароль"
+						required
+					/>
+					<img
+						id="togglePassword"
+						class="password-icon"
+						src="./img/icons/eye.svg"
+						alt="image"
+						loading="lazy"
+					/>
+				</div>
+				<p class="pass-rule">
+					Ваш пароль повинен бути мінімум 8 символів, включаючи літери та цифри
+				</p>
+				<label class="checkbox">
+					<input type="checkbox" id="customCheckbox" />
+					<div class="custom-box">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="24"
+							height="25"
+							viewBox="0 0 24 25"
+							fill="none"
+						>
+							<path
+								d="M9.5501 18.5L3.8501 12.8L5.2751 11.375L9.5501 15.65L18.7251 6.475L20.1501 7.9L9.5501 18.5Z"
+							/>
+						</svg>
+					</div>
+					<span
+						>Я погоджуюсь з умовами використання та політикою
+						конфіденційності</span
+					>
+				</label>
+				<button class="primary" id="regBtn" disabled>ЗАРЕЄСТРУВАТИСЯ</button>
+			</form>
+			<p class="registr__reg">
+				Вже є аккаунт? <a href="page-signin.html">Вхід</a>
+			</p>
+		</div>
+	</div>
+</section>

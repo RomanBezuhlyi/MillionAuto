@@ -1,0 +1,133 @@
+.registr-wrap {
+	position: relative;
+	&__bg-left {
+		position: absolute;
+		left: 0;
+		top: 148px;
+		@media (max-width: 991px) {
+			display: none;
+		}
+	}
+	&__bg-right {
+		position: absolute;
+		right: 0;
+		top: 148px;
+		@media (max-width: 991px) {
+			display: none;
+		}
+	}
+}
+.registr {
+	margin: 154px auto;
+	width: 380px;
+	@include flex(column, center, center);
+	padding: 32px;
+	border-radius: 16px;
+	background: #191919;
+	box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.1);
+	@media (max-width: 480px) {
+		margin: 24px 0;
+		width: 100%;
+		padding: 24px;
+	}
+	h4 {
+		text-align: center;
+		font-size: 28px;
+		font-weight: 700;
+		line-height: normal;
+		margin-bottom: 32px;
+		@media (max-width: 991px) {
+			font-size: 23px;
+		}
+	}
+	&__form {
+		width: 100%;
+		@include flex(column, flex-start, flex-start);
+	}
+	.pass-rule {
+		color: #fff0d3;
+		font-size: 14px;
+		line-height: 17.5px;
+		margin-bottom: 16px;
+	}
+	.primary {
+		width: 100%;
+		margin: 16px 0 40px 0;
+	}
+	.primary:disabled {
+		background: #5c4d30;
+		box-shadow: none;
+	}
+
+	&__alternative {
+		width: 100%;
+		@include flex(row, center, center);
+		margin-bottom: 24px;
+		gap: 8px;
+		p {
+			color: #fffaf1;
+			font-weight: 500;
+			line-height: normal;
+		}
+		span {
+			display: block;
+			width: 25%;
+			height: 1px;
+			background: #2b2b2b;
+		}
+	}
+
+	.checkbox {
+		align-items: flex-start;
+	}
+
+	&__list {
+		@include flex(row, center, center);
+		gap: 24px;
+		margin-bottom: 16px;
+	}
+	&__list-item {
+		@include flex(row, center, center);
+		a {
+			@include flex(row, center, center);
+			border-radius: 50px;
+			border: 1px solid $accent;
+			background: #131313;
+			width: 48px;
+			height: 48px;
+			padding: 8px;
+		}
+	}
+	&__reg {
+		text-align: center;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		@media (max-width: 991px) {
+			font-size: 14px;
+			line-height: 17.5px;
+		}
+		a {
+			color: $accent;
+			font-style: normal;
+			font-weight: 400;
+			text-decoration-line: underline;
+			text-decoration-style: dotted;
+			text-decoration-skip-ink: auto;
+			text-decoration-thickness: auto;
+			text-underline-offset: 25%;
+			text-underline-position: from-font;
+		}
+	}
+	&__error {
+		width: 100%;
+		padding: 8px 16px;
+		border-radius: 8px;
+		background: #b93b3d;
+		margin-bottom: 24px;
+		@media (max-width: 991px) {
+			font-size: 12px;
+		}
+	}
+}

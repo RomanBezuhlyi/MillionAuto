@@ -16,16 +16,5 @@ function checkFields() {
 emailInput.addEventListener('input', checkFields)
 passwordInput.addEventListener('input', checkFields)
 
-// Логіка для показу/приховування пароля
-togglePassword.addEventListener('click', function () {
-	const type =
-		passwordInput.getAttribute('type') === 'password' ? 'text' : 'password'
-	passwordInput.setAttribute('type', type)
-
-	const eyeIcon =
-		type === 'password' ? './img/icons/eye.svg' : './img/icons/eye_off_icon.svg'
-	togglePassword.setAttribute('src', eyeIcon)
-})
-
 // Викликаємо функцію на початку, щоб ініціалізувати стан кнопки
 checkFields()
