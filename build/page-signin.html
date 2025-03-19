@@ -66,7 +66,7 @@
 </header>
 
 <main>
-	<section class="signin-wrap">
+	<section class="signin-wrap" data-aos="fade">
 	<img
 		src="./img/carbon-1-cabinet.svg"
 		alt="image"
@@ -80,7 +80,7 @@
 		loading="lazy"
 	/>
 	<div class="container">
-		<div class="signin">
+		<div class="signin auth-block">
 			<h4>Вхід</h4>
 			<div class="signin__error none">
 				<p>Невірний пароль. Спрбуйте знову</p>
@@ -151,8 +151,108 @@
 				Ще немає аккаунта? <a href="page-registration.html">Реєстрація</a>
 			</p>
 		</div>
+		<div class="succes-block auth-block none">
+			<h4>Успіх</h4>
+			<p>
+				Перевірте свою потову скриньку <a href="#">simplemail@simple.domain</a>.
+				Ми надіслали вам електронного листа з інструкцією про те, як змінити
+				пароль
+			</p>
+			<button class="primary succes-block__btn">OK</button>
+		</div>
+		<div class="recov-block auth-block none">
+			<h4>Відновлення пароля</h4>
+			<p>Введіть вашу поштову адресу або номер телефону</p>
+			<p class="recov-block__error none">Такого користувача не існує</p>
+			<label class="label" for="recov">Email</label>
+			<input
+				data-recov
+				id="recov"
+				type="email"
+				class="input-primary"
+				required
+				placeholder="Ваш Email"
+				style="margin-bottom: 24px"
+			/>
+			<button class="primary recov-block__btn" disabled>ОТРИМАТИ</button>
+			<button class="recov-block__btn-back">ДО ВХОДУ</button>
+		</div>
+		<div class="change-pass-block auth-block none">
+			<h4>Зміна пароля</h4>
+			<div class="change-pass-block__error none">
+				<p>Паролі не збігаються</p>
+			</div>
+			<label class="label" for="password">Пароль*</label>
+			<div class="password" style="margin-bottom: 16px">
+				<input
+					type="password"
+					id="password"
+					class="password-input"
+					placeholder="Ваш пароль"
+					required
+				/>
+				<img
+					id="togglePassword"
+					class="password-icon"
+					src="./img/icons/eye.svg"
+					alt="image"
+					loading="lazy"
+				/>
+			</div>
+			<label class="label" for="password-rpt">Підтвердити пароль*</label>
+			<div class="password" style="margin-bottom: 16px">
+				<input
+					type="password"
+					id="password-rpt"
+					class="password-input"
+					placeholder="Ваш пароль"
+					required
+				/>
+				<img
+					id="togglePassword"
+					class="password-icon"
+					src="./img/icons/eye.svg"
+					alt="image"
+					loading="lazy"
+				/>
+			</div>
+			<p class="pass-rule">
+				Ваш пароль повинен бути мінімум 8 символів, включаючи літери та цифри
+			</p>
+			<button class="primary change-pass-block__btn" disabled>ЗМІНИТИ</button>
+		</div>
 	</div>
 </section>
+<script>
+	document.addEventListener('DOMContentLoaded', function () {
+		const input = document.querySelector('[data-recov]')
+		const button = document.querySelector('.recov-block__btn')
+
+		input.addEventListener('input', function () {
+			const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/ // Перевірка email
+			button.disabled = !emailPattern.test(input.value)
+		})
+	})
+
+	document.addEventListener('DOMContentLoaded', function () {
+		const form = document.querySelector('.change-pass-block')
+		const inputs = form.querySelectorAll('input')
+		const button = form.querySelector('button')
+
+		function toggleButtonState() {
+			// Перевіряємо, чи всі поля заповнені
+			const allFilled = [...inputs].every(input => input.value.trim() !== '')
+
+			// Увімкнути кнопку, якщо всі поля заповнені, і вимкнути, якщо ні
+			button.disabled = !allFilled
+		}
+
+		// Додаємо обробник події для кожного інпуту
+		inputs.forEach(input => {
+			input.addEventListener('input', toggleButtonState)
+		})
+	})
+</script>
 
 </main>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
