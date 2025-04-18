@@ -4,15 +4,22 @@ document.addEventListener('DOMContentLoaded', function () {
 	let activeIndex = 0
 
 	function updateActiveItem() {
+		if (carItems.length === 0 || activeIndex >= carItems.length) {
+			return
+		}
+
 		carItems.forEach(item => item.classList.remove('active'))
 		carItems[activeIndex].classList.add('active')
+
 		carPreviewImg.src = carItems[activeIndex].querySelector('img').src
 
 		const zoomButton = document.querySelector('.car__zoom')
-		zoomButton.setAttribute(
-			'href',
-			carItems[activeIndex].querySelector('img').src
-		)
+		if (zoomButton) {
+			zoomButton.setAttribute(
+				'href',
+				carItems[activeIndex].querySelector('img').src
+			)
+		}
 	}
 
 	carItems.forEach((item, index) => {
@@ -23,21 +30,27 @@ document.addEventListener('DOMContentLoaded', function () {
 	})
 
 	const nextButton = document.querySelector('.car__button-next')
-	nextButton.addEventListener('click', function () {
-		activeIndex = (activeIndex + 1) % carItems.length
-		updateActiveItem()
-	})
+	if (nextButton) {
+		nextButton.addEventListener('click', function () {
+			activeIndex = (activeIndex + 1) % carItems.length
+			updateActiveItem()
+		})
+	}
 
 	const prevButton = document.querySelector('.car__button-prev')
-	prevButton.addEventListener('click', function () {
-		activeIndex = (activeIndex - 1 + carItems.length) % carItems.length
-		updateActiveItem()
-	})
+	if (prevButton) {
+		prevButton.addEventListener('click', function () {
+			activeIndex = (activeIndex - 1 + carItems.length) % carItems.length
+			updateActiveItem()
+		})
+	}
 
 	updateActiveItem()
 
 	const likeButton = document.getElementById('likeButton')
-	likeButton.addEventListener('click', function () {
-		this.classList.toggle('like')
-	})
+	if (likeButton) {
+		likeButton.addEventListener('click', function () {
+			this.classList.toggle('like')
+		})
+	}
 })

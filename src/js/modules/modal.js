@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	})
 
 	document.body.addEventListener('input', event => {
-		if (event.target.matches('.modal-name, .modal-review')) {
+		if (event.target.matches('.input-primary, .textarea-primary')) {
 			validateForm(event.target.closest('.modal'))
 		}
 	})
@@ -58,8 +58,8 @@ function updateStars(modal, rating) {
 }
 
 function validateForm(modal) {
-	const nameInput = modal.querySelector('.modal-name')
-	const reviewInput = modal.querySelector('.modal-review')
+	const nameInput = modal.querySelector('.input-primary')
+	const reviewInput = modal.querySelector('.textarea-primary')
 	const submitBtn = modal.querySelector('[data-submit-modal]')
 	const selectedRating = modal.getAttribute('data-rating') || 0
 
@@ -77,8 +77,8 @@ function validateForm(modal) {
 }
 
 function submitForm(modal) {
-	const nameInput = modal.querySelector('.modal-name')
-	const reviewInput = modal.querySelector('.modal-review')
+	const nameInput = modal.querySelector('.input-primary')
+	const reviewInput = modal.querySelector('.textarea-primary')
 	const selectedRating = modal.getAttribute('data-rating') || 0
 
 	console.log("Ім'я:", nameInput.value)
@@ -89,8 +89,8 @@ function submitForm(modal) {
 }
 
 function resetForm(modal) {
-	modal.querySelector('.modal-name').value = ''
-	modal.querySelector('.modal-review').value = ''
+	modal.querySelector('.input-primary').value = ''
+	modal.querySelector('.textarea-primary').value = ''
 	modal.setAttribute('data-rating', 0)
 	updateStars(modal, 0)
 	validateForm(modal)

@@ -1,3 +1,19 @@
+var swiper1 = new Swiper('.mainSwiper', {
+	spaceBetween: 32,
+	slidesPerView: 1,
+	grabCursor: true,
+	loop: true,
+	autoplay: {
+		delay: 3000,
+		disableOnInteraction: false,
+	},
+	breakpoints: {
+		991: {
+			spaceBetween: 56,
+		},
+	},
+})
+
 var swiper1 = new Swiper('.servicesSwiper', {
 	navigation: {
 		nextEl: '.services-button-next',

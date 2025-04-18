@@ -69,21 +69,29 @@ document.addEventListener('DOMContentLoaded', () => {
 		dropdowns.forEach(dropdown => {
 			const dropdownList = dropdown.querySelector('.dropdown-list')
 			const arrowIcon = dropdown.querySelector('.input-chev')
-			if (!dropdown.contains(event.target)) {
-				dropdownList.classList.remove('open')
-				arrowIcon.classList.remove('rotate')
+
+			// Перевіряємо, чи існують елементи перед маніпуляцією з classList
+			if (dropdownList && arrowIcon) {
+				if (!dropdown.contains(event.target)) {
+					dropdownList.classList.remove('open')
+					arrowIcon.classList.remove('rotate')
+				}
 			}
 		})
 	})
 
-	document.getElementById('reset-button').addEventListener('click', () => {
-		document.querySelectorAll('.buy__form input').forEach(input => {
-			input.value = ''
-			if (input.hasAttribute('data-placeholder')) {
-				input.placeholder = input.getAttribute('data-placeholder')
-			}
+	if (document.getElementById('reset-button')) {
+		document.getElementById('reset-button').addEventListener('click', () => {
+			document.querySelectorAll('.buy__form input').forEach(input => {
+				input.value = ''
+				if (input.hasAttribute('data-placeholder')) {
+					input.placeholder = input.getAttribute('data-placeholder')
+				}
+			})
 		})
-	})
+	} else {
+		return
+	}
 
 	const form = document.getElementById('buy-form')
 	form.addEventListener('submit', event => {

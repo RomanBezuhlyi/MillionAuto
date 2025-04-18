@@ -563,7 +563,7 @@
 				</button>
 			</div>
 		</div>
-		<button id="openModal" class="primary reviews__list-btn">
+		<button data-open-modal="modal" class="primary reviews__list-btn">
 			ЗАЛИШИТИ ВІДГУК
 		</button>
 	</div>
@@ -620,8 +620,10 @@
 		</div>
 
 		<div class="modal-buttons">
-			<button id="closeModal" class="outline modal-cancel">Скасувати</button>
-			<button id="submitModal" class="primary modal-submit" disabled>
+			<button data-close-modal="modal" class="outline modal-cancel">
+				Скасувати
+			</button>
+			<button data-submit-modal="modal" class="primary modal-submit" disabled>
 				Відправити
 			</button>
 		</div>

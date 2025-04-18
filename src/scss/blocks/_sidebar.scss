@@ -1,0 +1,33 @@
+.sidebar {
+	width: 300px;
+	height: calc(100vh - 65px);
+	border-right: 1px solid #2b2b2b;
+	padding: 16px 0;
+	@include flex(column, space-between, flex-start);
+
+	&__list {
+		@include flex(column, flex-start, flex-start);
+	}
+	&__list-item {
+		a {
+			@include flex(row, center, center);
+			gap: 16px;
+			padding: 16px 32px 16px 8px;
+
+			color: #bababa;
+			font-size: 18px;
+			font-weight: 400;
+			line-height: normal;
+		}
+		&:hover {
+			a {
+				color: $accent;
+			}
+		}
+		&.active {
+			a {
+				color: $accent;
+			}
+		}
+	}
+}

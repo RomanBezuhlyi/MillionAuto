@@ -7,10 +7,14 @@ document.addEventListener('DOMContentLoaded', function () {
 	const noteInput = document.getElementById('modal-note')
 	const submitModalBuy = document.getElementById('submitModalBuy')
 
-	openModalBtn.addEventListener('click', () => {
-		modalBuy.style.display = 'block'
-		document.body.style.overflow = 'hidden'
-	})
+	if (!openModalBtn) {
+		return
+	} else {
+		openModalBtn.addEventListener('click', () => {
+			modalBuy.style.display = 'block'
+			document.body.style.overflow = 'hidden'
+		})
+	}
 
 	closeModalBuy.addEventListener('click', () => {
 		modalBuy.style.display = 'none'

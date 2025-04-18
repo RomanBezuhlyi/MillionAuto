@@ -9,6 +9,11 @@
 		padding-top: 77px;
 	}
 }
+.hero-wrap.container {
+	@media (max-width: 991px) {
+		padding: 0;
+	}
+}
 .hero {
 	@include flex(row, space-between, center);
 	gap: 54px;
@@ -18,21 +23,13 @@
 	&__img {
 		max-width: 50%;
 	}
-	&__img-mobile--left {
-		@media (max-width: 991px) {
-			margin-left: -16px;
-		}
-	}
-	&__img-mobile--right {
-		@media (max-width: 991px) {
-			margin-left: auto;
-			margin-right: -16px;
-		}
-	}
 	&__card {
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
+		@media (max-width: 991px) {
+			padding: 0 16px;
+		}
 		h4 {
 			color: $accent;
 			font-size: 28px;
@@ -50,6 +47,11 @@
 			line-height: normal;
 			margin-bottom: 24px;
 		}
+		a {
+			@media (max-width: 991px) {
+				box-shadow: none;
+			}
+		}
 	}
 	.left {
 		align-items: flex-start;
@@ -62,5 +64,22 @@
 			align-items: flex-start;
 			text-align: left;
 		}
+	}
+}
+.hero.left {
+	align-items: flex-start;
+}
+.hero.right {
+	align-items: flex-end;
+}
+
+.mainSwiper {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	padding: 0 30px;
+	@media (max-width: 991px) {
+		padding: 0;
 	}
 }

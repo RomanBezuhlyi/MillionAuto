@@ -71,44 +71,10 @@
 </section>
 
 <script>
-	// Слайдер суми кредиту
-	var sumSlider = document.getElementById('sumSlider')
-	var sumInput = document.getElementById('sumInput')
-
-	noUiSlider.create(sumSlider, {
-		start: 320000,
-		connect: [true, false],
-		range: { min: 20000, max: 1000000 },
-		step: 10000,
-		format: {
-			to: value => Math.round(value).toLocaleString('uk-UA'),
-			from: value => Number(value.replace(/\s/g, '')),
-		},
-	})
-
-	sumSlider.noUiSlider.on('update', function (values) {
-		sumInput.value = values[0]
-	})
-
-	// Слайдер терміну кредиту
-	var termSlider = document.getElementById('termSlider')
-	var termInput = document.getElementById('termInput')
-
-	noUiSlider.create(termSlider, {
-		start: 8,
-		connect: [true, false],
-		range: { min: 6, max: 36 },
-		step: 1,
-	})
-
-	termSlider.noUiSlider.on('update', function (values) {
-		termInput.value = values[0]
-	})
-
 	// Функція розрахунку платежу
 	function calculatePayment() {
-		let P = Number(sumInput.value.replace(/\s/g, '')) // Сума кредиту
-		let n = Number(termInput.value) // Кількість місяців
+		let P = Number(document.getElementById('sumInput').value.replace(/\s/g, '')) // Сума кредиту
+		let n = Number(document.getElementById('termInput').value) // Кількість місяців
 		let annualRate = Number(document.getElementById('rateInput').value) // Річна ставка
 		let r = annualRate / 12 / 100 // Місячна ставка
 
@@ -120,4 +86,40 @@
 			document.getElementById('paymentOutput').value = 'Помилка'
 		}
 	}
+
+	document.addEventListener('DOMContentLoaded', () => {
+		// Слайдер суми кредиту
+		var sumSlider = document.getElementById('sumSlider')
+		var sumInput = document.getElementById('sumInput')
+
+		noUiSlider.create(sumSlider, {
+			start: 320000,
+			connect: [true, false],
+			range: { min: 20000, max: 1000000 },
+			step: 10000,
+			format: {
+				to: value => Math.round(value).toLocaleString('uk-UA'),
+				from: value => Number(value.replace(/\s/g, '')),
+			},
+		})
+
+		sumSlider.noUiSlider.on('update', function (values) {
+			sumInput.value = values[0]
+		})
+
+		// Слайдер терміну кредиту
+		var termSlider = document.getElementById('termSlider')
+		var termInput = document.getElementById('termInput')
+
+		noUiSlider.create(termSlider, {
+			start: 8,
+			connect: [true, false],
+			range: { min: 6, max: 36 },
+			step: 1,
+		})
+
+		termSlider.noUiSlider.on('update', function (values) {
+			termInput.value = values[0]
+		})
+	})
 </script>

@@ -1,28 +1,27 @@
 document.addEventListener('DOMContentLoaded', function () {
 	const inputs = document.querySelectorAll('.catalog__filter input')
 	const dropdownItems = document.querySelectorAll('.dropdown-items li')
-	const submitButton = document.querySelector('.catalog__filter-btn')
+	const catalogFilterBtn = document.querySelector('.catalog__filter-btn')
 	const resetButton = document.getElementById('reset-filter')
 
-	// Функція для перевірки введених даних
-	function checkInputs() {
-		let isEmpty = true
+	if (!catalogFilterBtn) {
+		return
+	} else {
+		function checkInputs() {
+			let isEmpty = true
 
-		// Перевіряємо, чи є введені дані в інпутах
-		inputs.forEach(input => {
-			if (input.value.trim() !== '') {
-				isEmpty = false
+			inputs.forEach(input => {
+				if (input.value.trim() !== '') {
+					isEmpty = false
+				}
+			})
+
+			catalogFilterBtn.disabled = isEmpty
+
+			// Показуємо/ховаємо кнопку "Ресет"
+			if (resetButton) {
+				resetButton.classList.toggle('none', isEmpty)
 			}
-		})
-
-		// Активуємо/деактивуємо кнопку "Знайти"
-		submitButton.disabled = isEmpty
-
-		// Показуємо/ховаємо кнопку "Ресет"
-		if (isEmpty) {
-			resetButton.classList.add('none')
-		} else {
-			resetButton.classList.remove('none')
 		}
 	}
 
@@ -60,15 +59,17 @@ document.addEventListener('DOMContentLoaded', function () {
 	const filterCloseBtn = document.querySelector('.catalog__filter-wrap button')
 	const body = document.body
 
+	if (!filterWrap || !filterToggleBtn || !filterCloseBtn) {
+		return
+	}
+
 	function toggleFilter() {
 		if (!filterWrap.classList.contains('show')) {
-			// Зберігаємо поточне положення прокрутки
 			body.dataset.scrollY = window.scrollY
 			filterWrap.style.top = `${window.scrollY}px`
 			body.style.top = `-${window.scrollY}px`
 			body.classList.add('filter-open')
 		} else {
-			// Відновлюємо скрол після закриття
 			body.classList.remove('filter-open')
 			window.scrollTo(0, parseInt(body.dataset.scrollY || '0'))
 			body.style.top = ''
