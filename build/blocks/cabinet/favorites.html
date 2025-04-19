@@ -1,0 +1,406 @@
+<div class="profile">
+	<!-- header will be here -->
+
+	<div class="profile__body">
+		<div class="profile__grid">
+			<!-- nav -->
+			<aside class="profile__grid-aside">
+				<a href="page-my-info.html" class="profile-nav">
+					<span class="profile-nav__icon">
+						<img
+							src="./img/cabinet/profile-nav/info.svg"
+							width="24"
+							height="24"
+							alt=""
+						/>
+					</span>
+					<span class="profile-nav__txt">Моя інформація</span>
+				</a>
+
+				<a href="page-my-autos.html" class="profile-nav">
+					<span class="profile-nav__icon">
+						<img
+							src="./img/cabinet/profile-nav/car.svg"
+							width="24"
+							height="24"
+							alt=""
+						/>
+					</span>
+					<span class="profile-nav__txt">Мої автомобілі</span>
+				</a>
+
+				<a href="page-messages.html" class="profile-nav">
+					<span class="profile-nav__icon">
+						<img
+							src="./img/cabinet/profile-nav/bell.svg"
+							width="24"
+							height="24"
+							alt=""
+						/>
+					</span>
+					<span class="profile-nav__txt">Повідомлення</span>
+				</a>
+
+				<a href="page-favorites.html" class="profile-nav is-current">
+					<span class="profile-nav__icon">
+						<img
+							src="./img/cabinet/profile-nav/favorite.svg"
+							width="24"
+							height="24"
+							alt=""
+						/>
+					</span>
+					<span class="profile-nav__txt">Обрані автомобілі</span>
+				</a>
+
+				<a href="page-sell.html" class="profile-nav">
+					<span class="profile-nav__icon">
+						<img
+							src="./img/cabinet/profile-nav/sell.svg"
+							width="24"
+							height="24"
+							alt=""
+						/>
+					</span>
+					<span class="profile-nav__txt">Продати авто</span>
+				</a>
+
+				<a href="page-leasing.html" class="profile-nav">
+					<span class="profile-nav__icon">
+						<img
+							src="./img/cabinet/profile-nav/key.svg"
+							width="24"
+							height="24"
+							alt=""
+						/>
+					</span>
+					<span class="profile-nav__txt">Лізінг</span>
+				</a>
+
+				<a href="page-pownshop.html" class="profile-nav">
+					<span class="profile-nav__icon">
+						<img
+							src="./img/cabinet/profile-nav/coin.svg"
+							width="24"
+							height="24"
+							alt=""
+						/>
+					</span>
+					<span class="profile-nav__txt">Ломбард</span>
+				</a>
+
+				<a href="#" class="profile-nav">
+					<span class="profile-nav__icon">
+						<img
+							src="./img/cabinet/profile-nav/help.svg"
+							width="24"
+							height="24"
+							alt=""
+						/>
+					</span>
+					<span class="profile-nav__txt">Допомога</span>
+				</a>
+
+				<a href="#" class="profile-nav profile-nav_mt">
+					<span class="profile-nav__icon">
+						<img
+							src="./img/cabinet/profile-nav/exit.svg"
+							width="24"
+							height="24"
+							alt=""
+						/>
+					</span>
+					<span class="profile-nav__txt">Вихід</span>
+				</a>
+			</aside>
+			<!-- / nav -->
+
+			<!-- main -->
+
+			<!-- Заповнена сторінка -->
+			<main class="profile__grid-main">
+				<div class="profile-header">
+					<div class="profile-header__content">
+						<h1 class="pr-title">
+							<span class="pr-title__icon">
+								<img
+									src="./img/cabinet/profile-nav/favorite.svg"
+									width="24"
+									height="24"
+									alt=""
+								/>
+							</span>
+							Обрані автомобілі
+						</h1>
+
+						<div class="profile-header__txt">
+							Додайте цікаві автомобілі. Відстежуйте зміни
+						</div>
+					</div>
+				</div>
+
+				<div class="profile-content">
+					<!-- item -->
+					<div class="pr-card js-pr-collapse">
+						<div class="pr-card__body">
+							<div class="pr-card__start">
+								<a href="#" class="pr-card__content">
+									<span class="pr-card__img">
+										<img src="./img/cabinet/pr-auto-1.webp" alt="" />
+									</span>
+									<span class="pr-card__title">Land Rover Discovery Sport</span>
+								</a>
+
+								<div class="pr-card__info">
+									<div class="pr-card__item">
+										<div class="pr-date">2021</div>
+									</div>
+									<div class="pr-card__item">
+										<div class="pr-price">19 000 $</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="pr-card__end">
+								<div class="pr-card__label">В наявності</div>
+								<div class="pr-actions">
+									<div class="pr-actions__item">
+										<button class="pr-btn-circle" data-collapse type="button">
+											<svg width="24" height="24">
+												<use
+													xlink:href="./img/cabinet/sprite.svg#more-arrow"
+												></use>
+											</svg>
+										</button>
+									</div>
+
+									<div class="pr-actions__item">
+										<button class="pr-btn-circle" type="button">
+											<svg width="24" height="24">
+												<use xlink:href="./img/cabinet/sprite.svg#trash"></use>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="pr-collapse">
+							<div class="pr-collapse__inner">
+								<div class="pr-card__comment">
+									Я дуже задоволений своїм Land Rover Discovery Sport! Він
+									пропонує чудову комфортабельність та просторість
+								</div>
+								<div class="pr-card__form">
+									<form class="pr-form-line">
+										<div class="pr-form-line__content">
+											<label class="pr-control">
+												<textarea
+													rows="1"
+													class="pr-control__input js-resize-ta"
+													placeholder="Залиште свій коментар"
+												></textarea>
+												<span class="pr-control__label">Замітка</span>
+											</label>
+										</div>
+
+										<div class="pr-form-line__btn">
+											<button class="pr-btn" type="submit" disabled>
+												ЗБЕРЕГТИ
+											</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- / item -->
+
+					<!-- item -->
+					<div class="pr-card js-pr-collapse">
+						<div class="pr-card__body">
+							<div class="pr-card__start">
+								<a href="#" class="pr-card__content">
+									<span class="pr-card__img">
+										<img src="./img/cabinet/pr-auto-2.webp" alt="" />
+									</span>
+									<span class="pr-card__title">Land Rover Discovery Sport</span>
+								</a>
+
+								<div class="pr-card__info">
+									<div class="pr-card__item">
+										<div class="pr-date">2021</div>
+									</div>
+									<div class="pr-card__item">
+										<div class="pr-price">19 000 $</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="pr-card__end">
+								<div class="pr-card__label">В наявності</div>
+								<div class="pr-actions">
+									<div class="pr-actions__item">
+										<button class="pr-btn-circle" data-collapse type="button">
+											<svg width="24" height="24">
+												<use
+													xlink:href="./img/cabinet/sprite.svg#more-arrow"
+												></use>
+											</svg>
+										</button>
+									</div>
+
+									<div class="pr-actions__item">
+										<button class="pr-btn-circle" type="button">
+											<svg width="24" height="24">
+												<use xlink:href="./img/cabinet/sprite.svg#trash"></use>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="pr-collapse">
+							<div class="pr-collapse__inner">
+								<div class="pr-card__form">
+									<form class="pr-form-line">
+										<div class="pr-form-line__content">
+											<label class="pr-control">
+												<textarea
+													rows="1"
+													class="pr-control__input js-resize-ta"
+													placeholder="Залиште свій коментар"
+												></textarea>
+												<span class="pr-control__label">Замітка</span>
+											</label>
+										</div>
+
+										<div class="pr-form-line__btn">
+											<button class="pr-btn" type="submit" disabled>
+												ЗБЕРЕГТИ
+											</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- / item -->
+
+					<!-- item -->
+					<div class="pr-card js-pr-collapse">
+						<div class="pr-card__body">
+							<div class="pr-card__start">
+								<a href="#" class="pr-card__content">
+									<span class="pr-card__img">
+										<img src="./img/cabinet/pr-auto-2.webp" alt="" />
+									</span>
+									<span class="pr-card__title"
+										>Land Rover Discovery Sport Land Rover Discovery Sport</span
+									>
+								</a>
+
+								<div class="pr-card__info">
+									<div class="pr-card__item">
+										<div class="pr-date">2021</div>
+									</div>
+									<div class="pr-card__item">
+										<div class="pr-price">19 000 $</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="pr-card__end">
+								<div class="pr-card__label">В наявності</div>
+								<div class="pr-actions">
+									<div class="pr-actions__item">
+										<button class="pr-btn-circle" data-collapse type="button">
+											<svg width="24" height="24">
+												<use
+													xlink:href="./img/cabinet/sprite.svg#more-arrow"
+												></use>
+											</svg>
+										</button>
+									</div>
+
+									<div class="pr-actions__item">
+										<button class="pr-btn-circle" type="button">
+											<svg width="24" height="24">
+												<use xlink:href="./img/cabinet/sprite.svg#trash"></use>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="pr-collapse">
+							<div class="pr-collapse__inner">
+								<div class="pr-card__comment">
+									Я дуже задоволений своїм Land Rover Discovery Sport! Він
+									пропонує чудову комфортабельність та просторість
+								</div>
+								<div class="pr-card__comment">
+									Швидкість та керування на бездоріжжі - просто вражаючі. Хоча
+									деякі конкуренти можуть бути кращими на дорозі, Discovery
+									Sport все одно залишається одним з найкращих SUV
+								</div>
+								<div class="pr-card__form">
+									<form class="pr-form-line">
+										<div class="pr-form-line__content">
+											<label class="pr-control">
+												<textarea
+													rows="1"
+													class="pr-control__input js-resize-ta"
+													placeholder="Залиште свій коментар"
+												></textarea>
+												<span class="pr-control__label">Замітка</span>
+											</label>
+										</div>
+
+										<div class="pr-form-line__btn">
+											<button class="pr-btn" type="submit" disabled>
+												ЗБЕРЕГТИ
+											</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- / item -->
+				</div>
+			</main>
+
+			<!-- Пуста сторінка -->
+			<main class="profile__grid-main none">
+				<div class="profile-header">
+					<div class="profile-header__content">
+						<h1 class="pr-title">
+							<span class="pr-title__icon">
+								<img
+									src="./img/cabinet/profile-nav/favorite.svg"
+									width="24"
+									height="24"
+									alt=""
+								/>
+							</span>
+							Обрані автомобілі
+						</h1>
+
+						<div class="profile-header__txt">
+							Додайте цікаві автомобілі. Відстежуйте зміни
+						</div>
+					</div>
+				</div>
+
+				<div class="profile-content">
+					<p>Жодного автомобілю не має</p>
+				</div>
+			</main>
+
+			<!-- / main -->
+		</div>
+	</div>
+</div>

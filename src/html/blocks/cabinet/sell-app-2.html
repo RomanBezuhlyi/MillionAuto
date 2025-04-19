@@ -1,0 +1,225 @@
+<div class="profile">
+	<!-- header will be here -->
+
+	<div class="profile__body">
+		<div class="profile__grid">
+			<!-- nav -->
+			<aside class="profile__grid-aside">
+				<a href="page-my-info.html" class="profile-nav">
+					<span class="profile-nav__icon">
+						<img
+							src="./img/cabinet/profile-nav/info.svg"
+							width="24"
+							height="24"
+							alt=""
+						/>
+					</span>
+					<span class="profile-nav__txt">Моя інформація</span>
+				</a>
+
+				<a href="page-my-autos.html" class="profile-nav">
+					<span class="profile-nav__icon">
+						<img
+							src="./img/cabinet/profile-nav/car.svg"
+							width="24"
+							height="24"
+							alt=""
+						/>
+					</span>
+					<span class="profile-nav__txt">Мої автомобілі</span>
+				</a>
+
+				<a href="page-messages.html" class="profile-nav">
+					<span class="profile-nav__icon">
+						<img
+							src="./img/cabinet/profile-nav/bell.svg"
+							width="24"
+							height="24"
+							alt=""
+						/>
+					</span>
+					<span class="profile-nav__txt">Повідомлення</span>
+				</a>
+
+				<a href="page-favorites.html" class="profile-nav">
+					<span class="profile-nav__icon">
+						<img
+							src="./img/cabinet/profile-nav/favorite.svg"
+							width="24"
+							height="24"
+							alt=""
+						/>
+					</span>
+					<span class="profile-nav__txt">Обрані автомобілі</span>
+				</a>
+
+				<a href="page-sell.html" class="profile-nav is-current">
+					<span class="profile-nav__icon">
+						<img
+							src="./img/cabinet/profile-nav/sell.svg"
+							width="24"
+							height="24"
+							alt=""
+						/>
+					</span>
+					<span class="profile-nav__txt">Продати авто</span>
+				</a>
+
+				<a href="page-leasing.html" class="profile-nav">
+					<span class="profile-nav__icon">
+						<img
+							src="./img/cabinet/profile-nav/key.svg"
+							width="24"
+							height="24"
+							alt=""
+						/>
+					</span>
+					<span class="profile-nav__txt">Лізінг</span>
+				</a>
+
+				<a href="page-pownshop.html" class="profile-nav">
+					<span class="profile-nav__icon">
+						<img
+							src="./img/cabinet/profile-nav/coin.svg"
+							width="24"
+							height="24"
+							alt=""
+						/>
+					</span>
+					<span class="profile-nav__txt">Ломбард</span>
+				</a>
+
+				<a href="#" class="profile-nav">
+					<span class="profile-nav__icon">
+						<img
+							src="./img/cabinet/profile-nav/help.svg"
+							width="24"
+							height="24"
+							alt=""
+						/>
+					</span>
+					<span class="profile-nav__txt">Допомога</span>
+				</a>
+
+				<a href="#" class="profile-nav profile-nav_mt">
+					<span class="profile-nav__icon">
+						<img
+							src="./img/cabinet/profile-nav/exit.svg"
+							width="24"
+							height="24"
+							alt=""
+						/>
+					</span>
+					<span class="profile-nav__txt">Вихід</span>
+				</a>
+			</aside>
+			<!-- / nav -->
+
+			<!-- main -->
+
+			<main class="profile__grid-main">
+				<div class="profile-header">
+					<div class="profile-header__content">
+						<h1 class="pr-title">Заява про продаж автомобіля</h1>
+
+						<div class="profile-header__txt">
+							Заповніть дані, і ми запропонуємо вам максимальну ціну за ваш
+							автомобіль
+						</div>
+					</div>
+
+					<div class="profile-header__end">
+						<button class="pr-circle" type="button">
+							<span class="pr-circle__icon">
+								<svg width="24" height="24">
+									<use xlink:href="./img/cabinet/sprite.svg#close"></use>
+								</svg>
+							</span>
+							<span class="pr-circle__txt">скасувати</span>
+						</button>
+					</div>
+				</div>
+
+				<div class="profile-content">
+					<form class="pr-offer-wrap">
+						<div class="pr-offer">
+							<div class="pr-offer__title">Оберіть автомобіль для продажу</div>
+							<div class="pr-offer__inner">
+								<div class="pr-check-wrap">
+									<label class="pr-check">
+										<input type="radio" name="offer" value="new" />
+										<span class="pr-check__mark"></span>
+										<span class="pr-check__title"
+											>Заповнити дані автомобіля (ще ні де не продавався)</span
+										>
+									</label>
+
+									<label class="pr-check">
+										<input type="radio" name="offer" value="existing" checked />
+										<span class="pr-check__mark"></span>
+										<span class="pr-check__title"
+											>Вже є об’ява на інших ресурсах</span
+										>
+									</label>
+
+									<label class="pr-check">
+										<input type="radio" name="offer" value="mycars" />
+										<span class="pr-check__mark"></span>
+										<span class="pr-check__title">Обрати з моїх авто</span>
+									</label>
+								</div>
+							</div>
+						</div>
+
+						<div class="pr-offer">
+							<div class="pr-offer__title">
+								Скопіюйте посилання на ваше оголошення з іншого ресурсу
+							</div>
+							<div class="pr-offer__inner">
+								<div class="pr-offer__max">
+									<label class="pr-control">
+										<input
+											class="pr-control__input js-pr-input"
+											type="text"
+											placeholder="Посилання"
+										/>
+										<span class="pr-control__label">Посилання на об’яву</span>
+									</label>
+								</div>
+							</div>
+						</div>
+
+						<div class="pr-offer__footer">
+							<div class="pr-form__grid">
+								<div class="pr-form__item">
+									<button class="pr-btn" type="submit">
+										ВІДПРАВИТИ ЗАЯВКУ
+									</button>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</main>
+
+			<!-- / main -->
+		</div>
+	</div>
+</div>
+<script>
+	document.querySelectorAll('input[name="offer"]').forEach(radio => {
+		radio.addEventListener('change', function () {
+			switch (this.value) {
+				case 'new':
+					window.location.href = '/page-sell-app-1.html'
+					break
+				case 'existing':
+					window.location.href = '/page-sell-app-2.html'
+					break
+				case 'mycars':
+					window.location.href = '/page-sell-app-3.html'
+					break
+			}
+		})
+	})
+</script>

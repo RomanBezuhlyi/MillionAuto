@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/png" href="./img/favicon.png" />
+		<title>MillionAuto</title>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+		/>
+
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.1/nouislider.min.css"
+		/>
+		<link rel="stylesheet" href="./css/main.css" />
+	</head>
+	<body>
+		<header
+	id="header"
+	class="header-wrap"
+	style="border-bottom: 1px solid #2b2b2b"
+>
+	<div class="container">
+		<div class="header">
+			<a class="header__logo transition-link" href="index.html">
+				<img loading="lazy" src="./img/logo-header.svg" alt="image" />
+			</a>
+			<nav class="header__nav">
+				<a class="transition-link" href="page-catalog.html">Автомобілі</a>
+				<a href="index.html#services">Послуги</a>
+				<a class="transition-link" href="page-contact.html">Контакти</a>
+				<a class="transition-link" href="page-vacancies.html">Вакансії</a>
+				<a href="tel:+3800000000">Зателефонувати</a>
+				<div class="header__nav-opt">
+					<div class="header__nav-lang">
+						<a href="#"
+							><img loading="lazy" src="./img/united kingdom.svg" alt="image" />
+							Ua</a
+						>
+						<a class="active" href="#"
+							><img loading="lazy" src="./img/ukraine.svg" alt="image" /> En</a
+						>
+					</div>
+					<div class="header__nav-log">
+						<a href="#">simplemail@simple.domain</a>
+					</div>
+				</div>
+			</nav>
+			<button class="header__burger mobile">
+				<img
+					loading="lazy"
+					src="./img/icons/burger_menu_icon.svg"
+					alt="image"
+				/>
+			</button>
+		</div>
+	</div>
+</header>
+
+		<main><div class="profile">
+	<!-- header will be here -->
+
+	<div class="profile__body">
+		<div class="profile__grid">
+			<!-- nav -->
+			<aside class="profile__grid-aside">
+				<a href="page-my-info.html" class="profile-nav">
+					<span class="profile-nav__icon">
+						<img
+							src="./img/cabinet/profile-nav/info.svg"
+							width="24"
+							height="24"
+							alt=""
+						/>
+					</span>
+					<span class="profile-nav__txt">Моя інформація</span>
+				</a>
+
+				<a href="page-my-autos.html" class="profile-nav">
+					<span class="profile-nav__icon">
+						<img
+							src="./img/cabinet/profile-nav/car.svg"
+							width="24"
+							height="24"
+							alt=""
+						/>
+					</span>
+					<span class="profile-nav__txt">Мої автомобілі</span>
+				</a>
+
+				<a href="page-messages.html" class="profile-nav">
+					<span class="profile-nav__icon">
+						<img
+							src="./img/cabinet/profile-nav/bell.svg"
+							width="24"
+							height="24"
+							alt=""
+						/>
+					</span>
+					<span class="profile-nav__txt">Повідомлення</span>
+				</a>
+
+				<a href="page-favorites.html" class="profile-nav">
+					<span class="profile-nav__icon">
+						<img
+							src="./img/cabinet/profile-nav/favorite.svg"
+							width="24"
+							height="24"
+							alt=""
+						/>
+					</span>
+					<span class="profile-nav__txt">Обрані автомобілі</span>
+				</a>
+
+				<a href="page-sell.html" class="profile-nav">
+					<span class="profile-nav__icon">
+						<img
+							src="./img/cabinet/profile-nav/sell.svg"
+							width="24"
+							height="24"
+							alt=""
+						/>
+					</span>
+					<span class="profile-nav__txt">Продати авто</span>
+				</a>
+
+				<a href="page-leasing.html" class="profile-nav is-current">
+					<span class="profile-nav__icon">
+						<img
+							src="./img/cabinet/profile-nav/key.svg"
+							width="24"
+							height="24"
+							alt=""
+						/>
+					</span>
+					<span class="profile-nav__txt">Лізінг</span>
+				</a>
+
+				<a href="page-pownshop.html" class="profile-nav">
+					<span class="profile-nav__icon">
+						<img
+							src="./img/cabinet/profile-nav/coin.svg"
+							width="24"
+							height="24"
+							alt=""
+						/>
+					</span>
+					<span class="profile-nav__txt">Ломбард</span>
+				</a>
+
+				<a href="#" class="profile-nav">
+					<span class="profile-nav__icon">
+						<img
+							src="./img/cabinet/profile-nav/help.svg"
+							width="24"
+							height="24"
+							alt=""
+						/>
+					</span>
+					<span class="profile-nav__txt">Допомога</span>
+				</a>
+
+				<a href="#" class="profile-nav profile-nav_mt">
+					<span class="profile-nav__icon">
+						<img
+							src="./img/cabinet/profile-nav/exit.svg"
+							width="24"
+							height="24"
+							alt=""
+						/>
+					</span>
+					<span class="profile-nav__txt">Вихід</span>
+				</a>
+			</aside>
+			<!-- / nav -->
+
+			<!-- main -->
+
+			<!-- Заповнена сторінка -->
+			<main class="profile__grid-main">
+				<div class="profile-header">
+					<div class="profile-header__content">
+						<h1 class="pr-title">
+							<span class="pr-title__icon">
+								<img
+									src="./img/cabinet/profile-nav/key.svg"
+									width="24"
+									height="24"
+									alt=""
+								/>
+							</span>
+							Лізінг / Кредит
+						</h1>
+
+						<div class="profile-header__txt">Подавай заявку на лізінг авто</div>
+					</div>
+
+					<div class="profile-header__end">
+						<button class="pr-circle" type="button" data-modal="#pr-modal-bid">
+							<span class="pr-circle__icon">
+								<svg width="24" height="24">
+									<use xlink:href="./img/cabinet/sprite.svg#add"></use>
+								</svg>
+							</span>
+							<span class="pr-circle__txt">ДОДАТИ</span>
+						</button>
+					</div>
+				</div>
+
+				<div class="profile-content">
+					<div class="pr-line pr-line__header">
+						<div class="pr-line__content">
+							<div class="pr-line__item">Номер</div>
+							<div class="pr-line__item">Сума (грн)</div>
+							<div class="pr-line__item pr-line__sm">%</div>
+							<div class="pr-line__item pr-line__sm">Термін</div>
+							<div class="pr-line__item">Платіж (грн)</div>
+							<div class="pr-line__item">Наступний</div>
+							<div class="pr-line__end">Статус</div>
+						</div>
+					</div>
+
+					<!-- item -->
+					<div class="pr-line js-pr-collapse">
+						<div class="pr-line__content">
+							<div class="pr-line__item">
+								<div class="pr-line__caption">Номер</div>
+								<div class="pr-line__title">000001</div>
+							</div>
+							<div class="pr-line__item">
+								<div class="pr-line__caption">Сума (грн)</div>
+								<div class="pr-line__title">20 000</div>
+							</div>
+							<div class="pr-line__item pr-line__sm">
+								<div class="pr-line__caption">%</div>
+								<div class="pr-line__title">25</div>
+							</div>
+							<div class="pr-line__item pr-line__sm">
+								<div class="pr-line__caption">Термін</div>
+								<div class="pr-line__title">32</div>
+							</div>
+							<div class="pr-line__item">
+								<div class="pr-line__caption">Платіж (грн)</div>
+								<div class="pr-line__title">1 200</div>
+							</div>
+							<div class="pr-line__item pr-line__size">
+								<div class="pr-line__caption">Наступний платіж</div>
+								<div class="pr-line__title">01/01/2024</div>
+							</div>
+							<div class="pr-line__end">
+								<div class="pr-line__group">
+									<div class="pr-status-wrap">
+										<div class="pr-line__caption">Статус</div>
+										<div class="pr-status">Активний</div>
+									</div>
+									<div class="pr-actions">
+										<div class="pr-actions__item">
+											<button class="pr-btn-circle" type="button">
+												<svg width="24" height="24">
+													<use xlink:href="./img/cabinet/sprite.svg#pay"></use>
+												</svg>
+											</button>
+										</div>
+										<div class="pr-actions__item">
+											<button class="pr-btn-circle" data-collapse type="button">
+												<svg width="24" height="24">
+													<use
+														xlink:href="./img/cabinet/sprite.svg#more-arrow"
+													></use>
+												</svg>
+											</button>
+										</div>
+										<div class="pr-actions__item">
+											<button
+												class="pr-btn-circle"
+												data-modal="#pr-modal-remove"
+												type="button"
+											>
+												<svg width="24" height="24">
+													<use
+														xlink:href="./img/cabinet/sprite.svg#trash"
+													></use>
+												</svg>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="pr-collapse">
+							<div class="pr-collapse__inner">
+								<div class="pr-info pr-info_mt">
+									<div class="pr-info__header">
+										<div class="pr-info__col">
+											<div class="pr-info__caption">Сума кредиту</div>
+											<div class="pr-info__title">1 000 000 грн</div>
+										</div>
+										<div class="pr-info__col">
+											<div class="pr-info__caption">Строк кредиту</div>
+											<div class="pr-info__title">12 міс</div>
+										</div>
+										<div class="pr-info__col">
+											<div class="pr-info__caption">Від. ставка річних</div>
+											<div class="pr-info__title">20 %</div>
+										</div>
+									</div>
+
+									<div class="pr-info__content">
+										<table class="pr-t">
+											<tr>
+												<td>1</td>
+												<td>1 000 000, 00</td>
+												<td>16,67</td>
+												<td>22 000,88</td>
+												<td>12 000,00</td>
+											</tr>
+											<tr>
+												<td>2</td>
+												<td>1 000 000, 00</td>
+												<td>16,67</td>
+												<td>22 000,88</td>
+												<td>12 000,00</td>
+											</tr>
+											<tr>
+												<td>3</td>
+												<td>1 000 000, 00</td>
+												<td>16,67</td>
+												<td>22 000,88</td>
+												<td>12 000,00</td>
+											</tr>
+											<tr>
+												<td>4</td>
+												<td>1 000 000, 00</td>
+												<td>16,67</td>
+												<td>22 000,88</td>
+												<td>12 000,00</td>
+											</tr>
+											<tr>
+												<td>5</td>
+												<td>1 000 000, 00</td>
+												<td>16,67</td>
+												<td>22 000,88</td>
+												<td>12 000,00</td>
+											</tr>
+											<tr>
+												<td>6</td>
+												<td>1 000 000, 00</td>
+												<td>16,67</td>
+												<td>22 000,88</td>
+												<td>12 000,00</td>
+											</tr>
+											<tr>
+												<td>7</td>
+												<td>1 000 000, 00</td>
+												<td>16,67</td>
+												<td>22 000,88</td>
+												<td>12 000,00</td>
+											</tr>
+											<tr>
+												<td>8</td>
+												<td>1 000 000, 00</td>
+												<td>16,67</td>
+												<td>22 000,88</td>
+												<td>12 000,00</td>
+											</tr>
+											<tr>
+												<td>9</td>
+												<td>1 000 000, 00</td>
+												<td>16,67</td>
+												<td>22 000,88</td>
+												<td>12 000,00</td>
+											</tr>
+											<tr>
+												<td>10</td>
+												<td>1 000 000, 00</td>
+												<td>16,67</td>
+												<td>22 000,88</td>
+												<td>12 000,00</td>
+											</tr>
+											<tr>
+												<td>11</td>
+												<td>1 000 000, 00</td>
+												<td>16,67</td>
+												<td>22 000,88</td>
+												<td>12 000,00</td>
+											</tr>
+											<tr>
+												<td>12</td>
+												<td>1 000 000, 00</td>
+												<td>16,67</td>
+												<td>22 000,88</td>
+												<td>12 000,00</td>
+											</tr>
+											<tr class="pr-t__result">
+												<td></td>
+												<td></td>
+												<td>108,43</td>
+												<td>1 000</td>
+												<td>1108,34</td>
+											</tr>
+										</table>
+									</div>
+
+									<div class="pr-info__footer">
+										<div class="pr-btn">Сплачено</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- / item -->
+
+					<!-- item -->
+					<div class="pr-line js-pr-collapse">
+						<div class="pr-line__content">
+							<div class="pr-line__item">
+								<div class="pr-line__caption">Номер</div>
+								<div class="pr-line__title">000001</div>
+							</div>
+							<div class="pr-line__item">
+								<div class="pr-line__caption">Сума (грн)</div>
+								<div class="pr-line__title">20 000</div>
+							</div>
+							<div class="pr-line__item pr-line__sm">
+								<div class="pr-line__caption">%</div>
+								<div class="pr-line__title">25</div>
+							</div>
+							<div class="pr-line__item pr-line__sm">
+								<div class="pr-line__caption">Термін</div>
+								<div class="pr-line__title">32</div>
+							</div>
+							<div class="pr-line__item">
+								<div class="pr-line__caption">Платіж (грн)</div>
+								<div class="pr-line__title">1 200</div>
+							</div>
+							<div class="pr-line__item pr-line__size">
+								<div class="pr-line__caption">Наступний платіж</div>
+								<div class="pr-line__title">01/01/2024</div>
+							</div>
+							<div class="pr-line__end">
+								<div class="pr-line__group">
+									<div class="pr-status-wrap">
+										<div class="pr-line__caption">Статус</div>
+										<div class="pr-status pr-status_false pr-color">
+											Прострочений
+										</div>
+									</div>
+									<div class="pr-actions">
+										<div class="pr-actions__item">
+											<button class="pr-btn-circle" type="button">
+												<svg width="24" height="24">
+													<use xlink:href="./img/cabinet/sprite.svg#pay"></use>
+												</svg>
+											</button>
+										</div>
+										<div class="pr-actions__item">
+											<button class="pr-btn-circle" data-collapse type="button">
+												<svg width="24" height="24">
+													<use
+														xlink:href="./img/cabinet/sprite.svg#more-arrow"
+													></use>
+												</svg>
+											</button>
+										</div>
+										<div class="pr-actions__item">
+											<button
+												class="pr-btn-circle"
+												data-modal="#pr-modal-remove"
+												type="button"
+											>
+												<svg width="24" height="24">
+													<use
+														xlink:href="./img/cabinet/sprite.svg#trash"
+													></use>
+												</svg>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="pr-collapse">
+							<div class="pr-collapse__inner">
+								<div class="pr-info pr-info_mt">
+									<div class="pr-info__header">
+										<div class="pr-info__col">
+											<div class="pr-info__caption">Сума кредиту</div>
+											<div class="pr-info__title">1 000 000 грн</div>
+										</div>
+										<div class="pr-info__col">
+											<div class="pr-info__caption">Строк кредиту</div>
+											<div class="pr-info__title">12 міс</div>
+										</div>
+										<div class="pr-info__col">
+											<div class="pr-info__caption">Від. ставка річних</div>
+											<div class="pr-info__title">20 %</div>
+										</div>
+									</div>
+
+									<div class="pr-info__content">
+										<table class="pr-t">
+											<tr>
+												<td>1</td>
+												<td>1 000 000, 00</td>
+												<td>16,67</td>
+												<td>22 000,88</td>
+												<td>12 000,00</td>
+											</tr>
+											<tr>
+												<td>2</td>
+												<td>1 000 000, 00</td>
+												<td>16,67</td>
+												<td>22 000,88</td>
+												<td>12 000,00</td>
+											</tr>
+											<tr>
+												<td>3</td>
+												<td>1 000 000, 00</td>
+												<td>16,67</td>
+												<td>22 000,88</td>
+												<td>12 000,00</td>
+											</tr>
+											<tr>
+												<td>4</td>
+												<td>1 000 000, 00</td>
+												<td>16,67</td>
+												<td>22 000,88</td>
+												<td>12 000,00</td>
+											</tr>
+											<tr>
+												<td>5</td>
+												<td>1 000 000, 00</td>
+												<td>16,67</td>
+												<td>22 000,88</td>
+												<td>12 000,00</td>
+											</tr>
+											<tr>
+												<td>6</td>
+												<td>1 000 000, 00</td>
+												<td>16,67</td>
+												<td>22 000,88</td>
+												<td>12 000,00</td>
+											</tr>
+											<tr>
+												<td>7</td>
+												<td>1 000 000, 00</td>
+												<td>16,67</td>
+												<td>22 000,88</td>
+												<td>12 000,00</td>
+											</tr>
+											<tr>
+												<td>8</td>
+												<td>1 000 000, 00</td>
+												<td>16,67</td>
+												<td>22 000,88</td>
+												<td>12 000,00</td>
+											</tr>
+											<tr>
+												<td>9</td>
+												<td>1 000 000, 00</td>
+												<td>16,67</td>
+												<td>22 000,88</td>
+												<td>12 000,00</td>
+											</tr>
+											<tr>
+												<td>10</td>
+												<td>1 000 000, 00</td>
+												<td>16,67</td>
+												<td>22 000,88</td>
+												<td>12 000,00</td>
+											</tr>
+											<tr>
+												<td>11</td>
+												<td>1 000 000, 00</td>
+												<td>16,67</td>
+												<td>22 000,88</td>
+												<td>12 000,00</td>
+											</tr>
+											<tr>
+												<td>12</td>
+												<td>1 000 000, 00</td>
+												<td>16,67</td>
+												<td>22 000,88</td>
+												<td>12 000,00</td>
+											</tr>
+											<tr class="pr-t__result">
+												<td></td>
+												<td></td>
+												<td>108,43</td>
+												<td>1 000</td>
+												<td>1108,34</td>
+											</tr>
+										</table>
+									</div>
+
+									<div class="pr-info__footer">
+										<div class="pr-btn">Сплачено</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- / item -->
+
+					<!-- item -->
+					<div class="pr-line js-pr-collapse">
+						<div class="pr-line__content pr-disabled">
+							<div class="pr-line__item">
+								<div class="pr-line__caption">Номер</div>
+								<div class="pr-line__title">000001</div>
+							</div>
+							<div class="pr-line__item">
+								<div class="pr-line__caption">Сума (грн)</div>
+								<div class="pr-line__title">20 000</div>
+							</div>
+							<div class="pr-line__item pr-line__sm">
+								<div class="pr-line__caption">%</div>
+								<div class="pr-line__title">25</div>
+							</div>
+							<div class="pr-line__item pr-line__sm">
+								<div class="pr-line__caption">Термін</div>
+								<div class="pr-line__title">32</div>
+							</div>
+							<div class="pr-line__item">
+								<div class="pr-line__caption">Платіж (грн)</div>
+								<div class="pr-line__title">1 200</div>
+							</div>
+							<div class="pr-line__item pr-line__size">
+								<div class="pr-line__caption">Наступний платіж</div>
+								<div class="pr-line__title">01/01/2024</div>
+							</div>
+							<div class="pr-line__end">
+								<div class="pr-line__group">
+									<div class="pr-status-wrap">
+										<div class="pr-line__caption">Статус</div>
+										<div class="pr-status pr-status_false">Завершено</div>
+									</div>
+									<div class="pr-actions">
+										<div class="pr-actions__item">
+											<button class="pr-btn-circle" type="button">
+												<svg width="24" height="24">
+													<use xlink:href="./img/cabinet/sprite.svg#pay"></use>
+												</svg>
+											</button>
+										</div>
+										<div class="pr-actions__item">
+											<button class="pr-btn-circle" data-collapse type="button">
+												<svg width="24" height="24">
+													<use
+														xlink:href="./img/cabinet/sprite.svg#more-arrow"
+													></use>
+												</svg>
+											</button>
+										</div>
+										<div class="pr-actions__item">
+											<button
+												class="pr-btn-circle"
+												data-modal="#pr-modal-remove"
+												type="button"
+											>
+												<svg width="24" height="24">
+													<use
+														xlink:href="./img/cabinet/sprite.svg#trash"
+													></use>
+												</svg>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="pr-collapse">
+							<div class="pr-collapse__inner">
+								<div class="pr-info pr-info_mt">
+									<div class="pr-info__header">
+										<div class="pr-info__col">
+											<div class="pr-info__caption">Сума кредиту</div>
+											<div class="pr-info__title">1 000 000 грн</div>
+										</div>
+										<div class="pr-info__col">
+											<div class="pr-info__caption">Строк кредиту</div>
+											<div class="pr-info__title">12 міс</div>
+										</div>
+										<div class="pr-info__col">
+											<div class="pr-info__caption">Від. ставка річних</div>
+											<div class="pr-info__title">20 %</div>
+										</div>
+									</div>
+
+									<div class="pr-info__content">
+										<table class="pr-t">
+											<tr>
+												<td>1</td>
+												<td>1 000 000, 00</td>
+												<td>16,67</td>
+												<td>22 000,88</td>
+												<td>12 000,00</td>
+											</tr>
+											<tr>
+												<td>2</td>
+												<td>1 000 000, 00</td>
+												<td>16,67</td>
+												<td>22 000,88</td>
+												<td>12 000,00</td>
+											</tr>
+											<tr>
+												<td>3</td>
+												<td>1 000 000, 00</td>
+												<td>16,67</td>
+												<td>22 000,88</td>
+												<td>12 000,00</td>
+											</tr>
+											<tr>
+												<td>4</td>
+												<td>1 000 000, 00</td>
+												<td>16,67</td>
+												<td>22 000,88</td>
+												<td>12 000,00</td>
+											</tr>
+											<tr>
+												<td>5</td>
+												<td>1 000 000, 00</td>
+												<td>16,67</td>
+												<td>22 000,88</td>
+												<td>12 000,00</td>
+											</tr>
+											<tr>
+												<td>6</td>
+												<td>1 000 000, 00</td>
+												<td>16,67</td>
+												<td>22 000,88</td>
+												<td>12 000,00</td>
+											</tr>
+											<tr>
+												<td>7</td>
+												<td>1 000 000, 00</td>
+												<td>16,67</td>
+												<td>22 000,88</td>
+												<td>12 000,00</td>
+											</tr>
+											<tr>
+												<td>8</td>
+												<td>1 000 000, 00</td>
+												<td>16,67</td>
+												<td>22 000,88</td>
+												<td>12 000,00</td>
+											</tr>
+											<tr>
+												<td>9</td>
+												<td>1 000 000, 00</td>
+												<td>16,67</td>
+												<td>22 000,88</td>
+												<td>12 000,00</td>
+											</tr>
+											<tr>
+												<td>10</td>
+												<td>1 000 000, 00</td>
+												<td>16,67</td>
+												<td>22 000,88</td>
+												<td>12 000,00</td>
+											</tr>
+											<tr>
+												<td>11</td>
+												<td>1 000 000, 00</td>
+												<td>16,67</td>
+												<td>22 000,88</td>
+												<td>12 000,00</td>
+											</tr>
+											<tr>
+												<td>12</td>
+												<td>1 000 000, 00</td>
+												<td>16,67</td>
+												<td>22 000,88</td>
+												<td>12 000,00</td>
+											</tr>
+											<tr class="pr-t__result">
+												<td></td>
+												<td></td>
+												<td>108,43</td>
+												<td>1 000</td>
+												<td>1108,34</td>
+											</tr>
+										</table>
+									</div>
+
+									<div class="pr-info__footer">
+										<div class="pr-btn">Сплачено</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- / item -->
+				</div>
+			</main>
+			<!-- Пуста сторінка -->
+			<main class="profile__grid-main none">
+				<div class="profile-header">
+					<div class="profile-header__content">
+						<h1 class="pr-title">
+							<span class="pr-title__icon">
+								<img
+									src="./img/cabinet/profile-nav/key.svg"
+									width="24"
+									height="24"
+									alt=""
+								/>
+							</span>
+							Лізінг / Кредит
+						</h1>
+
+						<div class="profile-header__txt">Подавай заявку на лізінг авто</div>
+					</div>
+
+					<div class="profile-header__end">
+						<button class="pr-circle" type="button" data-modal="#pr-modal-bid">
+							<span class="pr-circle__icon">
+								<svg width="24" height="24">
+									<use xlink:href="./img/cabinet/sprite.svg#add"></use>
+								</svg>
+							</span>
+							<span class="pr-circle__txt">ДОДАТИ</span>
+						</button>
+					</div>
+				</div>
+
+				<div class="profile-content">
+					<p>Жодного договіру не має</p>
+				</div>
+			</main>
+			<!-- / main -->
+		</div>
+
+		<div id="pr-modal-bid" class="pr-modal">
+			<div class="pr-modal__bg" data-hide></div>
+			<div class="pr-modal__inner">
+				<div class="pr-modal__header">
+					<div class="pr-modal__title">Заявка</div>
+
+					<div class="pr-modal__info">
+						Виберіть умови, які вам підходять. Наш менеджер зв'яжеться з вами в
+						найближчий час
+					</div>
+				</div>
+
+				<form action="#">
+					<div class="pr-modal__content">
+						<div class="pr-modal__row">
+							<div class="pr-check-group">
+								<label class="pr-check">
+									<input type="radio" name="radio" checked />
+									<span class="pr-check__mark"></span>
+									<span class="pr-check__title">Лізінг</span>
+								</label>
+
+								<label class="pr-check">
+									<input type="radio" name="radio" />
+									<span class="pr-check__mark"></span>
+									<span class="pr-check__title">Кредит</span>
+								</label>
+							</div>
+						</div>
+						<div class="pr-modal__row">
+							<label class="pr-control">
+								<input
+									class="pr-control__input js-pr-input"
+									type="tel"
+									placeholder="+38 ХХХ ХХ ХХ"
+								/>
+								<span class="pr-control__label">Номер телефону</span>
+							</label>
+						</div>
+					</div>
+
+					<div class="pr-modal__footer">
+						<div class="pr-btns">
+							<div class="pr-btns__item">
+								<button class="pr-btn pr-btn_outline" type="button" data-hide>
+									СКАСУВАТИ
+								</button>
+							</div>
+							<div class="pr-btns__item">
+								<button class="pr-btn" type="submit" data-hide>Подати</button>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<div id="pr-modal-remove" class="pr-modal">
+			<div class="pr-modal__bg" data-hide></div>
+			<div class="pr-modal__inner">
+				<div class="pr-modal__header">
+					<div class="pr-modal__title">Видалити заявку</div>
+				</div>
+
+				<div class="pr-modal__content">
+					<div class="pr-modal__info">
+						Ви дійсно бажаєте видалити заявку
+						<span class="pr-modal__info-item">від 01/01/2024 Кредит</span>
+					</div>
+				</div>
+
+				<div class="pr-modal__footer">
+					<div class="pr-btns">
+						<div class="pr-btns__item">
+							<button class="pr-btn pr-btn_outline" type="button" data-hide>
+								СКАСУВАТИ
+							</button>
+						</div>
+						<div class="pr-btns__item">
+							<button class="pr-btn" type="submit" data-hide>Видалити</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</main>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://unpkg.com/imask"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.1/nouislider.min.js"></script>
+		<script src="./js/index.bundle.js"></script>
+	</body>
+</html>

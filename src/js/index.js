@@ -1,5 +1,6 @@
 import './modules/animation'
 import './modules/application'
+import './modules/cabinet'
 import './modules/car-preview'
 import './modules/catalog-filter'
 import './modules/dropdown'
